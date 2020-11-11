@@ -3,7 +3,7 @@
 #' @param response Response from the server
 handle_error_response <- function(response){
     msg <- paste("HTTP Error", response$status_code,
-                 "when connecting to Hlídač státu.")
+                 "when connecting to Hlidac statu.")
 
     if(response$status_code == 401){
         msg <- paste(msg, "Probably invalid token.")
