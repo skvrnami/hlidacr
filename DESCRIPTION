@@ -17,4 +17,6 @@ Imports:
     jsonlite,
     glue,
     purrr,
-    stringr
+    stringr,
+    curl,
+    usethis

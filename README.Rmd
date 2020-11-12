@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# rhlidac
+# hlidacr
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -26,7 +26,7 @@ You can install the development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("skvrnami/rhlidac")
+devtools::install_github("skvrnami/hlidacr")
 ```
 
 Besides the installation, you need access token for making API requests. 
@@ -38,7 +38,14 @@ at the Hlídač státu's website.
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-# library(rhlidac)
-## basic example code
+library(hlidacr)
+
+# Authorization token
+TOKEN <- Sys.getenv("HLIDAC_TOKEN")
+
+datasets <- get_datasets(TOKEN)
+str(datasets, max.level = 1)
+
+head(datasets$Results[,1:2], 5)
 ```
 

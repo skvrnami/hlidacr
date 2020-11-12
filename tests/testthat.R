@@ -1,4 +1,4 @@
 library(testthat)
-library(rhlidac)
+library(hlidacr)
 
-test_check("rhlidac")
+test_check("hlidacr")
