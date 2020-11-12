@@ -38,6 +38,9 @@ check_connection <- function(){
 #'
 #' @return Response from the server containing list of all datasets available
 #' @export
+#'
+#' @examples
+#' \dontrun{get_datasets(token = "XXXX")}
 get_datasets <- function(token){
     check_connection()
     response <- httr::GET("https://www.hlidacstatu.cz/Api/v2/datasety/",
@@ -57,6 +60,9 @@ get_datasets <- function(token){
 #'
 #' @return Response from the server containing metadata related to the specified dataset
 #' @export
+#'
+#' @examples
+#' \dontrun{get_dataset_metadata("ministri", token = "XXXX")}
 get_dataset_metadata <- function(dataset_id, token){
     check_connection()
     response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}"),
@@ -76,6 +82,12 @@ get_dataset_metadata <- function(dataset_id, token){
 #' @param desc Descending or ascending sorting
 #' @param token Authorization token
 #' @export
+#'
+#' @examples
+#' \dontrun{
+#' get_dataset_data("ministri", token = "XXXX")
+#' get_dataset_data("ministri", query = "Zeman", page = 1, token = "XXXX")
+#' }
 get_dataset_data <- function(dataset_id, query = NULL, page = 1, sort = NULL, desc = NULL, token){
     check_connection()
 
@@ -113,6 +125,11 @@ get_dataset_data <- function(dataset_id, query = NULL, page = 1, sort = NULL, de
 #' @param item_id ID of record
 #' @param token Authorization token
 #' @export
+#'
+#' @examples
+#' \dontrun{
+#' get_dataset_record_detail("ministri", item_id = 1, token = "XXXX")
+#' }
 get_dataset_record_detail <- function(dataset_id, item_id, token){
     check_connection()
 
@@ -130,6 +147,11 @@ get_dataset_record_detail <- function(dataset_id, item_id, token){
 #' @param company_name Name of the company
 #' @param token Access token
 #' @export
+#'
+#' @examples
+#' \dontrun{
+#' get_company("Agrofert", token = "XXXX")
+#' }
 get_company <- function(company_name, token){
     check_connection()
 
@@ -141,11 +163,16 @@ get_company <- function(company_name, token){
     jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
-#' Get company details
+#' Get person details
 #'
 #' @param person_id Person's ID
 #' @param token Access token
 #' @export
+#'
+#' @examples
+#' \dontrun{
+#' get_dataset_data("andrej-babis", token = "XXXX")
+#' }
 get_person <- function(person_id, token){
     check_connection()
 
@@ -165,6 +192,10 @@ get_person <- function(person_id, token){
 #' @param sort Ordering of the results
 #' @param token Access token
 #' @export
+#' @examples
+#' \dontrun{
+#' search_contracts("golf", token = "XXXX")
+#' }
 search_contracts <- function(query, page = 1, sort = 0, token){
     check_connection()
 

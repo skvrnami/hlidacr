@@ -29,3 +29,9 @@ get_dataset_data(
 \description{
 Get data from the dataset
 }
+\examples{
+\dontrun{
+get_dataset_data("ministri", token = "XXXX")
+get_dataset_data("ministri", query = "Zeman", page = 1, token = "XXXX")
+}
+}

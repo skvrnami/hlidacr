@@ -15,3 +15,6 @@ Response from the server containing list of all datasets available
 \description{
 Get list of datasets available via Hlídač státu API
 }
+\examples{
+\dontrun{get_datasets(token = "XXXX")}
+}
