@@ -88,7 +88,7 @@ get_dataset_metadata <- function(dataset_id, token){
 #' get_dataset_data("ministri", token = "XXXX")
 #' get_dataset_data("ministri", query = "Zeman", page = 1, token = "XXXX")
 #' }
-get_dataset_data <- function(dataset_id, query = NULL, page = 1, sort = NULL, desc = NULL, token){
+get_dataset_data <- function(dataset_id, token, query = NULL, page = 1, sort = NULL, desc = NULL){
     check_connection()
 
     if(!is.null(query)){
@@ -96,7 +96,7 @@ get_dataset_data <- function(dataset_id, query = NULL, page = 1, sort = NULL, de
     }
 
     if(!is.null(page)){
-        page <- glue::glue("page={page}")
+        page <- glue::glue("strana={page}")
     }
 
     if(!is.null(sort)){
@@ -171,7 +171,7 @@ get_company <- function(company_name, token){
 #'
 #' @examples
 #' \dontrun{
-#' get_dataset_data("andrej-babis", token = "XXXX")
+#' get_person("andrej-babis", token = "XXXX")
 #' }
 get_person <- function(person_id, token){
     check_connection()
@@ -196,7 +196,7 @@ get_person <- function(person_id, token){
 #' \dontrun{
 #' search_contracts("golf", token = "XXXX")
 #' }
-search_contracts <- function(query, page = 1, sort = 0, token){
+search_contracts <- function(query, token, page = 1, sort = 0){
     check_connection()
 
     if(!is.null(query)){

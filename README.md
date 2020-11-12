@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![Codecov test
+coverage](https://codecov.io/gh/skvrnami/hlidacr/branch/master/graph/badge.svg)](https://codecov.io/gh/skvrnami/hlidacr?branch=master)
 <!-- badges: end -->
 
 The goal of hlidacr is to provide access to the data published by
@@ -43,11 +45,16 @@ str(datasets, max.level = 1)
 #>  $ Page   : int 1
 #>  $ Results:'data.frame': 28 obs. of  16 variables:
 
-head(datasets$Results[,1:2], 5)
-#>                       id                               name
-#> 1               ministri                           Ministři
-#> 2      ministry-invoices            Faktury ministerstev ČR
-#> 3        rozhodnuti-uohs                    Rozhodnutí UOHS
-#> 4         prijemcidotaci                    Příjemci dotací
-#> 5 publicchargingstations Seznam veřejných dobíjecích stanic
+head(datasets$Results[,1:2], 10)
+#>                          id                               name
+#> 1                  ministri                           Ministři
+#> 2         ministry-invoices            Faktury ministerstev ČR
+#> 3           rozhodnuti-uohs                    Rozhodnutí UOHS
+#> 4            prijemcidotaci                    Příjemci dotací
+#> 5    publicchargingstations Seznam veřejných dobíjecích stanic
+#> 6  faktury-mesto-plasy-2018           Faktury Město Plasy 2018
+#> 7                   dotinfo                            DotInfo
+#> 8   kvalifikovanidodavatele           Kvalifikovani dodavatele
+#> 9                stav-mostu                    Stav Mostů v ČR
+#> 10 seznam-politickych-stran   Seznam politických stran a hnutí
 ```

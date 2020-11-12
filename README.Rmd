@@ -17,7 +17,6 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![Codecov test coverage](https://codecov.io/gh/skvrnami/hlidacr/branch/master/graph/badge.svg)](https://codecov.io/gh/skvrnami/hlidacr?branch=master)
-[![CircleCI build status](https://circleci.com/gh/skvrnami/hlidacr.svg?style=svg)](https://circleci.com/gh/skvrnami/hlidacr)
 <!-- badges: end -->
 
 The goal of hlidacr is to provide access to the data published by [Hlídač státu](https://www.hlidacstatu.cz/) provided by their [API](https://www.hlidacstatu.cz/api/v2/swagger/index). 
