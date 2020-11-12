@@ -14,3 +14,6 @@ jobs:
       - run:
           name: Check package
           command: R CMD check *tar.gz
+      - run:
+          name: Calculate code coverage
+          command: r -e 'covr::codecov()'
