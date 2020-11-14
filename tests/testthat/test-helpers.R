@@ -1,7 +1,3 @@
-test_that("multiplication works", {
-  expect_equal(2 * 2, 4)
-})
-
 response_401 <- list(status_code = 401)
 response_404 <- list(status_code = 404)
 

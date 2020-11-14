@@ -1,17 +1,21 @@
 Package: hlidacr
 Type: Package
-Title: Access Data of the Hlídaš státu
+Title: Access Data from the Hlídač státu API
 Version: 0.1.0
 Authors@R:
     person("Michael", "Škvrňák", email = "michael.skvrnak@protonmail.com", role = c("aut", "cre"))
 Description: Provides access to datasets published by Hlídač státu, 
     a Czech watchdog NGO, via their API. 
 License: MIT + file LICENSE
+URL: https://github.com/skvrnami/hlidacr
+BugReports: https://github.com/skvrnami/hlidacr/issues
 Encoding: UTF-8
 LazyData: true
 Suggests: 
     testthat,
-    covr
+    covr,
+    knitr,
+    rmarkdown
 RoxygenNote: 7.1.1
 Imports: 
     httr,
@@ -21,3 +25,4 @@ Imports:
     stringr,
     curl,
     usethis
+VignetteBuilder: knitr

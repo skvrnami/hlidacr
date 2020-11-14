@@ -1,0 +1,53 @@
+---
+title: "Počet dní ministrů v úřadu"
+author: "Michael Škvrňák"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+
+```{r, fig.show='hold'}
+library(dplyr)
+library(hlidacr)
+
+TOKEN <- Sys.getenv("HLIDAC_TOKEN")
+
+ministri <- get_dataset_data("ministri", token = TOKEN)
+total_records <- ministri$Total
+n_rows <- nrow(ministri$Results)
+
+total_pages <- ceiling(total_records / n_rows)
+
+purrr::map_df(1:total_pages, function(x) {
+  get_dataset_data("ministri", page = x, token = TOKEN)$Results
+}) -> ministri_all
+
+
+NOW <- as.Date("2020-11-12")
+END <- as.Date("2021-02-01")
+
+REMAINING <- as.numeric(END - NOW)
+
+ministri_all %>%
+  mutate(start_date = as.Date(zacatek, format = "%Y-%m-%dT%H:%M:%S"), 
+         end_date = as.Date(konec, format = "%Y-%m-%dT%H:%M:%S"), 
+         term_days = end_date - start_date) %>%
+  mutate(term_days_higher = term_days > REMAINING) -> ministri_terms
+
+table(ministri_terms$term_days_higher)
+
+implied::implied_probabilities(c(1.19, 4.05))$probabilities
+
+```
+
