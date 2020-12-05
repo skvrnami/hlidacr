@@ -30,3 +30,6 @@ check_connection <- function(){
     if(!curl::has_internet()) usethis::ui_stop("No internet connection. Cannot continue. Retry when connected.")
 }
 
+check_token <- function(token){
+    if(is.null(token)) usethis::ui_stop("No token defined.")
+}

@@ -8,15 +8,22 @@
 #' @export
 #'
 #' @examples
-#' \dontrun{get_datasets(token = "XXXX")}
-get_datasets <- function(token){
-    check_connection()
-    response <- httr::GET("https://www.hlidacstatu.cz/Api/v2/datasety/",
-               httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+#' \dontrun{
+#' get_datasets(token = "XXXX")
+#' }
+get_datasets <- function(token = NULL) {
+  check_token(token)
+  check_connection()
+  response <- httr::GET(
+    "https://www.hlidacstatu.cz/Api/v2/datasety/",
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Get dataset's metadata
@@ -30,15 +37,22 @@ get_datasets <- function(token){
 #' @export
 #'
 #' @examples
-#' \dontrun{get_dataset_metadata("ministri", token = "XXXX")}
-get_dataset_metadata <- function(dataset_id, token){
-    check_connection()
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}"),
-                    httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+#' \dontrun{
+#' get_dataset_metadata("ministri", token = "XXXX")
+#' }
+get_dataset_metadata <- function(dataset_id, token = NULL) {
+  check_token(token)
+  check_connection()
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Get data from the dataset
@@ -56,36 +70,39 @@ get_dataset_metadata <- function(dataset_id, token){
 #' get_dataset_data("ministri", token = "XXXX")
 #' get_dataset_data("ministri", query = "Zeman", page = 1, token = "XXXX")
 #' }
-get_dataset_data <- function(dataset_id, token, query = NULL, page = 1, sort = NULL, desc = NULL){
-    check_connection()
+get_dataset_data <- function(dataset_id, token = NULL, query = NULL, page = 1, sort = NULL, desc = NULL) {
+  check_token(token)
+  check_connection()
 
-    if(!is.null(query)){
-        query <- glue::glue("dotaz={query}")
-    }
+  if (!is.null(query)) {
+    query <- glue::glue("dotaz={query}")
+  }
 
-    if(!is.null(page)){
-        page <- glue::glue("strana={page}")
-    }
+  if (!is.null(page)) {
+    page <- glue::glue("strana={page}")
+  }
 
-    if(!is.null(sort)){
-        sort <- glue::glue("sort={sort}")
-    }
+  if (!is.null(sort)) {
+    sort <- glue::glue("sort={sort}")
+  }
 
-    if(!is.null(desc) && desc %in% c(0, 1)){
-        desc <- glue::glue("desc={desc}")
-    }
+  if (!is.null(desc) && desc %in% c(0, 1)) {
+    desc <- glue::glue("desc={desc}")
+  }
 
-    opts <- create_query(query, page, sort, desc)
+  opts <- create_query(query, page, sort, desc)
 
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}/hledat?{opts}"),
-                    httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}/hledat?{opts}"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
-
-# ministers1 <- get_dataset_data("ministri", query = "Zeman", token = token)
 
 #' Get record detail
 #'
@@ -98,16 +115,22 @@ get_dataset_data <- function(dataset_id, token, query = NULL, page = 1, sort = N
 #' \dontrun{
 #' get_dataset_record_detail("ministri", item_id = 1, token = "XXXX")
 #' }
-get_dataset_record_detail <- function(dataset_id, item_id, token){
-    check_connection()
+get_dataset_record_detail <- function(dataset_id, item_id, token = NULL) {
+  check_token(token)
+  check_connection()
 
-    response <- httr::GET(glue::glue(
-        "https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}/zaznamy/{item_id}"),
-                    httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+  response <- httr::GET(
+    glue::glue(
+      "https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}/zaznamy/{item_id}"
+    ),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Get company details
@@ -120,15 +143,20 @@ get_dataset_record_detail <- function(dataset_id, item_id, token){
 #' \dontrun{
 #' get_company("Agrofert", token = "XXXX")
 #' }
-get_company <- function(company_name, token){
-    check_connection()
+get_company <- function(company_name, token = NULL) {
+  check_token(token)
+  check_connection()
 
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/api/v2/firmy/{company_name}"),
-                    httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/firmy/{company_name}"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Get person details
@@ -141,16 +169,20 @@ get_company <- function(company_name, token){
 #' \dontrun{
 #' get_person("andrej-babis", token = "XXXX")
 #' }
-get_person <- function(person_id, token){
-    check_connection()
+get_person <- function(person_id, token = NULL) {
+  check_token(token)
+  check_connection()
 
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/{person_id}"),
-                          httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/{person_id}"),
+    httr::add_headers(Authorization = token)
+  )
 
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Search contract
@@ -164,29 +196,34 @@ get_person <- function(person_id, token){
 #' \dontrun{
 #' search_contracts("golf", token = "XXXX")
 #' }
-search_contracts <- function(query, token, page = 1, sort = 0){
-    check_connection()
+search_contracts <- function(query, token = NULL, page = 1, sort = 0) {
+  check_token(token)
+  check_connection()
 
-    if(!is.null(query)){
-        query <- glue::glue("dotaz={query}")
-    }
+  if (!is.null(query)) {
+    query <- glue::glue("dotaz={query}")
+  }
 
-    if(!is.null(page)){
-        page <- glue::glue("strana={page}")
-    }
+  if (!is.null(page)) {
+    page <- glue::glue("strana={page}")
+  }
 
-    if(!is.null(sort)){
-        sort <- glue::glue("razeni={sort}")
-    }
+  if (!is.null(sort)) {
+    sort <- glue::glue("razeni={sort}")
+  }
 
-    opts <- create_query(query, page, sort)
+  opts <- create_query(query, page, sort)
 
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/hledat?{opts}"),
-                          httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/hledat?{opts}"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Get contract details
@@ -194,14 +231,19 @@ search_contracts <- function(query, token, page = 1, sort = 0){
 #' @param id ID of contract
 #' @param token Authorization token
 #' @export
-get_contract <- function(id, token){
-    check_connection()
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/{id}"),
-                          httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+get_contract <- function(id, token = NULL) {
+  check_token(token)
+  check_connection()
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/{id}"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Get contract text
@@ -209,28 +251,38 @@ get_contract <- function(id, token){
 #' @param id ID of contract
 #' @param token Authorization token
 #' @export
-get_contract_text <- function(id, token){
-    check_connection()
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/text/{id}"),
-                          httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+get_contract_text <- function(id, token = NULL) {
+  check_token(token)
+  check_connection()
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/text/{id}"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Get websites
 #'
 #' @param token Authorization token
 #' @export
-get_websites <- function(token){
-    check_connection()
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/api/v2/Weby"),
-                          httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+get_websites <- function(token = NULL) {
+  check_token(token)
+  check_connection()
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/Weby"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
 #' Get website detail
@@ -238,13 +290,17 @@ get_websites <- function(token){
 #' @param id Website id
 #' @param token Authorization token
 #' @export
-get_website_detail <- function(id, token){
-    check_connection()
-    response <- httr::GET(glue::glue("https://www.hlidacstatu.cz/api/v2/Weby/{id}"),
-                          httr::add_headers(Authorization = token))
-    if(response$status_code != 200){
-        handle_error_response(response)
-    }
-    jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+get_website_detail <- function(id, token = NULL) {
+  check_token(token)
+  check_connection()
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/Weby/{id}"),
+    httr::add_headers(Authorization = token)
+  )
 
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
