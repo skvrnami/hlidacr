@@ -185,6 +185,44 @@ get_person <- function(person_id, token = NULL) {
   jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
+search_person <- function(query, party, token = NULL){
+  check_token(token)
+  check_connection()
+
+  opts <- create_query(query, party)
+
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/hledat{opts}"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+}
+
+get_person_social <- function(types, token){
+  check_token(token)
+  check_connection()
+
+  check_types(types)
+  opts <- create_type(types)
+
+
+  response <- httr::GET(
+    glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/social?{opts}"),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+}
+
 #' Search contract
 #'
 #' @param query Search query
