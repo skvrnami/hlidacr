@@ -4,7 +4,7 @@
 \alias{get_datasets}
 \title{Get list of datasets}
 \usage{
-get_datasets(token)
+get_datasets(token = NULL)
 }
 \arguments{
 \item{token}{Authorization token}
@@ -16,5 +16,7 @@ Response from the server containing list of all datasets available
 Get list of datasets available via Hlídač státu API
 }
 \examples{
-\dontrun{get_datasets(token = "XXXX")}
+\dontrun{
+get_datasets(token = "XXXX")
+}
 }

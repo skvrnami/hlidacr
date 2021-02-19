@@ -4,17 +4,22 @@
 \alias{search_contracts}
 \title{Search contract}
 \usage{
-search_contracts(query, page = 1, sort = 0, token)
+search_contracts(query, token = NULL, page = 1, sort = 0)
 }
 \arguments{
 \item{query}{Search query}
 
+\item{token}{Access token}
+
 \item{page}{Page of results}
 
 \item{sort}{Ordering of the results}
-
-\item{token}{Access token}
 }
 \description{
 Search contract
+}
+\examples{
+\dontrun{
+search_contracts("golf", token = "XXXX")
+}
 }

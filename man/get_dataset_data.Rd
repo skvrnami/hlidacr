@@ -6,15 +6,17 @@
 \usage{
 get_dataset_data(
   dataset_id,
+  token = NULL,
   query = NULL,
   page = 1,
   sort = NULL,
-  desc = NULL,
-  token
+  desc = NULL
 )
 }
 \arguments{
 \item{dataset_id}{ID of dataset}
+
+\item{token}{Authorization token}
 
 \item{query}{Search query}
 
@@ -23,8 +25,6 @@ get_dataset_data(
 \item{sort}{Sort by column}
 
 \item{desc}{Descending or ascending sorting}
-
-\item{token}{Authorization token}
 }
 \description{
 Get data from the dataset

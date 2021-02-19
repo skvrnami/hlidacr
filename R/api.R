@@ -185,14 +185,33 @@ get_person <- function(person_id, token = NULL) {
   jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
+#' Get person details
+#'
+#' @param query Search query for a person
+#' @param party Search query for a political party
+#' @param token Access token
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' search_person(query = "Kalousek", party = "TOP 09", token = "XXXX")
+#' }
 search_person <- function(query, party, token = NULL){
   check_token(token)
   check_connection()
 
+  if (!is.null(query)) {
+    query <- glue::glue("dotaz={query}")
+  }
+
+  if (!is.null(party)) {
+    page <- glue::glue("strana={party}")
+  }
+
   opts <- create_query(query, party)
 
   response <- httr::GET(
-    glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/hledat{opts}"),
+    glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/hledat?{opts}"),
     httr::add_headers(Authorization = token)
   )
 
@@ -203,13 +222,23 @@ search_person <- function(query, party, token = NULL){
   jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
+#' Get person social media accounts
+#'
+#' @param types Types of social media accounts, only the following types are allowed:
+#' 'Twitter', 'Facebook_page', 'Facebook_profile', 'Instagram', 'WWW', 'Youtube'
+#' @param token Access token
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' get_person_social(c("Twitter", "Instagram"), token = "XXXX")
+#' }
 get_person_social <- function(types, token){
   check_token(token)
   check_connection()
 
   check_types(types)
   opts <- create_type(types)
-
 
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/social?{opts}"),

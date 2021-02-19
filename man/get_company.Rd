@@ -4,7 +4,7 @@
 \alias{get_company}
 \title{Get company details}
 \usage{
-get_company(company_name, token)
+get_company(company_name, token = NULL)
 }
 \arguments{
 \item{company_name}{Name of the company}
@@ -13,4 +13,9 @@ get_company(company_name, token)
 }
 \description{
 Get company details
+}
+\examples{
+\dontrun{
+get_company("Agrofert", token = "XXXX")
+}
 }

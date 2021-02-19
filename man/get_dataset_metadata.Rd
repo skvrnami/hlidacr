@@ -4,7 +4,7 @@
 \alias{get_dataset_metadata}
 \title{Get dataset's metadata}
 \usage{
-get_dataset_metadata(dataset_id, token)
+get_dataset_metadata(dataset_id, token = NULL)
 }
 \arguments{
 \item{dataset_id}{ID of dataset}
@@ -18,5 +18,7 @@ Response from the server containing metadata related to the specified dataset
 Get metadata related to specified dataset.
 }
 \examples{
-\dontrun{get_dataset_metadata("ministri", token = "XXXX")}
+\dontrun{
+get_dataset_metadata("ministri", token = "XXXX")
+}
 }

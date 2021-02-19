@@ -4,7 +4,7 @@
 \alias{get_contract}
 \title{Get contract details}
 \usage{
-get_contract(id, token)
+get_contract(id, token = NULL)
 }
 \arguments{
 \item{id}{ID of contract}

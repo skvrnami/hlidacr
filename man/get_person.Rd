@@ -2,9 +2,9 @@
 % Please edit documentation in R/api.R
 \name{get_person}
 \alias{get_person}
-\title{Get company details}
+\title{Get person details}
 \usage{
-get_person(person_id, token)
+get_person(person_id, token = NULL)
 }
 \arguments{
 \item{person_id}{Person's ID}
@@ -12,5 +12,10 @@ get_person(person_id, token)
 \item{token}{Access token}
 }
 \description{
-Get company details
+Get person details
+}
+\examples{
+\dontrun{
+get_person("andrej-babis", token = "XXXX")
+}
 }

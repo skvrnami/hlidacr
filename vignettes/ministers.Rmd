@@ -1,10 +1,10 @@
 ---
-title: "Počet dní ministrů v úřadu"
+title: "Days in office of Czech ministers"
 author: "Michael Škvrňák"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteIndexEntry{Days in office of Czech ministers}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ```
 
 
-```{r, fig.show='hold'}
+```{r, fig.show='hold', eval=FALSE}
 library(dplyr)
 library(hlidacr)
 

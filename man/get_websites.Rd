@@ -4,7 +4,7 @@
 \alias{get_websites}
 \title{Get websites}
 \usage{
-get_websites(token)
+get_websites(token = NULL)
 }
 \arguments{
 \item{token}{Authorization token}
