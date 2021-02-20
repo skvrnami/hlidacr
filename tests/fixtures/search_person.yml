@@ -1,0 +1,36 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hlidacstatu.cz/api/v2/osoby/hledat?dotaz=Kalousek&strana=TOP%2009
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: My token is safe
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      cache-control: no-cache
+      pragma: no-cache
+      content-type: application/json; charset=utf-8
+      expires: '-1'
+      server: Microsoft-IIS/8.5
+      x-aspnet-version: 4.0.30319
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      access-control-expose-headers: Request-Context
+      x-powered-by: ASP.NET
+      access-control-allow-origin: '*'
+      date: Sat, 20 Feb 2021 17:54:40 GMT
+      content-length: '2531'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '[{"Jmeno":"Josef","Prijmeni":"Kalousek","Narozeni":"1959-06-05T00:00:00","NameId":"josef-kalousek-1","Profile":"/osoba/josef-kalousek-1"},{"TitulPred":"","Jmeno":"Martin","Prijmeni":"Kalousek","TitulPo":"","Narozeni":"1966-09-23T00:00:00","NameId":"martin-kalousek-1","Profile":"/osoba/martin-kalousek-1"},{"TitulPred":"","Jmeno":"Josef","Prijmeni":"Kalousek","TitulPo":"","Narozeni":"1949-01-08T00:00:00","NameId":"josef-kalousek","Profile":"/osoba/josef-kalousek"},{"Jmeno":"Libor","Prijmeni":"Kalousek","Narozeni":"1971-05-17T00:00:00","NameId":"libor-kalousek-1","Profile":"/osoba/libor-kalousek-1"},{"Jmeno":"Petr","Prijmeni":"Kalousek","Narozeni":"1980-04-12T00:00:00","NameId":"petr-kalousek-6","Profile":"/osoba/petr-kalousek-6"},{"Jmeno":"Zbyněk","Prijmeni":"Halousek","Narozeni":"1961-05-09T00:00:00","NameId":"zbynek-halousek","Profile":"/osoba/zbynek-halousek"},{"TitulPred":"Ing.","Jmeno":"Miroslav","Prijmeni":"Kalousek","Narozeni":"1960-12-17T00:00:00","NameId":"miroslav-kalousek","Profile":"/osoba/miroslav-kalousek"},{"TitulPred":"Ing.","Jmeno":"Kalousek","Prijmeni":"Josef","TitulPo":"","Narozeni":"1978-01-03T00:00:00","NameId":"kalousek-josef","Profile":"/osoba/kalousek-josef"},{"TitulPred":"","Jmeno":"Jakub","Prijmeni":"Kyloušek","TitulPo":"","Narozeni":"1979-08-15T00:00:00","NameId":"jakub-kylousek","Profile":"/osoba/jakub-kylousek"},{"Jmeno":"Tomáš","Prijmeni":"Valoušek","Narozeni":"1982-04-13T00:00:00","NameId":"tomas-valousek-2","Profile":"/osoba/tomas-valousek-2"},{"TitulPred":"RSDr.","Jmeno":"Ivana","Prijmeni":"Kalousková","Narozeni":"1952-10-07T00:00:00","NameId":"ivana-kalouskova-1","Profile":"/osoba/ivana-kalouskova-1"},{"TitulPred":"RSDr.","Jmeno":"Ivana","Prijmeni":"Kalousková","TitulPo":"","Narozeni":"1952-07-10T00:00:00","NameId":"ivana-kalouskova","Profile":"/osoba/ivana-kalouskova"},{"TitulPred":"","Jmeno":"Paula","Prijmeni":"Kalousová","TitulPo":"","Narozeni":"1993-09-02T00:00:00","NameId":"paula-kalousova","Profile":"/osoba/paula-kalousova"},{"TitulPred":"PhDr.","Jmeno":"Marie","Prijmeni":"Valoušková","Narozeni":"1948-08-19T00:00:00","NameId":"marie-valouskova","Profile":"/osoba/marie-valouskova"},{"TitulPred":"","Jmeno":"Marie,
+        Phdr.","Prijmeni":"Valoušková","TitulPo":"","Narozeni":"1948-08-19T00:00:00","NameId":"marie-phdr--valouskova","Profile":"/osoba/marie-phdr--valouskova"},{"TitulPred":"MUDr.","Jmeno":"Kalousová","Prijmeni":"Jansová","TitulPo":"","Narozeni":"1965-03-20T00:00:00","NameId":"kalousova-jansova","Profile":"/osoba/kalousova-jansova"}]'
+  recorded_at: 2021-02-20 17:54:40 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

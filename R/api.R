@@ -75,6 +75,7 @@ get_dataset_data <- function(dataset_id, token = NULL, query = NULL, page = 1, s
   check_connection()
 
   if (!is.null(query)) {
+    query <- urltools::url_encode(query)
     query <- glue::glue("dotaz={query}")
   }
 
@@ -147,6 +148,7 @@ get_company <- function(company_name, token = NULL) {
   check_token(token)
   check_connection()
 
+  company_name <- urltools::url_encode(company_name)
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/firmy/{company_name}"),
     httr::add_headers(Authorization = token)
@@ -201,11 +203,13 @@ search_person <- function(query, party, token = NULL){
   check_connection()
 
   if (!is.null(query)) {
+    query <- urltools::url_encode(query)
     query <- glue::glue("dotaz={query}")
   }
 
   if (!is.null(party)) {
-    page <- glue::glue("strana={party}")
+    party <- urltools::url_encode(party)
+    party <- glue::glue("strana={party}")
   }
 
   opts <- create_query(query, party)
@@ -268,6 +272,7 @@ search_contracts <- function(query, token = NULL, page = 1, sort = 0) {
   check_connection()
 
   if (!is.null(query)) {
+    query <- urltools::url_encode(query)
     query <- glue::glue("dotaz={query}")
   }
 

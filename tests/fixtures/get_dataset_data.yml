@@ -1,0 +1,144 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hlidacstatu.cz/Api/v2/datasety/ministri/hledat?strana=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: My token is safe
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      cache-control: no-cache
+      pragma: no-cache
+      content-type: application/json; charset=utf-8
+      expires: '-1'
+      server: Microsoft-IIS/8.5
+      x-aspnet-version: 4.0.30319
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      access-control-expose-headers: Request-Context
+      x-powered-by: ASP.NET
+      access-control-allow-origin: '*'
+      date: Sat, 20 Feb 2021 13:58:55 GMT
+      content-length: '7390'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"Total":353,"Page":1,"Results":[{"id":53.0,"vlada":"Klaus II.","pozice":"Ministr
+        obrany","resort":"Ministerstvo obrany","jmeno":"Miloslav Výborný","strana":"KDU-ČSL","zacatek":"1996-07-04T00:00:00+02:00","konec":"1998-01-02T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.6585149Z","DbCreatedBy":null},{"id":342.0,"vlada":"Babiš
+        II.","pozice":"Ministr životního prostředí","resort":"Ministerstvo životního
+        prostředí","jmeno":"Richard Brabec","strana":"ANO 2011","zacatek":"2018-06-27T00:00:00+02:00","konec":null,"DbCreated":"2020-01-03T16:46:08.6741477Z","DbCreatedBy":null},{"id":76.0,"vlada":"Zeman","pozice":"Místopředseda
+        vlády (od 10. prosince 1999)\nMinistr zahraničních věcí","resort":"Ministerstvo
+        zahraničních věcí","jmeno":"Jan Kavan","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7210138Z","DbCreatedBy":null},{"id":244.0,"vlada":"Nečas","pozice":"Ministr
+        spravedlnosti","resort":"Ministerstvo spravedlnosti","jmeno":"Pavel Blažek","strana":"ODS","zacatek":"2012-07-03T00:00:00+02:00","konec":"2013-07-10T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null},{"id":143.0,"vlada":"Paroubek","pozice":"Předseda
+        vlády","resort":"Předseda vlády","jmeno":"Jiří Paroubek","strana":"ČSSD","zacatek":"2005-04-25T00:00:00+02:00","konec":"2006-08-16T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":126.0,"vlada":"Gross","pozice":"1.
+        místopředseda vlády\nMinistr práce a sociálních věcí","resort":"Ministerstvo
+        práce a sociálních věcí","jmeno":"Zdeněk Škromach","strana":"ČSSD","zacatek":"2004-08-04T00:00:00+02:00","konec":"2005-04-25T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":150.0,"vlada":"Paroubek","pozice":"Ministr
+        zahraničních věcí","resort":"Ministerstvo zahraničních věcí","jmeno":"Cyril
+        Svoboda","strana":"KDU-ČSL","zacatek":"2005-04-25T00:00:00+02:00","konec":"2006-08-16T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7835189Z","DbCreatedBy":null},{"id":77.0,"vlada":"Zeman","pozice":"Místopředseda
+        vlády pro koordinaci resortů zahraničí, vnitra a obrany","resort":"Místopředseda
+        vlády","jmeno":"Egon Lánský","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"1999-12-01T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":314.0,"vlada":"Babiš
+        I.","pozice":"Místopředseda vlády\nMinistr životního prostředí","resort":"Ministerstvo
+        životního prostředí","jmeno":"Richard Brabec","strana":"ANO 2011","zacatek":"2017-12-13T00:00:00+01:00","konec":"2018-06-27T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7991562Z","DbCreatedBy":null},{"id":338.0,"vlada":"Babiš
+        II.","pozice":"Ministryně průmyslu a obchodu","resort":"Ministerstvo průmyslu
+        a obchodu","jmeno":"Karel Havlíček","strana":"ANO 2011","zacatek":"2019-04-30T00:00:00+02:00","konec":null,"DbCreated":"2020-01-03T16:46:08.8304189Z","DbCreatedBy":null},{"id":339.0,"vlada":"Babiš
+        II.","pozice":"Ministr spravedlnosti\nPředseda Legislativní rady vlády","resort":"Ministerstvo
+        spravedlnosti","jmeno":"Taťána Malá","strana":"ANO 2011","zacatek":"2018-06-27T00:00:00+02:00","konec":"2018-07-10T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8460135Z","DbCreatedBy":null},{"id":64.0,"vlada":"Tošovský","pozice":"Ministr
+        dopravy a spojů","resort":"Ministerstvo dopravy","jmeno":"Petr Moos","strana":"nestraník","zacatek":"1998-01-02T00:00:00+01:00","konec":"1998-07-17T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8616378Z","DbCreatedBy":null},{"id":218.0,"vlada":"Fischer","pozice":"Ministryně
+        zdravotnictví","resort":"Ministerstvo zdravotnictví","jmeno":"Dana Jurásková","strana":"ODS","zacatek":"2009-05-08T00:00:00+02:00","konec":"2010-07-13T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8616378Z","DbCreatedBy":null},{"id":305.0,"vlada":"Sobotka","pozice":"Ministr/-yně
+        školství, mládeže a tělovýchovy","resort":"Ministerstvo školství","jmeno":"Michaela
+        Marksová","strana":"ČSSD","zacatek":"2015-06-05T00:00:00+02:00","konec":"2015-06-17T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.892904Z","DbCreatedBy":null},{"id":256.0,"vlada":"Nečas","pozice":"Ministr(yně)
+        kultury","resort":"Ministerstvo kultury","jmeno":"Alena Hanáková","strana":"TOP09","zacatek":"2011-12-20T00:00:00+01:00","konec":"2013-07-10T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6585149Z","DbCreatedBy":null},{"id":20.0,"vlada":"Klaus
+        I.","pozice":"Ministr kultury","resort":"Ministerstvo kultury","jmeno":"Pavel
+        Tigrid","strana":"KDU-ČSL","zacatek":"1994-01-19T00:00:00+01:00","konec":"1996-07-04T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6585149Z","DbCreatedBy":null},{"id":189.0,"vlada":"Topolánek
+        II.","pozice":"Místopředseda vlády\nMinistr práce a sociálních věcí","resort":"Ministerstvo
+        práce a sociálních věcí","jmeno":"Petr Nečas","strana":"ODS","zacatek":"2007-01-09T00:00:00+01:00","konec":"2009-05-08T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6741477Z","DbCreatedBy":null},{"id":138.0,"vlada":"Gross","pozice":"Ministr
+        průmyslu a obchodu","resort":"Ministerstvo průmyslu a obchodu","jmeno":"Milan
+        Urban","strana":"ČSSD","zacatek":"2004-08-04T00:00:00+02:00","konec":"2005-04-25T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6741477Z","DbCreatedBy":null},{"id":294.0,"vlada":"Sobotka","pozice":"Ministr
+        průmyslu a obchodu","resort":"Ministerstvo průmyslu a obchodu","jmeno":"Bohuslav
+        Sobotka","strana":"ČSSD","zacatek":"2017-03-01T00:00:00+01:00","konec":"2017-04-04T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7210138Z","DbCreatedBy":null},{"id":93.0,"vlada":"Zeman","pozice":"Ministr
+        financí","resort":"Ministerstvo financí","jmeno":"Ivo Svoboda","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"1999-07-20T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null},{"id":184.0,"vlada":"Topolánek
+        II.","pozice":"Ministr pro místní rozvoj","resort":"Ministerstvo pro místní
+        rozvoj","jmeno":"Jiří Čunek","strana":"KDU-ČSL","zacatek":"2007-01-09T00:00:00+01:00","konec":"2007-11-13T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":255.0,"vlada":"Nečas","pozice":"Ministr(yně)
+        kultury","resort":"Ministerstvo kultury","jmeno":"Jiří Besser","strana":"TOP09","zacatek":"2010-07-13T00:00:00+02:00","konec":"2011-12-16T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.9241454Z","DbCreatedBy":null},{"id":70.0,"vlada":"Tošovský","pozice":"Ministr
+        vnitra","resort":"Ministerstvo vnitra","jmeno":"Cyril Svoboda","strana":"KDU-ČSL","zacatek":"1998-01-02T00:00:00+01:00","konec":"1998-07-17T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6585149Z","DbCreatedBy":null},{"id":261.0,"vlada":"Nečas","pozice":"Ministr
+        školství, mládeže a tělovýchovy","resort":"Ministerstvo školství","jmeno":"Josef
+        Dobeš","strana":"VV","zacatek":"2010-07-13T00:00:00+02:00","konec":"2012-03-31T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7210138Z","DbCreatedBy":null},{"id":293.0,"vlada":"Sobotka","pozice":"Ministr
+        průmyslu a obchodu","resort":"Ministerstvo průmyslu a obchodu","jmeno":"Jan
+        Mládek","strana":"ČSSD","zacatek":"2014-01-29T00:00:00+01:00","konec":"2017-02-28T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null}]}'
+  recorded_at: 2021-02-20 13:58:56 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4
+- request:
+    method: get
+    uri: https://www.hlidacstatu.cz/Api/v2/datasety/ministri/hledat?dotaz=Zeman&strana=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: My token is safe
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      cache-control: no-cache
+      pragma: no-cache
+      content-type: application/json; charset=utf-8
+      expires: '-1'
+      server: Microsoft-IIS/8.5
+      x-aspnet-version: 4.0.30319
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      access-control-expose-headers: Request-Context
+      x-powered-by: ASP.NET
+      access-control-allow-origin: '*'
+      date: Sat, 20 Feb 2021 13:58:55 GMT
+      content-length: '7183'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"Total":27,"Page":1,"Results":[{"id":96.0,"vlada":"Zeman","pozice":"Ministr
+        obrany","resort":"Ministerstvo obrany","jmeno":"Jaroslav Tvrdík","strana":"ČSSD","zacatek":"2001-05-04T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8147591Z","DbCreatedBy":null},{"id":94.0,"vlada":"Zeman","pozice":"Ministr
+        financí","resort":"Ministerstvo financí","jmeno":"Jiří Rusnok","strana":"ČSSD","zacatek":"2001-04-13T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":99.0,"vlada":"Zeman","pozice":"Ministr
+        bez portfeje","resort":"Ministr bez portfeje","jmeno":"Karel Březina","strana":"ČSSD","zacatek":"2000-03-23T00:00:00+01:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7991562Z","DbCreatedBy":null},{"id":86.0,"vlada":"Zeman","pozice":"Ministr
+        kultury","resort":"Ministerstvo kultury","jmeno":"Pavel Dostál","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6272605Z","DbCreatedBy":null},{"id":82.0,"vlada":"Zeman","pozice":"Ministr
+        pro místní rozvoj","resort":"Ministerstvo pro místní rozvoj","jmeno":"Jaromír
+        Císař","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2000-04-26T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":98.0,"vlada":"Zeman","pozice":"Ministr
+        bez portfeje","resort":"Ministr bez portfeje","jmeno":"Jaroslav Bašta","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2000-03-23T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.9086026Z","DbCreatedBy":null},{"id":97.0,"vlada":"Zeman","pozice":"Ministr
+        školství, mládeže a tělovýchovy","resort":"Ministerstvo školství","jmeno":"Eduard
+        Zeman","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8616378Z","DbCreatedBy":null},{"id":75.0,"vlada":"Zeman","pozice":"Místopředseda
+        vlády (od 30. května 2001)\nMinistr průmyslu a obchodu","resort":"Ministerstvo
+        průmyslu a obchodu","jmeno":"Miroslav Grégr","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null},{"id":79.0,"vlada":"Zeman","pozice":"Místopředseda
+        vlády\nPředseda Legislativní rady vlády","resort":"Legislativní rada vlády","jmeno":"Pavel
+        Rychetský","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":73.0,"vlada":"Zeman","pozice":"Předseda
+        vlády","resort":"Předseda vlády","jmeno":"Miloš Zeman","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7053953Z","DbCreatedBy":null},{"id":92.0,"vlada":"Zeman","pozice":"Ministr
+        dopravy a spojů","resort":"Ministerstvo dopravy","jmeno":"Jaromír Schling","strana":"ČSSD","zacatek":"2000-04-26T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null},{"id":87.0,"vlada":"Zeman","pozice":"Ministr
+        zemědělství","resort":"Ministerstvo zemědělství","jmeno":"Jan Fencl","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6585149Z","DbCreatedBy":null},{"id":88.0,"vlada":"Zeman","pozice":"Ministr
+        vnitra","resort":"Ministerstvo vnitra","jmeno":"Václav Grulich","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2000-04-04T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6741477Z","DbCreatedBy":null},{"id":84.0,"vlada":"Zeman","pozice":"Ministr
+        zdravotnictví","resort":"Ministerstvo zdravotnictví","jmeno":"Ivan David","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"1999-12-09T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.8304189Z","DbCreatedBy":null},{"id":83.0,"vlada":"Zeman","pozice":"Ministr
+        pro místní rozvoj","resort":"Ministerstvo pro místní rozvoj","jmeno":"Petr
+        Lachnit","strana":"ČSSD","zacatek":"2000-04-26T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8147591Z","DbCreatedBy":null},{"id":76.0,"vlada":"Zeman","pozice":"Místopředseda
+        vlády (od 10. prosince 1999)\nMinistr zahraničních věcí","resort":"Ministerstvo
+        zahraničních věcí","jmeno":"Jan Kavan","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7210138Z","DbCreatedBy":null},{"id":77.0,"vlada":"Zeman","pozice":"Místopředseda
+        vlády pro koordinaci resortů zahraničí, vnitra a obrany","resort":"Místopředseda
+        vlády","jmeno":"Egon Lánský","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"1999-12-01T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":93.0,"vlada":"Zeman","pozice":"Ministr
+        financí","resort":"Ministerstvo financí","jmeno":"Ivo Svoboda","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"1999-07-20T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null},{"id":90.0,"vlada":"Zeman","pozice":"Ministr
+        životního prostředí","resort":"Ministerstvo životního prostředí","jmeno":"Miloš
+        Kužvart","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7053953Z","DbCreatedBy":null},{"id":80.0,"vlada":"Zeman","pozice":"Ministr
+        spravedlnosti","resort":"Ministerstvo spravedlnosti","jmeno":"Otakar Motejl","strana":"nestraník","zacatek":"1998-08-01T00:00:00+02:00","konec":"2000-10-16T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7991562Z","DbCreatedBy":null},{"id":91.0,"vlada":"Zeman","pozice":"Ministr
+        dopravy a spojů","resort":"Ministerstvo dopravy","jmeno":"Antonín Peltrám","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2000-04-26T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6897957Z","DbCreatedBy":null},{"id":85.0,"vlada":"Zeman","pozice":"Ministr
+        zdravotnictví","resort":"Ministerstvo zdravotnictví","jmeno":"Bohumil Fišer","strana":"ČSSD","zacatek":"1999-12-09T00:00:00+01:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8460135Z","DbCreatedBy":null},{"id":78.0,"vlada":"Zeman","pozice":"Místopředseda
+        vlády\nMinistr financí (od 21. července 1999 do 12. dubna 2001)","resort":"Ministerstvo
+        financí","jmeno":"Pavel Mertlík","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2001-04-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null},{"id":89.0,"vlada":"Zeman","pozice":"Ministr
+        vnitra","resort":"Ministerstvo vnitra","jmeno":"Stanislav Gross","strana":"ČSSD","zacatek":"2000-04-05T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6741477Z","DbCreatedBy":null},{"id":81.0,"vlada":"Zeman","pozice":"Ministr
+        spravedlnosti","resort":"Ministerstvo spravedlnosti","jmeno":"Jaroslav Bureš","strana":"nestraník","zacatek":"2001-02-02T00:00:00+01:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8616378Z","DbCreatedBy":null}]}'
+  recorded_at: 2021-02-20 13:58:56 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

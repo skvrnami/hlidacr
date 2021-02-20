@@ -1,0 +1,577 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hlidacstatu.cz/api/v2/smlouvy/text/3583464
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: My token is safe
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      cache-control: no-cache
+      pragma: no-cache
+      content-type: application/json; charset=utf-8
+      expires: '-1'
+      server: Microsoft-IIS/8.5
+      x-aspnet-version: 4.0.30319
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      access-control-expose-headers: Request-Context
+      x-powered-by: ASP.NET
+      access-control-allow-origin: '*'
+      date: Sat, 20 Feb 2021 17:52:41 GMT
+      content-length: '51703'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '["„Adventure golf, ul. Lázeňská“\r\n\r\n                                    číslo
+        smlouvy objednatele: 836/OSRM/2017\r\n                                    číslo
+        smlouvy zhotovitele: 17-091101\r\n\r\n                        SMLOUVA O DÍLO\r\n\r\nuzavřená
+        podle ustanovení § 2586 a násl. zákona č. 89/2012 Sb., občanský zákoník\r\n\r\n                                        Článek
+        I\r\n                                    Smluvní strany\r\n\r\nObjednatel:               statutární
+        město Havířov\r\nse sídlem:                Svornosti 86/2, PSČ 736 01 Havířov-Město\r\n\r\nnení
+        zapsán v obchodním rejstříku\r\n\r\nOprávněný zástupce        JUDr. René Vašek,
+        vedoucí odboru správy a rozvoje majetku\r\n- ve věcech smluvních:    na základě
+        pověření ze dne 08. 03. 2016\r\n                          Ing. Kateřina Mikulová,
+        vedoucí oddělení investic OSRM\r\n- ve věcech technických:  Ing. Jana Sikora,
+        referent oddělení investic OSRM\r\n                          Mgr. Marek Vlachopulos,
+        referent oddělení investic OSRM\r\nID datové schránky:       7zhb6tn\r\nBankovní
+        spojení:         Česká spořitelna, a.s., centrála v Praze\r\nČíslo účtu:               20028-1721604319/0800\r\nIČO:                      00297488\r\nDIČ:                      CZ00297488\r\n\r\nZhotovitel:               ŠNAPKA
+        SLUŽBY s.r.o.\r\nse sídlem:                Hřbitovní 651/8, 735 42 Těrlicko\r\n\r\nzapsán
+        v obchodním rejstříku vedeném krajský soudem v Ostravě, oddíl C, vložka 32006\r\n\r\nOprávněný
+        zástupce:       Ing. Ivan Šnapka - jednatel\r\n- ve věcech smluvních:    Ing.
+        Ivan Šnapka\r\n- ve věcech technických:  Ing. Ivan Šnapka\r\nID datové schránky:       9gg5ymn\r\nBankovní
+        spojení:         FIO Banka a.s.\r\nČíslo účtu:               2900233132/2010\r\nIČ:                       27858782\r\nDIČ:                      CZ27858782\r\n\r\ndále
+        také obecně „smluvní strany“.\r\n\r\n                                    1\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n                                                      Článek
+        II\r\n                                               Základní ustanovení\r\n\r\n1.
+        Zástupci smluvních stran podepisující tuto smlouvu prohlašují:\r\n   a) že
+        údaje uvedené v čl. I této smlouvy (dále jen „identifikační údaje“) a taktéž
+        oprávnění\r\n       k podnikání jsou v souladu s právní skutečností v době
+        uzavření této smlouvy,\r\n   b) že podle vnitřních předpisů nebo jiného obdobného
+        předpisu či rozhodnutí orgánu jsou\r\n       oprávněni podepsat tuto smlouvu,\r\n   c)
+        že k platnosti smlouvy ze strany zhotovitele není potřeba podpisu jiné osoby
+        či dalšího\r\n       právního úkonu,\r\n   d) že ze strany objednatele s uzavřením
+        této smlouvy vyslovila souhlas vedoucí odboru správy\r\n       a rozvoje majetku
+        dne 21. 9. 2017,\r\n   e) že zhotovitel byl vybrán na základě zadávacího řízení
+        na veřejnou zakázku objednatele\r\n       zn. VZ/391/OSRM/17, „Adventure golf,
+        ul. Lázeňská“ – zpracování projektové dokumentace.\r\n\r\n2. Smluvní strany
+        se zavazují, že zástupci smluvních stran, podepisující tuto smlouvu, změny
+        svých\r\n   identifikačních údajů písemně oznámí (s ověřeným podpisem) bez
+        prodlení druhé smluvní\r\n   straně.\r\n   Písemné oznámení o změně identifikačních
+        údajů, a to včetně změny bankovního spojení\r\n   smluvní strana zašle k rukám
+        osoby pověřené zastupováním druhé smluvní strany ve věcech\r\n   technických.\r\n   Písemné
+        oznámení o změně bankovního spojení smluvní strana doloží kopií smlouvy o
+        zřízení\r\n   daného účtu.\r\n   Písemné oznámení o změně zástupce smluvní
+        strany, podepisujícího tuto smlouvu, smluvní\r\n   strana doloží dokladem
+        o volbě nebo jmenování.\r\n   V písemném oznámení smluvní strana vždy uvede
+        odkaz na číslo smlouvy a datum účinnosti\r\n   oznamované změny.\r\n\r\n3.
+        Zhotovitel se zavazuje nejpozději při podpisu této smlouvy předložit objednateli
+        smlouvu\r\n   (včetně všech příslušných pojistných podmínek a případných dalších
+        souvisejících ujednání)\r\n   o pojištění odpovědnosti zhotovitele za škodu,
+        kterou může svou činností či nečinností způsobit\r\n   v souvislosti s plněním
+        předmětu této smlouvy objednateli či jakékoliv třetí osobě (dále jen\r\n   „pojistná
+        smlouva“). Pojištění s pojistným plněním v minimální výši 1 000 000 Kč musí
+        být\r\n   sjednáno za podmínek, které budou zajišťovat komplexní pojištění
+        odpovědnosti zhotovitele\r\n   za škodu, kterou může způsobit v souvislosti
+        s poskytováním předmětu plnění objednateli\r\n   či jakékoliv třetí osobě.
+        Pojištění bude sjednáno na principu příčiny, tj. pojištění se bude\r\n   vztahovat
+        na odpovědnost za škodu, vzniklou jednáním nebo opomenutím pojištěného, k
+        němuž\r\n   došlo v době trvání pojištění, tedy pokud příčinou škody bylo
+        jednání nebo opomenutí\r\n   pojištěného z doby trvání pojištění. Zhotovitel
+        se zavazuje nejpozději do 5 pracovních dnů\r\n   od podpisu kteréhokoliv dodatku
+        k pojistné smlouvě nebo v případě uzavření nové pojistné\r\n   smlouvy, doručit
+        objednateli takovýto dodatek či novou pojistnou smlouvu. Zhotovitel se\r\n   zavazuje,
+        že pojistná smlouva, resp. pojištění bude udržováno v platnosti a účinnosti
+        po celou\r\n   dobu trvání této smlouvy, což je zhotovitel povinen na požádání
+        objednateli prokázat.\r\n   Pokud se na straně zhotovitele jedná o případ,
+        kdy více zhotovitelů podávalo v zadávacím řízení\r\n   uvedeném v písm. e)
+        odst. 1. tohoto článku smlouvy společnou nabídku, musí mít pojištění\r\n   sjednáni
+        všichni zhotovitelé podávající společnou nabídku, popř. z pojistné smlouvy
+        musí\r\n   jednoznačně vyplývat, že je pojištěna odpovědnost všech zhotovitelů
+        podávajících společnou\r\n   nabídku.\r\n\r\n4. Zhotovitel prohlašuje, že
+        je odborně způsobilý k zajištění předmětu plnění podle této smlouvy,\r\n   a
+        že odborně prověřil veškeré podklady předané mu objednatelem co do jejich
+        správnosti\r\n   a úplnosti, k těmto nemá výhrady a provedl odbornou prohlídku
+        místa stavby.\r\n\r\n                                                                        2\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n5. Smluvní strany prohlašují, že předmět smlouvy
+        není plněním nemožným a že tuto smlouvu\r\n   uzavřely po pečlivém zvážení
+        všech možných důsledků.\r\n\r\n6. Zhotovené dílo nebude využito pro ekonomickou
+        činnost objednatele ve smyslu zákona\r\n   č. 235/2004 Sb., o dani z přidané
+        hodnoty, ve znění pozdějších předpisů.\r\n\r\n7. Objednatel výslovně prohlašuje,
+        že není v souvislosti s plněním předmětu této smlouvy osobou\r\n   povinnou
+        k dani z přidané hodnoty a nebude uplatněn režim přenesené daňové povinnosti
+        podle\r\n   § 92e zákona č. 235/2004 Sb., o dani z přidané hodnoty, ve znění
+        pozdějších předpisů.\r\n\r\n8. Daň z přidané hodnoty na výstupu bude odvedena
+        z plnění dle této smlouvy zhotovitelem.\r\n\r\n9. Pokud se na straně zhotovitele
+        jedná o případ, kdy více zhotovitelů podávalo v zadávacím řízení\r\n   uvedeném
+        v písm. e) odst. 1. tohoto článku smlouvy společnou nabídku, zavazují se všichni\r\n   zhotovitelé
+        podávající společnou nabídku, že v souvislosti s předmětem plnění této smlouvy\r\n   ponesou
+        po celou dobu trvání závazků vyplývajících z této smlouvy společně a nerozdílně\r\n   odpovědnost
+        vůči objednateli a třetím osobám.\r\n\r\n                                                      Článek
+        III\r\n                                                    Předmět díla\r\n\r\n1.
+        Touto smlouvou o dílo se zhotovitel zavazuje provést pro objednatele dílo,
+        tj. zpracovat\r\n   projektovou dokumentaci pro územní řízení, projektovou
+        dokumentaci pro stavební řízení,\r\n   a dokumentaci pro provádění stavby
+        (dále též „dokumentace“ nebo „ projektová dokumentace“)\r\n   pro výběr zhotovitele
+        stavby „Adventure golf, ul. Lázeňská“ číslo stavby 17034.\r\n\r\n2. Zhotovitel
+        provede dílo v zejména tomto navrhovaném řešení:\r\n      Výstavbu adventure
+        golfu s maximálním využitím pozemku parcela 649/3, k. ú. Havířov –\r\n        Město,\r\n     
+        Vybudování řádného odvodnění plochy,\r\n      Výsadbu izolační zeleně,\r\n     
+        Nasvětlení prostoru,\r\n\r\n3. Členění předmětu díla:\r\n3.1. Zpracování projektové
+        dokumentace pro územní řízení (dále jen „DÚR“):\r\n\r\n    Zpracování DÚR
+        - rozsah\r\n    Projektová dokumentace k žádosti o vydání územního rozhodnutí
+        bude zpracována v rozsahu\r\n    a obsahu stanoveném stavebním zákonem. Zhotovitel
+        se dále zavazuje projektovou\r\n    dokumentaci realizovat v souladu s příslušnými
+        právními předpisy, technickými podmínkami\r\n    v rozsahu dle zákona č. 183/2006
+        Sb., o územním plánování a stavebním řádu, ve znění\r\n    pozdějších předpisů
+        a jeho prováděcích předpisů, dle platných technických norem a ostatních\r\n    souvisejících
+        zákonů a předpisů a touto smlouvou. Zhotovitel je povinen prověřit správnost\r\n    projektových
+        řešení a propočtů projektové dokumentace, která je předmětem díla dle této\r\n    smlouvy.\r\n\r\n3.2.
+        Zpracování projektu pro stavební řízení (dále jen „DSP“):\r\n     Zpracování
+        DSP - rozsah\r\n    Projektová dokumentace k žádosti o stavební povolení bude
+        zpracována v rozsahu a obsahu\r\n    stanoveném vyhláškou č. 499/2006 Sb.,
+        o dokumentaci staveb a v rozsahu a obsahu\r\n    definovaném v Sazebníku pro
+        navrhování nabídkových cen projektových prací a inženýrské\r\n    činnosti
+        UNIKA. Zhotovitel se dále zavazuje projektovou dokumentaci realizovat v souladu\r\n\r\n                                                                        3\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n    s příslušnými právními předpisy, technickými
+        podmínkami v rozsahu dle zákona č. 183/2006\r\n    Sb., o územním plánování
+        a stavebním řádu, ve znění pozdějších předpisů a jeho prováděcích\r\n    předpisů,
+        dle platných technických norem a ostatních souvisejících zákonů a předpisů
+        a touto\r\n    smlouvou. Zhotovitel je povinen prověřit správnost projektových
+        řešení a propočtů projektové\r\n    dokumentace, která je předmětem díla dle
+        této smlouvy.\r\n\r\n3.3. Zpracování dokumentace provedení stavby (dále jen
+        „DPS“)\r\n     Projektovou dokumentaci zhotovitel dopracuje jako dokumentaci
+        pro realizaci stavby v souladu\r\n     se všemi právními předpisy a aktuálními
+        předpisy týkající se zadávání veřejných zakázek\r\n     na stavební práce
+        (položkový rozpočet, výkaz výměr). Zhotovitel zpracuje pro objednatele\r\n     tento
+        rozpočet a výkaz výměr v požadovaném počtu vyhotovení dle bodu 5.4. níže.\r\n\r\n4.
+        Součásti předmětu díla:\r\n   4.1. jsou i případné další náležitosti, které
+        vzniknou projednáváním DÚR a DSP. Zhotovitel se\r\n        zavazuje účastnit
+        se na základě pozvánky objednatele všech jednání týkajících se\r\n        předmětného
+        díla,\r\n\r\n   4.2. je i povinnost zhotovitele zajistit vstupní, průběžné
+        (dle potřeb) a závěrečné konzultace.\r\n        Veškeré připomínky a požadavky,
+        které vyplynou z průběžných konzultací v průběhu\r\n        zpracování DÚR
+        a DSP budou zhotovitelem zahrnuty do projektové dokumentace.\r\n\r\n   4.3.
+        je výškopisné a polohopisné zaměření oprávněnou osobou, které zabezpečí zhotovitel
+        před\r\n        zpracováním DÚR.\r\n\r\n5. Zhotovitel se dále zavazuje, že:\r\n     5.1.
+        zjistí-li při provádění díla skryté překážky bránící řádnému provedení díla,
+        bez odkladu\r\n            tuto skutečnost písemně oznámí objednateli a bude
+        s ním konzultovat další postup,\r\n\r\n     5.2. svolá před zahájením prací
+        vstupní jednání (konzultaci),\r\n\r\n     5.3. bude projektovou dokumentaci
+        v průběhu prací a na závěr prací konzultovat na jednáních\r\n            (průběžných
+        konzultacích) písemně svolaných zhotovitelem, za účasti dotčených\r\n            zástupců
+        Magistrátu města Havířova a budoucího správce. O těchto jednáních pořídí\r\n            zápisy,\r\n\r\n     5.4.
+        zpracuje výkazy výměr (položkové rozpočty), a to v tištěné i elektronické
+        podobě\r\n            (2 x výkazy výměr, 2 x položkový rozpočet). Součástí
+        PD (DÚR, DSP+DPS) bude i CD\r\n            nosič s kompletní (elektronickou)
+        podobou projektu stavby ve formátu * dwg a *pdf),\r\n            a to včetně
+        výkazů výměr (slepý rozpočet).\r\n\r\n     5.5. Dodá na požádání objednatele
+        další paré projektové dokumentace za cenu vícetisků:\r\n            2.000,00
+        Kč vč. DPH/jeden vícetisk DUR\r\n            2.500,00 Kč vč. DPH/jeden vícetisk
+        DSP\r\n            2.500,00 Kč vč. DPH/jeden vícetisk DPS.\r\n\r\n     5.6.
+        provede dílo svým jménem a na vlastní odpovědnost. V případě, že pověří provedením\r\n            jeho
+        části jinou osobu, má zhotovitel odpovědnost jako by dílo provedl sám. Zhotovitel
+        je\r\n            oprávněn pověřit provedením části díla pouze poddodavatele
+        uvedené v Seznamu\r\n            poddodavatelů (příloha č. 2 smlouvy o dílo).
+        Zhotovitel je oprávněn požádat objednatele\r\n            o změnu v Seznamu
+        poddodavatelů. V případě, že zhotovitel o změnu v Seznamu\r\n            poddodavatelů
+        požádá, je právem objednatele rozhodnout o tom, zda žádost o změnu\r\n\r\n                                                                        4\r\n   „Adventure
+        golf, ul. Lázeňská“\r\n\r\nv Seznamu poddodavatelů akceptuje nebo odmítne.
+        Akceptací objednatele o změně\r\nSeznamu poddodavatelů se rozumí uzavření
+        dodatku ke smlouvě o dílo týkající se změny\r\npřílohy č. 2 této smlouvy.\r\n\r\n5.7.
+        že bude od zahájení realizace stavby až do nabytí právní moci rozhodnutí o
+        předání\r\n       stavby do trvalého užívání vykonávat na uvedené stavbě autorský
+        dozor (dále také „AD“)\r\n       za níže uvedených podmínek:\r\n       a)
+        AD bude zhotovitel provádět dle potřeb objednatele na základě jeho vyžádání.
+        Pokud\r\n           se smluvní strany nedohodnou jinak, je objednatel povinen
+        vyzvat zhotovitele\r\n           k výkonu autorského dozoru v předstihu min.
+        3 kalendářních dnů.\r\n       b) AD bude zhotovitelem proveden v maximálním
+        rozsahu 40 hodin.\r\n       c) Honorář za výkon autorského dozoru za jednu
+        hodinu se sjednává ve výši 500,- Kč\r\n           bez DPH. Částka zohledňuje
+        rozsah i obtížnost sjednaných výkonů a zahrnuje veškeré\r\n           náklady
+        související s výkonem autorského dozoru bez ohledu na počet pracovníků,\r\n           cestovní
+        náklady, telekomunikační a poštovní náklady, náklady na množení\r\n           dokumentace
+        a dokladů.\r\n           Honorář bude objednatelem placen měsíčně pozadu,
+        a to na základě faktury\r\n           vystavené zhotovitelem do 5. dne následujícího
+        měsíce za měsíc uplynulý. Nedílnou\r\n           součástí faktury bude „Výkaz
+        výkonu autorského dozoru“ s uvedením data výkonu\r\n           autorského
+        dozoru, popisu činnosti, počtu hodin v daném datu a celkového počtu\r\n           hodin
+        ve fakturovaném měsíci.\r\n           Splatnost faktury bude 30 dnů ode dne
+        jejího doručení objednateli.\r\n       d) Objednatel bude zhotoviteli účtovat
+        smluvní pokutu ve výši 500,- Kč za každé\r\n           jednotlivé nesplnění
+        povinnosti k výkonu autorského dozoru, přičemž uplatněním\r\n           nároku
+        na zaplacení smluvní pokuty není dotčeno právo objednatele domáhat se\r\n           náhrady
+        škody v plné výši.\r\n       e) V případě, že po podpisu této smlouvy o dílo
+        kterákoliv smluvní strana požádá\r\n           o uzavření samostatné smlouvy
+        o výkonu autorského dozoru, zavazují se smluvní\r\n           strany takovouto
+        smlouvu bez zbytečného odkladu uzavřít, přičemž smlouva\r\n           o výkonu
+        autorského dozoru nesmí být v rozporu s ujednáními uvedenými v této\r\n           smlouvě
+        o dílo.\r\n\r\n6. Předmět díla dle této smlouvy bude splněn dnem předání a
+        převzetí zhotoveného díla,\r\n    uvedeného v „Protokolu o předání a převzetí“,
+        potvrzeném podpisem obou smluvních stran.\r\n\r\n7. Projektovou dokumentaci
+        zhotovitel zpracuje a předá objednateli takto:  4 vyhotovení\r\n    Dokumentace
+        DUR a propočet nákladů                                     2 CD nosiče\r\n    Elektronická
+        podoba DUR (ve formátu *dwg a *pdf)                       4 vyhotovení\r\n    Dokumentace
+        DSP                                                        2 CD nosiče\r\n    Elektronická
+        podoba DSP (ve formátu *dwg a *pdf)                       6 vyhotovení\r\n    Dokumentace
+        DPS                                                        2 CD nosiče\r\n    Elektronická
+        podoba DPS (ve formátu *dwg a *pdf)                       2 vyhotovení\r\n    Položkový
+        rozpočet oceněný v tištěné podobě                            2 CD nosiče\r\n    Položkový
+        rozpočet oceněný v elektronické podobě (Excel)               2 CD nosiče\r\n    Výkaz
+        výměr v elektronické podobě (Excel)\r\n\r\nVyhotovení požadovaná nad tento
+        počet zhotovitel bude objednateli fakturovat jako vícetisky.\r\n\r\n8. Zhotovitel
+        zajistí a odpovídá za to, aby obě varianty zpracování díla (tištěná a elektronická\r\n    podoba)
+        byly ve všem zaručeně shodné, bez jakýchkoliv rozdílů. V případě zjištění
+        rozdílu\r\n    přednost má tištěná varianta.\r\n\r\n5\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n9. Objednatel se zavazuje zhotovené (dokončené)
+        dílo převzít ve smluvně sjednané době, zaplatit\r\n    zhotoviteli cenu sjednanou
+        touto smlouvou za podmínek dále touto smlouvou dohodnutých.\r\n\r\n        Článek
+        IV\r\nTermín a místo plnění\r\n\r\n1. Zhotovitel se zavazuje předat dohodnutý
+        předmět plnění v termínech:     90 dnů od\r\n   a) zpracování DÚR dle Článku
+        III odst. 3.1., vč. inženýrské činnosti    60 dnů od vydání\r\n       účinnosti
+        této smlouvy                                              30 dnů od vydání\r\n   b)
+        zpracování DSP dle Článku III odst. 3.2. ,vč. inženýrské činnosti\r\n       pravomocného
+        územního rozhodnutí\r\n   c) zpracování DPS dle Článku III odst. 3.3.\r\n       pravomocného
+        stavebního povolení\r\n\r\n2. Zhotovitel je mimo jiné též v prodlení o počet
+        dnů, po které řízení o vydání územního rozhodnutí\r\n   nebo stavebního povolení
+        bylo přerušeno z jeho zavinění.\r\n\r\n3. Místem plnění je Magistrát města
+        Havířova, ul. Svornosti 2, Havířov–Město, odbor správy\r\n   a rozvoje majetku,
+        oddělení investic.\r\n\r\n                                        Článek V\r\n                                          Cena\r\n\r\n1.
+        Cena prací je stanovena na základě výsledku zadávacího řízení a činí:\r\n\r\nCena
+        za DÚR dle Článku III odst. 3.1. vč. zaměření a inženýrské činnosti:  120.000,00
+        Kč\r\nCena za provedené dílo bez DPH                                              25.200,00
+        Kč\r\nDPH 21 %                                                                   145.200,00
+        Kč\r\nCena za provedené dílo vč. DPH\r\n\r\nCena za DSP dle Článku III odst.
+        3.2., vč. inženýrské činnosti             100.000,00 Kč\r\nCena za provedené
+        dílo bez DPH                                              21.000,00 Kč\r\nDPH
+        21 %                                                                   121.000,00
+        Kč\r\nCena za provedené dílo vč. DPH\r\n\r\nCena za DPS dle Článku III odst.
+        3.3.,                                     25.000,00 Kč\r\nCena za provedené
+        dílo bez DPH                                              5.250,00 Kč\r\nDPH
+        21 %                                                                   30.250,00
+        Kč\r\nCena za provedené dílo vč. DPH\r\n\r\nCena celkem (DÚR, DSP, DPS a další
+        plnění) bez DPH                         245.000,00 Kč\r\nDPH 21 %                                                                     51.450,00Kč\r\nCena
+        celkem (DÚR, DSP, DPS a další plnění) vč. DPH                         296.450,00Kč\r\n\r\nSlovy:
+        dvěstadevadesátšesttisícčtyčistapadesát korun českých včetně DPH.\r\n\r\n2.
+        Zhotovitel prohlašuje, že cena je pevná a nepřekročitelná a nejvýše přípustná
+        k dosažení záměru\r\n   objednatele a k naplnění předmětu díla a platí po
+        celou dobu platnosti této smlouvy.\r\n\r\n                                        6\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n3. V případě, že dojde k prodlení v předání díla
+        z důvodů ležících prokazatelně na straně\r\n   zhotovitele, je tato cena neměnná
+        až do doby skutečného ukončení a předání díla.\r\n\r\n4. Cena může být změněna,
+        pokud po podpisu této smlouvy a před termínem dokončení díla\r\n   (zdanitelného
+        plnění) dojde ke změnám sazeb DPH.\r\n\r\n5. Daň z přidané hodnoty bude účtována
+        zhotovitelem v procentní sazbě dle platných právních\r\n   předpisů a zhotovitel
+        odpovídá za to, že sazba daně z přidané hodnoty je stanovena v souladu\r\n   s
+        platnými právními předpisy.\r\n\r\n6. Do nejvýše přípustné ceny jsou zahrnuty
+        veškeré náklady spojené s realizací díla, např. poplatky\r\n   za nutná vytýčení
+        inženýrských sítí a zařízení dotčených umístěním stavby, poplatky\r\n   za
+        vyjádření správců inženýrských sítí, úhradu za výškové a polohopisné zaměření,
+        náklady\r\n   na případný hydrogeologický průzkum a případná měření atd.).
+        Součástí ceny jsou i práce\r\n   a dodávky, které v této smlouvě uvedeny nejsou
+        a zhotovitel, jakožto odborník, o nich vědět měl\r\n   nebo vědět mohl.\r\n\r\n                                                      Článek
+        VI\r\n                                                Platební podmínky\r\n\r\n1.
+        Smluvní strany se dohodly, že zhotovitel nemá v průběhu plnění smlouvy nárok
+        na zálohy\r\n   ze strany objednatele. Objednatel není povinen hradit v průběhu
+        plnění smlouvy přiměřenou část\r\n   odměny ve smyslu ust. § 2611 zák. č.
+        89/2012 Sb., občanský zákoník.\r\n\r\n2. Na předmět díla se sjednávají dílčí
+        plnění (v rozsahu DÚR, DSP, DPS) za cenu dle odst. 1 čl. V\r\n   této smlouvy
+        a smluvní strany se dohodly, že toto plnění se považuje za samostatné zdanitelné\r\n   posledním
+        pracovním dnem kalendářního měsíce.\r\n\r\n3. Fakturace a platební podmínky
+        budou realizovány takto:\r\n    3.1. DÚR – Daňový doklad za zpracování DÚR
+        odešle zhotovitel objednateli nejpozději do 10\r\n          dnů od předání
+        díla (DÚR). Termínem úhrady daňového dokladu se rozumí odepsání částky\r\n          z
+        účtu objednatele. Zhotovitel souhlasí s tím, že objednatel bude hradit cenu
+        dodávky na\r\n          základě daňového dokladu za zpracování DÚR se splatností
+        30 dnů až do výše 90%\r\n          celkové ceny dodávky vč. 100% DPH, 10%
+        z celkové ceny dodávky DÚR bez DPH uhradí\r\n          objednatel zhotoviteli
+        po vydání pravomocného územního rozhodnutí (všech\r\n          pravomocných
+        územních rozhodnutích) dané stavby, nejpozději však do 31. 12. 2018. Tato\r\n          pozastávka
+        může být započtena v případě náhrady škody související s odstraňováním vad\r\n          projektové
+        dokumentace DÚR nebo v případě smluvní pokuty sjednané ve smlouvě o dílo.\r\n\r\n    3.2.
+        DSP – Daňový doklad za zpracování DSP odešle zhotovitel objednateli nejpozději
+        do 10\r\n          dnů od předání díla (DSP). Termínem úhrady daňového dokladu
+        se rozumí odepsání částky\r\n          z účtu objednatele. Zhotovitel souhlasí
+        s tím, že objednatel bude hradit cenu dodávky\r\n          na základě daňového
+        dokladu za zpracování DSP se splatností 30 dnů až do výše 90%\r\n          celkové
+        ceny dodávky vč. 100% DPH, 10% z celkové ceny dodávky DSP bez DPH uhradí\r\n          objednatel
+        zhotoviteli po vydání pravomocného stavebního povolení (všech pravomocných\r\n          stavebních
+        povoleních) pro danou stavbu, nejpozději však do 31. 12. 2019. Tato pozastávka\r\n          může
+        být započtena v případě náhrady škody související s odstraňováním vad projektové\r\n          dokumentace
+        DSP nebo v případě smluvní pokuty sjednané ve smlouvě o dílo.\r\n\r\n    3.3.
+        DPS - Daňový doklad za zpracování DPS odešle zhotovitel objednateli nejpozději
+        do 10\r\n          dnů od předání díla (DPS). Termínem úhrady daňového dokladu
+        se rozumí odepsání částky\r\n\r\n                                                                        7\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n          z účtu objednatele. Zhotovitel souhlasí
+        s tím, že objednatel bude hradit cenu dodávky\r\n          na základě daňového
+        dokladu za zpracování DPS se splatností 30 dnů až do výše 90%\r\n          celkové
+        ceny dodávky vč. 100% DPH, 10% z celkové ceny dodávky DPS bez DPH uhradí\r\n          objednatel
+        zhotoviteli po předání stavby „Adventure golf, ul. Lázeňská“ k užívání,\r\n          nejpozději
+        však do 24 měsíců od vydání pravomocného stavebního povolení. Tato\r\n          pozastávka
+        může být započtena v případě náhrady škody související s odstraňováním vad\r\n          projektové
+        dokumentace DPS nebo v případě smluvní pokuty sjednané ve smlouvě o dílo.\r\n\r\n4.
+        Daňový doklad (faktura) musí kromě náležitostí stanovených platnými právní
+        předpisy\r\n   obsahovat i tyto údaje:\r\n   - označení plátce:\r\n     statutární
+        město Havířov\r\n     Odbor správy a rozvoje majetku\r\n     oddělení investic\r\n     Svornosti
+        86/2, 736 01 Havířov-Město\r\n   - označení zhotovitele a čitelné jméno a
+        příjmení vystavitele faktury a jeho vlastnoruční podpis\r\n   - bankovní spojení
+        dle článku I této smlouvy\r\n   - odkaz na číslo uzavřené smlouvy o dílo (evnt.
+        číslo objednatele uvedené v záhlaví této\r\n     smlouvy),\r\n   - předmět
+        plnění a jeho přesnou specifikaci ve slovním vyjádření (nestačí pouze odkaz
+        na číslo\r\n     uzavřené smlouvy)\r\n   - přesný název a číslo stavby dle
+        článku III odst. 1 této smlouvy.\r\n\r\n5. Doručení faktury zhotovitel provede
+        osobně nebo doručenkou prostřednictvím pošty.\r\n\r\n6. Nebude-li daňový doklad
+        (faktura) obsahovat náležitosti uvedené v této smlouvě nebo bude-li\r\n   chybně
+        vyúčtována cena objednatel vadnou fakturu, vrátí před uplynutím lhůty splatnosti
+        vrátit\r\n   druhé smluvní straně bez zaplacení k provedení opravy. Ve vrácené
+        faktuře (na titulní straně)\r\n   vyznačí objednatel důvod vrácení. Druhá
+        smluvní strana provede opravu vystavením nové\r\n   faktury. Vrátí-li objednatel
+        vadnou fakturu druhé smluvní straně, přestává běžet původní lhůta\r\n   splatnosti.
+        Nová lhůta splatnosti běží opět ode dne doručení nově vyhotovené (opravené)
+        faktury.\r\n\r\n7. Povinnost zaplatit je splněna dnem připsání příslušné částky
+        na účet zhotovitele, uvedený v čl. I\r\n   této smlouvy, vyjma případu uvedeného
+        v odst. 8. tohoto článku. Změnu účtu zhotovitel musí\r\n   objednateli oznámit
+        předem postupem sjednaným v čl. II odst. 2 této smlouvy.\r\n\r\n8. Zhotovitel
+        bere na vědomí, že objednatel:\r\n   a) provede bezhotovostní úhradu pouze
+        na účet uvedený v centrálním registru plátců DPH, a to i\r\n       v případě,
+        že na daňovém dokladu bude uvedeno jiné číslo účtu, a to u úplat, kdy celková\r\n       cena
+        díla bude vyšší než dvojnásobek částky podle zákona upravujícího provádění
+        plateb\r\n       v hotovosti (§ 4 z.č. 254/2004 Sb.).\r\n   b) bez jakékoliv
+        sankce pozastaví vyplacení části úhrady ve výši vyúčtované DPH uvedené\r\n       na
+        daňovém dokladu v případě, že se zhotovitel stane po podpisu smlouvy nespolehlivým\r\n       plátcem,
+        a to po celou dobu, kdy bude veden jako nespolehlivý plátce,\r\n   c) provede
+        úhradu pozastavené části DPH podle písm. b) přímo správci daně (finančnímu\r\n       úřadu).\r\n\r\n                                                                        8\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n                                                     Článek
+        VII\r\n                                             Součinnost objednatele\r\n\r\n1.
+        Vyskytne-li se během prací potřeba doplnění podkladů nebo potřeba vyjasnění
+        již předaných\r\n    podkladů, je objednatel povinen tyto podklady specifikované
+        zhotovitelem, resp. příslušné\r\n    vyjasnění, předat v termínech stanovených
+        zhotovitelem. O dobu prodlení objednatele\r\n    s poskytnutím součinnosti
+        se prodlužuje termín plnění jen v případě, že v důsledku prodlení\r\n    objednatele
+        není možné provést dílo v původně sjednaném termínu.\r\n\r\n2. Za objednatele
+        jsou oprávněni v průběhu prací předávat vstupní údaje a odsouhlasit řešení\r\n    navržené
+        zhotovitelem osoby uvedené v článku I této smlouvy.\r\n\r\n                                                    Článek
+        VIII\r\n                                               Použití dokumentace\r\n\r\n1.
+        Dokumentace dle této smlouvy o dílo není předmětem obchodního tajemství.\r\n\r\n2.
+        Podpisem této smlouvy zhotovitel bezúplatně poskytuje objednateli nevypověditelné,
+        výhradní,\r\n    převoditelné a neomezené právo k vytváření kopií, užívání
+        a zpřístupnění dalším osobám\r\n    projektové dokumentace nebo jakékoliv
+        její části a také jakýchkoliv dokumentů, listin, náčrtů,\r\n    návrhů, změn
+        projektové dokumentace, programů a dat vytvořených nebo poskytnutých\r\n    zhotovitelem
+        na základě této smlouvy, jež požívá nebo může požívat ochrany podle právních\r\n    předpisů
+        v oblasti ochrany duševního vlastnictví, včetně práva upravovat a měnit takováto
+        díla,\r\n    a to za účelem realizace, provozování, užívání, údržby, změn,
+        úprav, oprav a demolice stavby\r\n    nebo jejích jednotlivých částí. Toto
+        právo uděluje zhotovitel na dobu neurčitou a bude\r\n    opravňovat také jakoukoli
+        osobu, která bude řádným vlastníkem nebo uživatelem příslušné části\r\n    stavby.
+        Upravovat dílo a nakládat s dílem může objednatel (prostřednictvím třetích
+        osob)\r\n    i tehdy, pokud planost či účinnost této smlouvy zanikne, nebo
+        se zruší před úplným vykonáním\r\n    díla zhotovitelem.\r\n\r\n3. Zhotovitel
+        se zavazuje, že veškeré technické a ekonomické podklady, výkresové a technické\r\n    dokumentace
+        včetně textových částí nebudou předány třetí osobě. Zhotovitel se rovněž\r\n    zavazuje,
+        že nebudou žádné třetí osobě poskytnuty jakékoliv informace související s
+        tímto\r\n    dílem. Ustanovení se nevztahuje na poddodavatele odsouhlasené
+        objednatelem.\r\n\r\n                                                      Článek
+        IX\r\n                                     Záruční doba a odpovědnost za vady\r\n\r\n1.
+        Dílo má vady, jestliže jeho provedení neodpovídá požadavkům uvedeným v této
+        smlouvě,\r\n    příslušným právním předpisům, normám nebo jiné dokumentaci,
+        vztahující se k provedení díla.\r\n\r\n2. Zhotovitel odpovídá za vady, jež
+        má dílo v době předání a za vady, které se na díle projeví\r\n    v záruční
+        době.\r\n\r\n3. Za vady díla, které se projeví po záruční době po celou dobu
+        životnosti projektované stavby,\r\n    odpovídá tehdy, pokud jejich příčinou
+        bylo jeho porušení povinností.\r\n\r\n4. Záruční doba trvá po dobu záruky
+        zhotovitele stavby, minimálně však 60 měsíců a začíná\r\n    plynout ode dne
+        odevzdání projektové dokumentace objednateli. Objednatel, po dokončení\r\n    stavby,
+        písemně oznámí zhotoviteli dobu záruky.\r\n\r\n                                                                        9\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n5. Zhotovitel uhradí veškeré škody, které objednateli
+        vzniknou z důvodů vady díla na straně\r\n    zhotovitele.\r\n\r\n6. Zhotovitel
+        ručí za to, že dokumentace bude kompletní a kvalitní, tzn. že bude vypracována\r\n    a
+        dodána v souladu s touto smlouvou, příslušnými normami ČSN, právními přepisy
+        platnými\r\n    v době zpracování a úrovní technického poznání. Zhotovitel
+        rovněž ručí za původnost díla a to,\r\n    že splněné dílo bude prosté práv
+        třetích osob.\r\n\r\n7. V případě vady dokumentace má objednatel práva uvedená
+        v § 2106 odst. 1 občanského\r\n    zákoníku, přičemž se má za to, že objednatel
+        požaduje bezplatné odstranění vady\r\n    v dohodnutém termínu, neuvede-li
+        v oznámení vady jiný způsob požadované nápravy vady.\r\n\r\n8. V písemném
+        oznámení vady dokumentace objednatel oznámí zhotoviteli její výskyt, vadu\r\n    popíše
+        a uvede, jak se projevuje.\r\n\r\n9. Vady dokumentace započne zhotovitel odstraňovat
+        do 3 kalendářních dnů ode dne doručení\r\n    písemného oznámení o vadě a
+        vady odstraní nejpozději do 12 kalendářních dnů, pokud se\r\n    smluvní strany
+        na základě reklamačního jednání nedohodnou jinak. Reklamační jednání svolá\r\n    zhotovitel.\r\n\r\n10.
+        O odstranění reklamované vady musí být sepsán zápis.\r\n\r\n11. Objednatel
+        má právo nechat odstranit vady na náklady zhotovitele v případě, že zhotovitel
+        sám\r\n    neodstraní vady v termínu podle odst. 9. čl. IX této smlouvy nebo
+        v jiném dohodnutém termínu.\r\n    Objednatel účelně vynaložené náklady na
+        opravu zhotoviteli vyúčtuje daňovým dokladem.\r\n    Daňový doklad odešle
+        objednatel zhotoviteli nejpozději do 10 dnů od odepsání nákladů na\r\n    odstranění
+        vady z účtu objednatele.\r\n\r\n12. Odstraňování reklamovaných vad projektové
+        dokumentace se nepovažuje za výkon autorského\r\n    dozoru.\r\n\r\n                                                      Článek
+        X\r\n                                                        Sankce\r\n\r\n1.
+        Sankce za nedodržení termínů:\r\n   1.1 Objednatel bude účtovat zhotoviteli
+        smluvní pokutu ve výši 0,5 % z ceny díla za každý\r\n          i započatý
+        kalendářní den prodlení a každý jednotlivý případ:\r\n          a) nedodržení
+        sjednaného termínu pro předání díla uvedeného v čl. IV odst. 1 písm. a)\r\n              nebo
+        písm. b) nebo písm. c) této smlouvy,\r\n          b) nedodržení sjednaného
+        termínu pro odstranění vad.\r\n\r\n   1.2 Nebude-li faktura uhrazena ve lhůtě
+        splatnosti, je zhotovitel oprávněn vyúčtovat\r\n          objednateli úrok
+        z prodlení ve výši 18,25 % ročně z dlužné částky, tj. 0,05% z dlužné\r\n          částky
+        za každý i započatý kalendářní den prodlení.\r\n\r\n   1.3 V případě nedodržení
+        dohodnutého termínu k odstranění vady, která se projevila v záruční\r\n          době,
+        objednatel bude účtovat zhotoviteli smluvní pokutu ve výši 0,5% z celkové
+        ceny díla\r\n          za každý i započatý kalendářní den prodlení.\r\n\r\n                                                                       10\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n2. Sankce za vady díla:\r\n     2.1. Za každou
+        vadu (chybu) v projektové dokumentaci, rozpočtech a ve výkazech výměr,\r\n          zjištěnou
+        při realizaci stavby, která si vyžádá zvýšení nákladů stavby od 10.000,00
+        Kč\r\n          do 100.000,00 Kč bez DPH, objednatel bude účtovat zhotoviteli
+        smluvní pokutu ve výši\r\n          10.000,00 Kč.\r\n\r\n     2.2. Za vady
+        (chyby) v projektové dokumentaci, rozpočtech a ve výkazech výměr zjištěné
+        při\r\n          realizaci stavby, které si vyžádají zvýšení nákladů stavby
+        o více než 100.000,00 Kč bez\r\n          DPH, objednatel bude účtovat zhotoviteli
+        smluvní pokutu ve výši 10% z částky, o kterou\r\n          se v důsledku této
+        vady zvýšily náklady na stavbu.\r\n\r\n3. V případě, že zhotovitel pověří
+        provedením části díla poddodavatele neuvedené v Seznamu\r\n    poddodavatelů
+        (příloha č. 2 smlouvy o dílo), vyúčtuje objednatel zhotoviteli smluvní pokutu\r\n    ve
+        výši 0,5% z celkové ceny díla za každý zjištěný případ.\r\n\r\n4. V případě,
+        že závazek provést dílo zanikne řádným ukončením díla nebo odstoupením od
+        této\r\n    smlouvy, nezaniká objednateli nárok na smluvní pokutu, pokud vznikl
+        dřívějším porušením\r\n    povinností zhotovitelem.\r\n\r\n5. Zánik závazku
+        pozdním plněním neznamená zánik nároku na smluvní pokutu za prodlení\r\n    s
+        plněním.\r\n\r\n6. Smluvní pokuty sjednané touto smlouvou zaplatí zhotovitel
+        nezávisle na zavinění a na tom,\r\n    zda a v jaké výši vznikne objednateli
+        škoda, kterou lze vymáhat samostatně.\r\n\r\n7. Vedle smluvní pokuty má objednatel
+        právo na náhradu škody vzniklé z porušení povinnosti,\r\n    ke kterému se
+        smluvní pokuta vztahuje, a to i ve výši přesahující smluvní pokutu.\r\n\r\n8.
+        Smluvní pokuty je objednatel oprávněn započíst proti pohledávce zhotovitele
+        a naopak.\r\n\r\n9. Sankce budou uhrazeny na základě faktury, vystavené objednatelem,
+        jejíž splatnost se sjednává\r\n    ve lhůtě 15 dnů ode dne doručení.\r\n\r\n                                                      Článek
+        XI\r\n                                     Vlastnické právo a nebezpečí škody\r\n\r\n1.
+        Vlastnické právo předmětu zhotoveného díla přechází na objednatele dnem předání
+        a převzetí\r\n    hotoveného díla, uvedeném v písemném „Protokolu o předání
+        a převzetí“ dle Příloha č. 1 této\r\n    smlouvy.\r\n\r\n2. Zhotovitel nese
+        nebezpečí škody na realizovaném předmětu díla do okamžiku předání a převzetí\r\n    díla
+        objednatelem.\r\n\r\n3. Zhotovitel odpovídá objednateli za škody, které prokazatelně
+        způsobí objednateli nebo jiné\r\n    osobě v souvislosti s prováděním a zhotovením
+        smluveného. Zhotovitel je povinen upozornit\r\n    objednatele na následky
+        jeho rozhodnutí a úkonů, které jsou zřejmě neúčelné nebo objednatele\r\n    poškozují.\r\n\r\n4.
+        Objednatel i zhotovitel jsou povinni učinit vše, aby se zabránilo vzniku škody
+        na realizované\r\n    stavbě dle předmětu díla. V případě, že z důvodu chyby
+        v projektu může vzniknout objednateli\r\n    škoda, uvědomí objednatel neprodleně
+        zhotovitele, aby rozpor nebo chybu v projektové\r\n\r\n                                                                       11\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n    dokumentaci opravil. Zhotovitel je povinen
+        tuto opravu provést do 3 dnů od uvědomění.\r\n    Objednatel musí uložit prostudování
+        dokumentace stavebnímu dozoru a realizátoru stavby.\r\n    Zhotovitel je povinen
+        podávat objednateli vysvětlení k nejasným řešením a zajistit\r\n    minimalizování
+        škody.\r\n\r\n5. Zhotovitel uhradí příslušné škody vzniklé objednateli nedodržením
+        smluvených podmínek díla\r\n    zhotovitelem.\r\n\r\n                                                     Článek
+        XII\r\n                                                 Zvláštní ujednání\r\n\r\n1.
+        Zhotovitel bere na vědomí, že tato smlouva bude vedena v evidenci smluv Magistrátu
+        města\r\n    Havířova. Zhotovitel prohlašuje, že skutečnosti uvedené ve smlouvě
+        nepovažuje za obchodní\r\n    tajemství a uděluje svolení k jejich užití a
+        zveřejnění bez stanovení jakýchkoliv dalších\r\n    podmínek.\r\n\r\n2. Zhotovitel
+        bere na vědomí, že předmět smlouvy je financován z veřejných prostředků a\r\n    zavazuje
+        se tímto:\r\n    a) spolupůsobit při výkonu finanční kontroly podle § 2 písm.
+        e) zák. č. 320/2001 Sb., o finanční\r\n        kontrole, ve znění pozdějších
+        předpisů,\r\n    b) uložit účetní dokumentaci vztahující se k plnění této
+        smlouvy po dobu 10 let od prvního dne\r\n        roku následujícího po dni
+        podpisu předávacího protokolu.\r\n\r\n                                                    Článek
+        XIII\r\n                                              Závěrečná ustanovení\r\n\r\n1.
+        Odpověď na nabídku s pozměňovacím dodatkem nebo odchylkou (§ 1740 odst. 3
+        občanského\r\n    zákoníku) není přijata, pokud druhá smluvní strana tuto
+        odpověď výslovně písemně nepotvrdí\r\n    jako přijetí nabídky na uzavření
+        smlouvy.\r\n\r\n2. Změnit nebo doplnit tuto smlouvu mohou smluvní strany pouze
+        formou písemných dodatků,\r\n    které budou vzestupně číslovány, výslovně
+        prohlášeny za dodatek této smlouvy a podepsány\r\n    oprávněnými zástupci
+        smluvních stran před zahájením plnění. Za písemnou formu nebude pro\r\n    tento
+        účel považována výměna e-mailových či jiných elektronických zpráv.\r\n    To
+        neplatí pro identifikační údaje obsažené v čl. I. této smlouvy, u kterých
+        při jejich změně\r\n    postačí oznámení způsobem upraveným v čl. II. odst.
+        2 této smlouvy.\r\n\r\n3. Písemná forma musí být zachována rovněž v případě
+        odstoupení od smlouvy.\r\n\r\n4. Smluvní strany se odchylně od ustanovení
+        občanského zákoníku, která obecně upravují uzavření\r\n    smlouvy, dohodly,
+        že dodatek je uzavřen výlučně tehdy, byl-li písemný návrh dodatku\r\n    podepsaný
+        a předložený jednou smluvní stranou podepsán druhou smluvní stranou ve znění\r\n    předloženého
+        návrhu bez jakýchkoli změn, výhrad apod. a doručen navrhující smluvní straně.\r\n    Za
+        přijetí návrhu dodatku se nebude považovat případ, kdy smluvní strana, které
+        byl návrh\r\n    adresován, se fakticky zachová podle návrhu dodatku, tj.
+        např. poskytne-li nebo přijme-li\r\n    plnění, aniž by zároveň návrh dodatku
+        podepsala.\r\n\r\n5. Smluvní strany odchylně od ustanovení § 582 odst. 2 občanského
+        zákoníku sjednávají, že\r\n    mohou namítnout neplatnost změny této smlouvy
+        pro nedodržení sjednané formy i v případě, že\r\n    již bylo plněno.\r\n\r\n                                                                       12\r\n                                                                                                            „Adventure
+        golf, ul. Lázeňská“\r\n\r\n6. Smluvní vztah uzavřený na základě této smlouvy
+        o dílo lze ukončit písemnou dohodou.\r\n\r\n7. Objednatel může od smlouvy
+        odstoupit v případě uvedeném v občanském zákoníku a při\r\n    následujících
+        podstatných porušeních této smlouvy tj.:\r\n    a) zhotovitel je v prodlení
+        s plněním díla v termínech dle Článku IV odst. 1 této smlouvy o déle\r\n        než
+        30 kalendářních dnů s tím, že zhotoviteli nevzniká nárok na úhradu již vzniklých\r\n        nákladů.\r\n    b)
+        zhotovitel při realizaci díla nerespektuje připomínky objednatele dle Článku
+        III odst. 4 bodu\r\n        4.2. této smlouvy.\r\n\r\n8. V případě zániku
+        závazku před řádným splněním díla je zhotovitel povinen v dohodnuté lhůtě\r\n    předat
+        objednateli nedokončené dílo včetně věcí, které opatřil a které jsou součástí
+        díla. Smluvní\r\n    strany se dohodly, že povinná strana uhradí oprávněné
+        straně prokazatelné náklady, které jí\r\n    vznikly řádným plněním povinností
+        podle této smlouvy v případě, kdy úplné dokončení díla\r\n    bylo znemožněno
+        z důvodů vzniklých na straně druhé.\r\n\r\n9. V případě zániku závazku před
+        splněním díla uzavřou smluvní strany dohodu, ve které upraví\r\n    vzájemná
+        práva a povinnosti.\r\n\r\n10. Zhotovitel není oprávněn převést svá práva
+        a povinnosti ze smlouvy nebo její část třetí osobě\r\n    bez předchozího
+        písemného souhlasu objednatele.\r\n\r\n11. Smluvní strany se dohodly, na vyloučení
+        použití ustanovení § 1987 odst. 2 občanského\r\n    zákoníku a sjednávají,
+        že i nejistá nebo neurčitá pohledávka je způsobilá k započtení.\r\n\r\n12.
+        Obě smluvní strany se dohodly, že v případě nástupnictví jsou nástupnické
+        organizace\r\n    smluvních stran vázány ustanoveními této smlouvy v plném
+        rozsahu.\r\n\r\n13. Pro případ, že kterékoliv ustanovení této smlouvy se stane
+        neúčinným nebo neplatným, smluvní\r\n    strany se zavazují bez zbytečných
+        odkladů nahradit takové ustanovení novým. Případná\r\n    neplatnost některého
+        z ustanovení této smlouvy nemá za následek neplatnost ostatních\r\n    ustanovení.\r\n\r\n14.
+        Písemnosti se považují za doručené i v případě, že kterákoliv ze smluvních
+        stran její doručení\r\n    odmítne či jinak znemožní.\r\n\r\n15. Tato Smlouva,
+        její případné dodatky či dohody o ukončení tohoto smluvního vztahu budou\r\n    uveřejněny
+        v registru smluv na http://smlouvy.gov.cz/. Objednavatel zajistí zveřejnění
+        smlouvy\r\n    nejpozději do 15 kalendářních dnů od uzavření této smlouvy.\r\n    Objednavatel
+        se zavazuje uvést ID datové schránky zhotovitele do formuláře pro uveřejnění\r\n    smlouvy
+        v registru smluv.\r\n\r\n16. Smluvní strany se dohodly, že objednatel, jako
+        osoba uvedená v § 2 odst. 1 zákona o registru\r\n    smluv, zajistí zveřejnění
+        této Smlouvy nejpozději do 15 dnů ode dne podpisu této Smlouvy\r\n    smluvní
+        stranou, která ho podepisuje jako druhá v pořadí.\r\n\r\n17. Tato smlouva
+        je vypracována ve třech vyhotoveních, z nichž objednatel obdrží dvě vyhotovení\r\n    a
+        zhotovitel jedno vyhotovení.\r\n\r\n18. Tato smlouva nabývá platnosti dnem
+        jejího podpisu smluvní stranou, která ji podepisuje jako\r\n    druhá v pořadí,
+        účinnosti nabývá dnem jejího uveřejnění prostřednictvím registru smluv\r\n    v
+        souladu s § 6 odst. 1 zákona o registru smluv.\r\n\r\n                                                                       13\r\n                                                                    „Adventure
+        golf, ul. Lázeňská“\r\n\r\n19. Nedílnou součástí této smlouvy jsou tyto přílohy:\r\n    Příloha
+        č. 1 - Předávací protokol\r\n    Příloha č. 2 - Seznam poddodavatelů\r\n\r\nHavířov
+        11. 10. 2017                                   Těrlicko 25. 10. 2017\r\nZa
+        objednatele:                                        Za zhotovitele:\r\n\r\nv.r.                                                           v.r\r\n\r\n              JUDr.
+        René Vašek                          Ing. Ivan Šnapka\r\nvedoucí odboru správy
+        a rozvoje majetku                jednatel společnosti\r\n\r\nZa správnost:
+        Jana Sikora, referentka oddělení investic, OSRM\r\nHavířov dne: 30. 10. 2017\r\n\r\n                                         14\r\n                                                                             „Adventure
+        golf, ul. Lázeňská“\r\n\r\n                                                                                   Příloha
+        č. 1 smlouvy\r\n\r\n                                        Předávací protokol\r\n\r\nObjednatel:               Havířov,
+        statutární město   Název části plnění:\r\nZhotovitel:               č.                          Datum
+        předání:\r\nSmlouva:\r\n\r\nPopis předávaného plnění\r\nKe dni ……………….byly
+        předány následující výstupy díla:\r\n\r\nZa zhotovitele předložil:                                 Datum:\r\nPodpis:                                                   Datum:\r\nZa
+        objednatele převzal:\r\nPodpis:\r\n\r\nPřipomínky pracovního týmu objednatele\r\nPřipomínky
+        k dílu:\r\n\r\nTermín k odstranění vad:                             Datum:\r\nZa
+        objednatele:                                      Podpis:\r\nJméno a příjmení:\r\n                                                     Datum:\r\nZa
+        zhotovitele:                                      Podpis:\r\nJméno a příjmení:\r\n                                                     Za
+        zhotovitele předal:\r\nVady odstraněny dne:                                 Podpis:\r\nZa
+        objednatele převzal:                              Dne:\r\nPodpis:\r\n\r\nDne:\r\n\r\n                                                      15\r\n                                                                           „Adventure
+        golf, ul. Lázeňská“\r\n\r\n                                                                                            Příloha
+        č. 2\r\n\r\n                                Seznam poddodavatelů\r\n\r\nNázev
+        veřejné zakázky:          Popis části plnění, % podíl na plnění\r\n                                kterou
+        hodlá uchazeč VZ\r\n„Adventure golf, ul. Lázeňská“  zadat subdodavateli\r\n\r\nIdentifikace
+        subdodavatele:                                               %\r\n1. Název:\r\n\r\n     Sídlo:\r\n     Tel./fax:\r\n     E-mail:\r\n     IČO:\r\n     DIČ:\r\n     Spisová
+        značka v\r\n     obch. rejstříku:\r\n     Osob oprávněná k\r\n     jednání:\r\n\r\nIdentifikace
+        subdodavatele:\r\n2. Název:\r\n\r\n     Sídlo:\r\n     Tel./fax:\r\n     E-mail:\r\n     IČO:\r\n     DIČ:\r\n     Spisová
+        značka v\r\n     obch. rejstříku:\r\n     Osoba oprávněná\r\n     k jednání:\r\n\r\nCelkový
+        objem subdodávek\r\n\r\nV Těrlicku dne\r\n\r\n…………………………\r\n     Ing. Ivan
+        Šnapka\r\n\r\n   jednatel společnosti\r\n\r\n                                                                       16\r\n"]'
+  recorded_at: 2021-02-20 17:52:42 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

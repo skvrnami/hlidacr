@@ -1,0 +1,683 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hlidacstatu.cz/api/v2/Weby
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: My token is safe
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      cache-control: no-cache
+      pragma: no-cache
+      content-type: application/json; charset=utf-8
+      expires: '-1'
+      server: Microsoft-IIS/8.5
+      x-aspnet-version: 4.0.30319
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      access-control-expose-headers: Request-Context
+      x-powered-by: ASP.NET
+      access-control-allow-origin: '*'
+      date: Sat, 20 Feb 2021 17:52:41 GMT
+      content-length: '105769'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '[{"hostid":"10107","host":"HTTPS nen.nipez.cz","url":"https://nen.nipez.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10107","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10107?h=6306B57A524363D494F83CED45FFF372","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"Národní Elektronický Nástroj","popis":"Elektronický
+        nástroj pro administraci a zadávání veřejných zakázek a koncesí pro všechny
+        kategorie veřejných zakázek a všechny kategorie zadavatelů, vč. sektorových.
+        NEN podporuje všechny rozsahy elektronizace od evidence zadávacích řízení
+        po plně elektronické postupy.","hash":"6306B57A524363D494F83CED45FFF372"},{"hostid":"10161","host":"HTTPS
+        adisepo.mfcr.cz","url":"https://adisepo.mfcr.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10161","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10161?h=8380EF85E36393EF3F94F8178509C5D7","urad":"Ministerstvo
+        financí","publicname":"Elektronická podání pro FS","popis":"Elektronická Podání
+        Pro Finanční Správu","hash":"8380EF85E36393EF3F94F8178509C5D7"},{"hostid":"10174","host":"wwwinfo.mfcr.cz
+        ares_es","url":"http://wwwinfo.mfcr.cz/cgi-bin/ares/ares_es.cgi?jazyk=cz&obch_jm=&ico=00001350&cestina=cestina&obec=&k_fu=&maxpoc=200&ulice=&cis","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10174","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10174?h=3B49A8D0E30C9C366B280871C14D24AB","urad":"Ministerstvo
+        financí","publicname":"ARES - ekonom.subjekty","popis":"zpřístupnění informací
+        z veřejné části IS ARES prostřednictvím internetu na veřejném webu.","hash":"3B49A8D0E30C9C366B280871C14D24AB"},{"hostid":"10120","host":"geoportal.cuzk.cz","url":"http://geoportal.cuzk.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10120","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10120?h=B5A770817B7019DC90B18CD805EB20A0","urad":"ČÚZK","publicname":"Geoportál
+        ČÚZK","popis":"Informační systém, který umožňuje na jednom místě přístup k
+        prostorovým datům pořizovaným a aktualizovaným v resortu Českého úřadu zeměměřického
+        a katastrálního (ČÚZK).","hash":"B5A770817B7019DC90B18CD805EB20A0"},{"hostid":"10122","host":"nahlizenidokn.cuzk.cz","url":"http://nahlizenidokn.cuzk.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10122","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10122?h=011A6F7E682CB86C12505AD05D317708","urad":"ČÚZK","publicname":"Katastr
+        nemovitostí","popis":"Aplikace umožňující on-line přístup uživatelů k vybraným
+        údajům informačního systému katastru nemovitostí (ISKN).","hash":"011A6F7E682CB86C12505AD05D317708"},{"hostid":"10143","host":"www.chmi.cz","url":"http://www.chmi.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10143","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10143?h=F1578A7A2599BF7AE0323FAC218B1A89","urad":"Český
+        hydrometeorol.ústav","publicname":"Předpověď počasí","popis":"Příjem a zpracování
+        informací z meteorologických družic; přenos informací na servery ČHMÚ; tvorba
+        produktů pro interní a externí uživatele; prezentace operativních produktů
+        na webu ČHMÚ","hash":"F1578A7A2599BF7AE0323FAC218B1A89"},{"hostid":"10133","host":"HTTPS
+        www.mojedatovaschranka.cz searchList","url":"https://www.mojedatovaschranka.cz/sds/searchList?start=null&extendedSearch=no&searchCriterion=ovm_name_of_subject&searchValue=dm","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10133","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10133?h=069F6A4358DB3D0F3FD94ABF09E1E5D9","urad":"Ministerstvo
+        vnitra","publicname":"Datove schranky","popis":"Seznam držitelů datových schránek","hash":"069F6A4358DB3D0F3FD94ABF09E1E5D9"},{"hostid":"10245","host":"www.mojedatovaschranka.cz","url":"http://www.mojedatovaschranka.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10245","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10245?h=4429F6399A95092295C20853235A4296","urad":"Ministerstvo
+        vnitra","publicname":"Moje datová schránka","popis":"Systém datových schránek,
+        web rozhraní.","hash":"4429F6399A95092295C20853235A4296"},{"hostid":"10131","host":"HTTPS
+        or.justice.cz","url":"https://or.justice.cz/ias/ui/rejstrik-$firma?p%3A%3Asubmit=x&.%2Frejstrik-%24firma=&nazev=hlidac+statu&polozek=50","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10131","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10131?h=7E0A9C509EF69FEDEA604631E2253290","urad":"Ministerstvo
+        spravedlnosti","publicname":"Obchodní rejstřík","popis":"Elektronický výpis
+        z Veřejného rejstříku podepsaný kvalifikovaným systémovým certifikátem rejstříkového
+        soudu","hash":"7E0A9C509EF69FEDEA604631E2253290"},{"hostid":"10353","host":"HTTPS
+        adisepo.mfcr.cz form_uvod","url":"https://adisepo.mfcr.cz/adistc/adis/idpr_epo/epo2/form/form_uvod.faces?CPodani=t7foDy07LhrIVwWb3NGrluIW","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10353","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10353?h=FBC65471DF0DE93533659DBD3033EAD9","urad":"Ministerstvo
+        financí","publicname":"Kontrolní hlášení DPH","popis":"Daňový portál > Elektronická
+        podání > Kontrolní hlášení DPH platné od 1.1.2016","hash":"FBC65471DF0DE93533659DBD3033EAD9"},{"hostid":"10354","host":"HTTPS
+        www.datoveschranky.info aplikacni-rozhrani","url":"https://www.datoveschranky.info/dulezite-informace/aplikacni-rozhrani","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10354","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10354?h=E30C4A49D63CDB7616740F0EEA98D2B4","urad":"Ministerstvo
+        vnitra","publicname":"API datových schránek","popis":"Jádro Datových schránek,
+        API rozhraní pro posílání a příjem DS.","hash":"E30C4A49D63CDB7616740F0EEA98D2B4"},{"hostid":"10357","host":"HTTPS
+        www.czechpoint.cz sluzby","url":"https://www.czechpoint.cz/public/verejnost/sluzby/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10357","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10357?h=7A872BD5823EB4B7347311A22E4C8FF9","urad":"Ministerstvo
+        vnitra","publicname":"CzechPoint","popis":"Služba umožňuje podání žádosti
+        o výpis z evidence rejstříku trestů","hash":"7A872BD5823EB4B7347311A22E4C8FF9"},{"hostid":"10152","host":"www.vestnikverejnychzakazek.cz","url":"http://www.vestnikverejnychzakazek.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10152","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10152?h=096B471255BBF9D89C6055936EB37015","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"Věstník veřejn.zakázek","popis":"Uveřejňování
+        informací o veřejných zakázkách prostřednictví standardních formulářů stanovených
+        nařízením EK na národní úrovni a současné jejich odesílání k uveřejnění do
+        Úředního věstníku EU","hash":"096B471255BBF9D89C6055936EB37015"},{"hostid":"10358","host":"HTTPS
+        portal.gov.cz","url":"https://portal.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10358","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10358?h=731F5D5DE6B38C79DB2904C91D2571E0","urad":"Ministerstvo
+        vnitra","publicname":"Portál veřejné správy","popis":"Popisy úkonů využívaných
+        občany v životních situacích","hash":"731F5D5DE6B38C79DB2904C91D2571E0"},{"hostid":"10360","host":"adisspr.mfcr.cz
+        ws_spdph","url":"http://adisspr.mfcr.cz/adistc/adis/idpr_pub/dpr_info/ws_spdph.faces","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10360","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10360?h=87D450487665D22ED45AB90033320195","urad":"Ministerstvo
+        financí","publicname":"API Registru DPH","popis":"Webová služba pro zjišťování
+        spolehlivosti plátců DPH a bankovních účtů plátců DPH","hash":"87D450487665D22ED45AB90033320195"},{"hostid":"10459","host":"HTTPS
+        nia.eidentita.cz Login","url":"https://nia.eidentita.cz/IPSTS.SMS/Login","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10459","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10459?h=55EDA519E3AB9F362EFC4029AE7A76FD","urad":"SZR","publicname":"eIdentita
+        - NIA","popis":"eIdentita.cz bude identifikační bránou pro jednoduchý a bezpečný
+        přístup k online službám veřejné správy. Je součástí státem garantovaného
+        systému národní identitní autority (NIA).","hash":"55EDA519E3AB9F362EFC4029AE7A76FD"},{"hostid":"10500","host":"HTTPS
+        koronavirus.mzcr.cz","url":"https://koronavirus.mzcr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10500","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10500?h=D78E70347DFCB4AF14B4FB34FDBBE2CB","urad":"Ministerstvo
+        zdravotnictví","publicname":"Aktuální výskyt onemocnění COVID-19 v ČR","popis":"Zejména
+        informace","hash":"D78E70347DFCB4AF14B4FB34FDBBE2CB"},{"hostid":"10501","host":"HTTPS
+        onemocneni-aktualne.mzcr.cz covid-19","url":"https://onemocneni-aktualne.mzcr.cz/covid-19","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10501","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10501?h=47551BB397B93BB84C839F63AAB954C4","urad":"Ministerstvo
+        zdravotnictví","publicname":"Přehled situace v ČR: COVID-19","popis":"Zejména
+        statistická data","hash":"47551BB397B93BB84C839F63AAB954C4"},{"hostid":"10504","host":"HTTPS
+        crs.uzis.cz","url":"https://crs.uzis.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10504","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10504?h=33FD3ABED794973EB15F1B9BE0D9B85A","urad":"Ministerstvo
+        zdravotnictví","publicname":"Centrální rezervační systém odběrových míst COVID-19","popis":"Přehled
+        odběrových míst v jednotlivých krajích a odkazy, kde je možné si termín zarezervovat,
+        data o vytížení odběrových míst a možnost rezervace. ","hash":"33FD3ABED794973EB15F1B9BE0D9B85A"},{"hostid":"10506","host":"HTTPS
+        obcan.portal.gov.cz","url":"https://obcan.portal.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10506","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10506?h=9A2B8DEB6C2F8865EB5D8C91A218C92D","urad":"Ministerstvo
+        vnitra","publicname":"Portál občana","popis":"Přijímejte a posílejte datové
+        zprávy, spravujte své údaje ze základních registrů, ukládejte a spravujte
+        své doklady a dokumenty, podávejte cokoli na kterýkoli úřad.","hash":"9A2B8DEB6C2F8865EB5D8C91A218C92D"},{"hostid":"10324","host":"API
+        EET","url":"http://www.etrzby.cz/cs/technicka-specifikace","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10324","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10324?h=4EF6E65DBEC8941B23A03D46770F2F6F","urad":"Ministerstvo
+        financí","publicname":"API EET","popis":"API EET se kterým komunikují pokladny
+        obchodníků","hash":"4EF6E65DBEC8941B23A03D46770F2F6F"},{"hostid":"10463","host":"NEN
+        API","url":"https://portalnen.nipez.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10463","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10463?h=D093ACAB494DAA8C979AC24573F84E24","urad":"MMR","publicname":"NEN
+        aplikace","popis":"NEN Silverlight aplikace","hash":"D093ACAB494DAA8C979AC24573F84E24"},{"hostid":"10118","host":"hydro.chmi.cz
+        hpps","url":"http://hydro.chmi.cz/hpps","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10118","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10118?h=F9A5C299DEE18031266E96FD8DA961C7","urad":"Český
+        hydrometeorologický ústav","publicname":"Hlásná/předpovědní povodň.služba","popis":"Zpřístupňuje
+        operativní a podpůrná data v rámci hlásné a předpovědní povodňové služby ČHMÚ.
+        Aktualizace hodnot až s frekvencí 10 min. Dále poskytuje informace o povodňovém
+        riziku (prevence), zahrnuje např. digitální povodňový plán ČR, digitální povodňovou
+        knihu aj.","hash":"F9A5C299DEE18031266E96FD8DA961C7"},{"hostid":"10119","host":"eagri.cz
+        Prehled","url":"http://eagri.cz/public/app/eagriapp/EKO/Prehled","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10119","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10119?h=31A2E5CF8C64F88CF5EBE55880CD9414","urad":"Ministerstvo
+        zemědělství","publicname":"Registr ekologických podnikatelů","popis":"Tato
+        aplikace zpřístupňuje veřejné údaje o subjektech podnikajících v ekologickém
+        zemědělství, kterým Ministerstvo zemědělství udělilo registraci podle zákona
+        č. 242/2000 Sb., o ekologickém zemědělství.","hash":"31A2E5CF8C64F88CF5EBE55880CD9414"},{"hostid":"10121","host":"eagri.cz
+        farmar","url":"http://eagri.cz/public/web/mze/farmar","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10121","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10121?h=E202B690B247827D500764393C728966","urad":"Ministerstvo
+        zemědělství","publicname":"Portál farmáře","popis":"Portál farmáře je rozcestníkem
+        k aplikacím Ministerstva zemědělství. Aplikace jsou rozděleny na veřejné –
+        tj. ty, ke kterým má přístup i neregistrovaný uživatel a na aplikace pro registrované
+        uživatele, k nimž má přístup jen uživatel po přihlášení. Hlavním účelem Portálu
+        farmáře je zpřístupnění aplikací registrů Ministerstva zemědělství a podřízených
+        organizačních složek státu (ÚKZÚZ, SVS, ÚHUL), a to jak pro přihlášené, tak
+        pro nepřihlášené uživatele.","hash":"E202B690B247827D500764393C728966"},{"hostid":"10123","host":"kontrolystravovani.hygpraha.cz","url":"http://kontrolystravovani.hygpraha.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10123","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10123?h=C19F11BA2A6A90A1F1E248F310220CD2","urad":"Krajská
+        hygienická stanice","publicname":"kontrolystravovani.hygpraha.cz","popis":"Informace
+        o nebezpečných výrobcích","hash":"C19F11BA2A6A90A1F1E248F310220CD2"},{"hostid":"10124","host":"monitor.statnipokladna.cz","url":"http://monitor.statnipokladna.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10124","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10124?h=97DB87AA6DF0410E4CEEA7FF6CF7D62D","urad":"Ministerstvo
+        financí","publicname":"Monitor státní pokladny","popis":"MONITOR je informační
+        portál Ministerstva financí, který umožňuje volný přístup k rozpočtovým a
+        účetním informacím ze všech úrovní státní správy a samosprávy.","hash":"97DB87AA6DF0410E4CEEA7FF6CF7D62D"},{"hostid":"10125","host":"nv.cuzk.cz","url":"http://nv.cuzk.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10125","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10125?h=2BB91D631ACF12BCAF095914C4A9AE7B","urad":"Český
+        úřad zeměměřický a katastrální","publicname":"Návrh na vklad práva do KN","popis":"Aplikace
+        umožňující vytvoření formuláře návrhu na vklad do KN. Využívá aktuální údaje
+        ISKN.","hash":"2BB91D631ACF12BCAF095914C4A9AE7B"},{"hostid":"10126","host":"or.justice.cz
+        podani","url":"http://or.justice.cz/ias/ui/podani","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10126","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10126?h=D1538CBDB748F74ECCC11D6F34AD98CC","urad":"Ministerstvo
+        spravedlnosti","publicname":"Podání do veřejného rejstříku","popis":"Elektronické
+        podání do Veřejného rejstříku a Sbírky listin příslušným rejstříkovým soudům","hash":"D1538CBDB748F74ECCC11D6F34AD98CC"},{"hostid":"10132","host":"spektrum.ctu.cz","url":"http://spektrum.ctu.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10132","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10132?h=3FA42C070B30BDDEB7993F74E289FBC9","urad":"ČTÚ","publicname":"Využití
+        rádiového spektra","popis":"Efektivní přístup k informacím o rádiovém spektru
+        a o podmínkách při využívání rádiového spektra.","hash":"3FA42C070B30BDDEB7993F74E289FBC9"},{"hostid":"10134","host":"vdp.cuzk.cz","url":"http://vdp.cuzk.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10134","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10134?h=D6923A88F2C7894809ABD5EED8718C2A","urad":"ČÚZK","publicname":"RÚIAN
+        - veřejný přístup","popis":"Aplikace umožňující on-line přístup uživatelů
+        k údajům základního registru územní identifikace, adres a nemovitostí (RÚIAN)","hash":"D6923A88F2C7894809ABD5EED8718C2A"},{"hostid":"10136","host":"voda.gov.cz","url":"http://voda.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10136","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10136?h=641BF56A04799F9BEBAD8824E4F72707","urad":"ČIŽP","publicname":"Vodohospodářský
+        info portál VODA","popis":"Vyhledávání a prohlížení údajů o stavu vod a jejich
+        zobrazení v mapových podkladech geoportálu.","hash":"641BF56A04799F9BEBAD8824E4F72707"},{"hostid":"10137","host":"www.cbusbs.cz","url":"http://www.cbusbs.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10137","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10137?h=100EC578BCE61C85537BDA4F58C991FE","urad":"Český
+        báňský úřad","publicname":"Český báňský úřad","popis":"","hash":"100EC578BCE61C85537BDA4F58C991FE"},{"hostid":"10139","host":"www.cssz.cz
+        cz","url":"http://www.cssz.cz/cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10139","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10139?h=20F4B526CBA81115F1D27516766FF288","urad":"ČSSZ","publicname":"Česká
+        správa sociálního zabezpečení","popis":"Informace o druhu a výši vyplacených
+        dávek nemocenského pojištění pojištěnci za zvolené období.","hash":"20F4B526CBA81115F1D27516766FF288"},{"hostid":"10140","host":"HTTPS
+        eportal.cssz.cz tiskopisy-pro-pojistence","url":"https://eportal.cssz.cz/web/portal/tiskopisy-pro-pojistence","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10140","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10140?h=0318FA6C3B2E4432E701B2B8CEBC23D0","urad":"ČSSZ","publicname":"Elektronické
+        podání tiskopisů","popis":"on-line formulář","hash":"0318FA6C3B2E4432E701B2B8CEBC23D0"},{"hostid":"10141","host":"www.cuzk.cz
+        aplikace-dp","url":"http://www.cuzk.cz/aplikace-dp","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10141","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10141?h=A8AD3939584B49E352E37B749D63D0B0","urad":"ČÚZK","publicname":"IS
+        katastru nemovitostí ČR","popis":"Dálkový přístup (DP)k údajům KN - katastru
+        nemovistostí Aplikace umožňující on-line přístup uživatelů k údajům informačního
+        systému katastru nemovitostí (ISKN). Významné výstupy jsou poskytovány ve
+        formě elektronické veřejné listiny.","hash":"A8AD3939584B49E352E37B749D63D0B0"},{"hostid":"10142","host":"portal.mpsv.cz
+        poradce","url":"http://portal.mpsv.cz/soc/poradce","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10142","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10142?h=03C23DD52F90450B90E089128A12B9CF","urad":"Úřad
+        práce","publicname":"portal.mpsv.cz poradce","popis":"Po zadání základních
+        údajů pomůže občanům odhadnout, jestli mají nárok na nějakou dávku nebo příspěvek.","hash":"03C23DD52F90450B90E089128A12B9CF"},{"hostid":"10144","host":"www.army.cz","url":"http://www.army.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10144","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10144?h=4788CA2AF8E5670FF188E5A5D94388E7","urad":"Ministerstvo
+        obrany","publicname":"Web Ministerstva obrany","popis":"Možnost podání elektronickou
+        cestou z formuláře na www.army.cz.","hash":"4788CA2AF8E5670FF188E5A5D94388E7"},{"hostid":"10145","host":"www.rrtv.cz","url":"http://www.rrtv.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10145","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10145?h=6D932979DFCF74E784C4D4B2D3668B47","urad":"Rada
+        pro rozhlasové a televizní vysílání","publicname":"Rada pro rozhlas. a TV
+        vysílání","popis":"","hash":"6D932979DFCF74E784C4D4B2D3668B47"},{"hostid":"10147","host":"www.sukl.cz","url":"http://www.sukl.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10147","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10147?h=3B750BCE66AC6D8591BA679C18306AF3","urad":"Státní
+        ústav pro kontrolu léčiv","publicname":"Státní ústav pro kontrolu léčiv","popis":"Přehled
+        zahrnuje všechna klinická hodnocení schválená od účinnosti zákona, tj. od
+        31.12.2007.","hash":"3B750BCE66AC6D8591BA679C18306AF3"},{"hostid":"10148","host":"www.rvp.cz","url":"http://www.rvp.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10148","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10148?h=939AAE2852B6CCE1F06E52D4C0155A46","urad":"Národní
+        ústav pro vzdělávání","publicname":"Národní ústav pro vzdělávání","popis":"Metodická
+        podpora učitelů a podpora zavedení rámcových vzdělávacích programů ve školách","hash":"939AAE2852B6CCE1F06E52D4C0155A46"},{"hostid":"10149","host":"www.sshr.cz","url":"http://www.sshr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10149","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10149?h=DEF43A1A5CDFA80B301C5A1B8D240BE3","urad":"Správa
+        státních hmotných rezerv","publicname":"Správa státních hmotných rezerv","popis":"","hash":"DEF43A1A5CDFA80B301C5A1B8D240BE3"},{"hostid":"10150","host":"www.rzp.cz","url":"http://www.rzp.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10150","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10150?h=D5C3229A93CCC71F896FBCB714FBA6E0","urad":"Ministerstvo
+        průmyslu obchodu","publicname":"Živnostenský rejstřík","popis":"Zpřístupnění
+        informací z veřejné části Informačního systému Registru živnostenského podnikání
+        prostřednictvím internetu na veřejném webu.","hash":"D5C3229A93CCC71F896FBCB714FBA6E0"},{"hostid":"10151","host":"www.uohs.cz","url":"http://www.uohs.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10151","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10151?h=5B733709EC467FC47EFF771C0D359D93","urad":"Úřad
+        pro ochranu hospodářské soutěže","publicname":"Úřad pro ochranu hospod.soutěže","popis":"Vzdálené
+        nahlížení do spisů správních řízení vedených Úřadem","hash":"5B733709EC467FC47EFF771C0D359D93"},{"hostid":"10153","host":"www.uoou.cz","url":"http://www.uoou.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10153","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10153?h=414F3A1168B288BBE20ACD41CF916067","urad":"Úřad
+        pro ochranu osobních údajů","publicname":"Úřad pro ochranu osob.údajů","popis":"UOOU","hash":"414F3A1168B288BBE20ACD41CF916067"},{"hostid":"10154","host":"HTTPS
+        www.uicr.cz","url":"https://www.uicr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10154","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10154?h=630CA110F3F5B0277F624D8E2D40F690","urad":"Úřad
+        pro přístup k dopravní infrastruktuře","publicname":"Úřad pro přístup k dopravní
+        infrastruktuře","popis":"","hash":"630CA110F3F5B0277F624D8E2D40F690"},{"hostid":"10158","host":"HTTPS
+        udhpsh.cz","url":"https://udhpsh.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10158","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10158?h=333D99779C99A5B64E764AF24275E3A5","urad":"ÚDHPSH","publicname":"Web
+        ÚDHPSH","popis":"","hash":"333D99779C99A5B64E764AF24275E3A5"},{"hostid":"10163","host":"HTTPS
+        crab.uzsvm.cz","url":"https://crab.uzsvm.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10163","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10163?h=7ACAACA32268B08979B6071E788ED22B","urad":"ÚZSVM","publicname":"Centrální
+        reg. administr.budov","popis":"","hash":"7ACAACA32268B08979B6071E788ED22B"},{"hostid":"10169","host":"www.uur.cz","url":"http://www.uur.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10169","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10169?h=68394A48D5365A370F9CCFFADDEAF5ED","urad":"Ústav
+        územního rozvoje","publicname":"Ústav územního rozvoje","popis":"UUR","hash":"68394A48D5365A370F9CCFFADDEAF5ED"},{"hostid":"10170","host":"HTTPS
+        www.sujb.cz","url":"https://www.sujb.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10170","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10170?h=6945015EFC63C5E383C27A797371D6FB","urad":"Státní
+        úřad pro jadernou bezpečnost","publicname":"Státní úřad pro jadernou bezpečnost","popis":"","hash":"6945015EFC63C5E383C27A797371D6FB"},{"hostid":"10172","host":"HTTPS
+        www.volby.cz","url":"https://www.volby.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10172","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10172?h=A84A166375D6F67FA05D5ECEA9B7E91E","urad":"Český
+        statistický úřad","publicname":"Volby.cz","popis":"Služba poskytuje průběžené
+        i definitivní informace o zpracování výsledků hlasování do všech typů voleb
+        až do úrovně volebních okrsků.","hash":"A84A166375D6F67FA05D5ECEA9B7E91E"},{"hostid":"10173","host":"cedr.mfcr.cz","url":"http://cedr.mfcr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10173","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10173?h=B28335DB6187D7C5179CD2DE5E963836","urad":"Ministerstvo
+        financí","publicname":"Centrální registr dotací","popis":"Centrální registr
+        dotací","hash":"B28335DB6187D7C5179CD2DE5E963836"},{"hostid":"10175","host":"HTTPS
+        www.usoud.cz","url":"https://www.usoud.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10175","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10175?h=3EDCC2AF2E8881CEDDB060D5E633CC9A","urad":"Ústavní
+        soud","publicname":"Ústavní soud","popis":"","hash":"3EDCC2AF2E8881CEDDB060D5E633CC9A"},{"hostid":"10176","host":"HTTPS
+        www.govcert.cz","url":"https://www.govcert.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10176","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10176?h=5CC720BCE4A639005E6F28DCB8B5EEFC","urad":"NÚKIB","publicname":"Web
+        NÚKIB","popis":"Národní úřad pro kybernetickou a informační bezpečnost","hash":"5CC720BCE4A639005E6F28DCB8B5EEFC"},{"hostid":"10182","host":"HTTPS
+        eportal.cssz.cz","url":"https://eportal.cssz.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10182","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10182?h=F85C1F48EEB6B468300EBD1E839EC323","urad":"Česká
+        správa sociálního zabezpečení","publicname":"ePortál ČSSZ","popis":"ePortál
+        umožňuje využívat vybrané online služby. Jedná se o obdobu internetové samoobsluhy,
+        která rozšiřuje způsoby poskytování služeb – 24 hodin denně 7 dní v týdnu.","hash":"F85C1F48EEB6B468300EBD1E839EC323"},{"hostid":"10235","host":"www.msmt.cz","url":"http://www.msmt.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10235","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10235?h=AE9F90C764685B4F6E257085CE6F2D38","urad":"MSMT","publicname":"Ministerstvo
+        školství","popis":"","hash":"AE9F90C764685B4F6E257085CE6F2D38"},{"hostid":"10238","host":"www.mpo.cz","url":"http://www.mpo.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10238","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10238?h=7F8A2E258C6D92ABCC5AF297430CF6D2","urad":"Ministerstvo
+        průmyslu a obchodu","publicname":"Ministerstvo průmyslu a obchodu","popis":"Zpřístupnění
+        informací usnadňujících podnikání prostřednictvím internetu na veřejném webu.","hash":"7F8A2E258C6D92ABCC5AF297430CF6D2"},{"hostid":"10246","host":"www.portal-vz.cz","url":"http://www.portal-vz.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10246","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10246?h=C5AC70C2B4A6F7F4B6941A8BAF867C68","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"Portál o VZ a koncesích","popis":"Portál
+        nabízí komplexní a přehledné informace týkající se zadávání veřejných zakázek.
+        Komplexně řešený je zde informační systém o veřejných zakázkách, pod kterým
+        se nachází přístup k Věstníku veřejných zakázek, k seznamu kvalifikovaných
+        dodavatelů a systémům certifikovaných dodavatelů, ke statistikám veřejných
+        zakázek, k rejstříku koncesních smluv, přístup ke klasifikacím a číselníkům.
+        Dostupný je zde také rejstřík osob se zákazem plnění veřejných zakázek resp.
+        rejstřík osob se zákazem plnění koncesních smluv. Lze vyhledávat subjekty
+        dle různých parametrů. Portál neomezeným dálkovým přístupem bezplatně zpřístupňuje
+        informace usnadňující zadavatelům i dodavatelům veřejných zakázek své aktivity
+        prostřednictvím internetu. Údaje jsou ve formátu otevřených dat.","hash":"C5AC70C2B4A6F7F4B6941A8BAF867C68"},{"hostid":"10266","host":"www.policie.cz","url":"http://www.policie.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10266","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10266?h=735FD3E20CD965A1CB56EB24AC1ED978","urad":"Policie
+        ČR","publicname":"Policie ČR","popis":"","hash":"735FD3E20CD965A1CB56EB24AC1ED978"},{"hostid":"10296","host":"www.mzv.cz","url":"http://www.mzv.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10296","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10296?h=A0E4F5BBDC121F24C2C8D5BAC958C763","urad":"Ministerstvo
+        zahraničních věcí","publicname":"Ministerstvo zahraničních věcí","popis":"Min
+        zahranici","hash":"A0E4F5BBDC121F24C2C8D5BAC958C763"},{"hostid":"10297","host":"www.mzp.cz","url":"http://www.mzp.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10297","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10297?h=06F66EC82303EC3063888D476629B315","urad":"Ministerstvo
+        životního prostředí","publicname":"Ministerstvo životního prostředí","popis":"MZP","hash":"06F66EC82303EC3063888D476629B315"},{"hostid":"10298","host":"www.hygpraha.cz
+        Default","url":"http://www.hygpraha.cz/Default.aspx","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10298","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10298?h=77C52E40FBB9B3C5CB5237C0531231ED","urad":"Krajská
+        hygienická stanice","publicname":"Krajská hygienická stanice","popis":"Informace
+        o nebezpečných výrobcích","hash":"77C52E40FBB9B3C5CB5237C0531231ED"},{"hostid":"10299","host":"www.mfcr.cz","url":"http://www.mfcr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10299","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10299?h=619B7F273B151077722AE7D4C2D3F5C3","urad":"Ministerstvo
+        financí","publicname":"Ministerstvo financí","popis":"MF CR","hash":"619B7F273B151077722AE7D4C2D3F5C3"},{"hostid":"10300","host":"www.mvcr.cz","url":"http://www.mvcr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10300","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10300?h=583F8DA7EFFFEFE7A7FD956E0D33937E","urad":"MV
+        CR","publicname":"Ministerstvo vnitra","popis":"","hash":"583F8DA7EFFFEFE7A7FD956E0D33937E"},{"hostid":"10301","host":"www.mze.cz","url":"http://www.mze.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10301","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10301?h=A841CB8678FB65CC75843BC1B632C209","urad":"MZE","publicname":"Ministerstvo
+        zemědělství","popis":"","hash":"A841CB8678FB65CC75843BC1B632C209"},{"hostid":"10302","host":"www.mkcr.cz","url":"http://www.mkcr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10302","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10302?h=DFDE5CE7024B8D24D668B0D9F4D7D302","urad":"Ministerstvo
+        kultury","publicname":"Ministerstvo kultury","popis":"Získání informací o
+        majetkových poměrech veřejných funkcionářů po dobu výkonu funkce","hash":"DFDE5CE7024B8D24D668B0D9F4D7D302"},{"hostid":"10303","host":"www.isvz.cz
+        ISVZ","url":"http://www.isvz.cz/isvz/Podpora/ISVZ.aspx","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10303","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10303?h=A622436C275A7F3AF93520BD9F88D86D","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"IS o veřejných zakázkách","popis":"Informační
+        systém o veřejných zakázkách obsahuje přístup k Věstníku veřejných zakázek,
+        k seznamu kvalifikovaných dodavatelů a systémům certifikovaných dodavatelů
+        (věstník, vyhledávání subjektů dle různých parametrů), ke statistikám veřejných
+        zakázek, k rejstříku koncesních smluv, přístup ke klasifikacím a číselníkům.
+        Dostupný je zde také rejstřík osob se zákazem plnění veřejných zakázek resp.
+        rejstřík osob se zákazem plnění koncesních smluv. Údaje jsou ve formátu otevřených
+        dat.","hash":"A622436C275A7F3AF93520BD9F88D86D"},{"hostid":"10304","host":"www.kudyznudy.cz","url":"http://www.kudyznudy.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10304","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10304?h=DF8A56C73F251A3C90536F61A0C37C08","urad":"Česká
+        centrála cestovního ruchu","publicname":"Kudy z nudy","popis":"Podpora domácího
+        cestovního ruchu","hash":"DF8A56C73F251A3C90536F61A0C37C08"},{"hostid":"10305","host":"www.mdcr.cz","url":"http://www.mdcr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10305","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10305?h=B0942F25AE25C65AFB46A21A921D2552","urad":"Ministerstvo
+        dopravy","publicname":"Ministerstvo dopravy","popis":"K informaci, kde je
+        možno prověřit schopnosti řízení a ve stanovených případech získat body do
+        bodobého hodnocení řidiče","hash":"B0942F25AE25C65AFB46A21A921D2552"},{"hostid":"10306","host":"www.eru.cz","url":"http://www.eru.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10306","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10306?h=C545EA4A34B3401D3078BCB9D942B09D","urad":"Energetický
+        regulační úřad","publicname":"Energetický regulační úřad","popis":"","hash":"C545EA4A34B3401D3078BCB9D942B09D"},{"hostid":"10307","host":"www.mmr.cz","url":"http://www.mmr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10307","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10307?h=7FF3B2B74AEF445CA5775C2B76F5A113","urad":"MMR","publicname":"Ministerstvo
+        pro místní rozvoj","popis":"","hash":"7FF3B2B74AEF445CA5775C2B76F5A113"},{"hostid":"10309","host":"www.ctu.cz","url":"http://www.ctu.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10309","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10309?h=49A78AAD68C554EC1486AA7F4CFE38B6","urad":"Český
+        telekomunikační úřad","publicname":"Český telekomunikační úřad","popis":"Zpřístupňuje
+        na jednom místě formuláře pro podání ve vybraných agendách ČTÚ.","hash":"49A78AAD68C554EC1486AA7F4CFE38B6"},{"hostid":"10313","host":"www.czechpoint.cz","url":"http://www.czechpoint.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10313","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10313?h=4C10B5B56B7FC55E45C3CC13768371DF","urad":"Rejstřík
+        trestů","publicname":"www.czechpoint.cz","popis":"Služba umožňuje podání žádosti
+        o výpis z evidence rejstříku trestů","hash":"4C10B5B56B7FC55E45C3CC13768371DF"},{"hostid":"10328","host":"HTTPS
+        www.celnisprava.cz","url":"https://www.celnisprava.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10328","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10328?h=DDAEA157860D84FE4FFC4CC010C79D6D","urad":"Celní
+        správa","publicname":"Celní správa","popis":"Celní správa","hash":"DDAEA157860D84FE4FFC4CC010C79D6D"},{"hostid":"10329","host":"adisspr.mfcr.cz
+        eet_sluzby","url":"http://adisspr.mfcr.cz/adistc/adis/idpr_pub/eet/eet_sluzby.faces","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10329","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10329?h=C4A61FF6DA84349CEA96360A5FC17BA9","urad":"Ministerstvo
+        financí","publicname":"Daňový portál pro EET","popis":"Elektronická Evidence
+        Tržeb","hash":"C4A61FF6DA84349CEA96360A5FC17BA9"},{"hostid":"10342","host":"www.czso.cz
+        registr_osob","url":"http://www.czso.cz/csu/czso/registr_osob","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10342","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10342?h=D12708CF50D20F18B1E1972E2DD88319","urad":"Český
+        statistický úřad","publicname":"www.czso.cz registr_osob","popis":"Informace
+        o jednom ze základních registrů, jehož je ČSÚ správcem. ROSu eviduje právnické
+        osoby a organizační složky právnických osob, podnikající fyzické osoby, podnikající
+        zahraniční osoby a organizační složky zahraničních osob, organizace s mezinárodním
+        prvkem, organizační složky státu a orgány veřejné moci. Vlastní obsah ROSu
+        není prostřednictvím webu přístupný.","hash":"D12708CF50D20F18B1E1972E2DD88319"},{"hostid":"10343","host":"www.mzcr.cz","url":"http://www.mzcr.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10343","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10343?h=AEC035CB4829CBFB9CEB5F8A59611472","urad":"Ministerstvo
+        zdravotnictví","publicname":"Ministerstvo zdravotnictví","popis":"MZdrav","hash":"AEC035CB4829CBFB9CEB5F8A59611472"},{"hostid":"10345","host":"www.nsoud.cz","url":"http://www.nsoud.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10345","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10345?h=28CE80A599EE70564CF9B6474F784A8C","urad":"Ministerstvo
+        spravedlnosti","publicname":"Ministerstvo spravedlnosti","popis":"Nejvyssi
+        soud","hash":"28CE80A599EE70564CF9B6474F784A8C"},{"hostid":"10361","host":"aplikace.policie.cz
+        patrani-vozidla","url":"http://aplikace.policie.cz/patrani-vozidla/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10361","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10361?h=9BBCD2E9CFF76402A8305DB0D2AD1523","urad":"Ministerstvo
+        vnitra","publicname":"Pátrání po ukradených vozidlech","popis":"Databáze obsahuje
+        záznamy z aktivní pátrací evidence Policie České republiky. Zpřístupněné záznamy
+        jsou platné k termínu aktualizace databáze na Internetu.","hash":"9BBCD2E9CFF76402A8305DB0D2AD1523"},{"hostid":"10364","host":"HTTPS
+        ozs.cuzk.cz","url":"https://ozs.cuzk.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10364","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10364?h=36B516BE6A59E0451759A8DAC4470F17","urad":"ČÚZK","publicname":"Sledování
+        změn údajů o nemovitostech","popis":"Webové rozhraní pro sledování změn údajů
+        o nemovitostech . Poskytuje se osobám, které mají zapsáno věcné právo k dotčeným
+        nemovitostem nebo účastníkům řízení o takovém právu. Služba vystavuje změny
+        pro uživatele v definovaném rozhraní ke stažení prostřednictvím externích
+        informačních systémů.","hash":"36B516BE6A59E0451759A8DAC4470F17"},{"hostid":"10365","host":"HTTPS
+        portal.gov.cz obcan","url":"https://portal.gov.cz/obcan/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10365","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10365?h=F9F73783FFB640DB48B4EF1637EE6315","urad":"Ministerstvo
+        vnitra","publicname":"Informace pro občany","popis":"Popisy úkonů využívaných
+        občany v životních situacích","hash":"F9F73783FFB640DB48B4EF1637EE6315"},{"hostid":"10108","host":"HTTPS
+        www.epreskripce.cz","url":"https://www.epreskripce.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10108","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10108?h=4B8E4682077DC623097036EE9C183B56","urad":"Státní
+        ústav pro kontrolu léčiv","publicname":"eRecept","popis":"Elektronický recept","hash":"4B8E4682077DC623097036EE9C183B56"},{"hostid":"10366","host":"HTTPS
+        portal.gov.cz podnikani","url":"https://portal.gov.cz/podnikani/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10366","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10366?h=B9657AF8ED1CCE8E16AC510CB05532A5","urad":"Ministerstvo
+        vnitra","publicname":"Info pro podnikatele a živnostníky","popis":"Popisy
+        úkonů využívaných podnikateli v životních situacích","hash":"B9657AF8ED1CCE8E16AC510CB05532A5"},{"hostid":"10367","host":"HTTPS
+        www.mpsv.cz","url":"https://www.mpsv.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10367","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10367?h=13BA6333C8309E1F0FE9FCF323ED3E90","urad":"Ministerstvo
+        práce a sociálních věcí","publicname":"Ministerstvo práce a sociálních věcí","popis":"","hash":"13BA6333C8309E1F0FE9FCF323ED3E90"},{"hostid":"10368","host":"HTTPS
+        portal.mpsv.cz poradce","url":"https://portal.mpsv.cz/soc/poradce","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10368","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10368?h=27886AFE093C0267A7BECE60527059A5","urad":"Úřad
+        práce","publicname":"Sociální kalkulačka","popis":"Po zadání základních údajů
+        pomůže občanům odhadnout, jestli mají nárok na nějakou dávku nebo příspěvek.","hash":"27886AFE093C0267A7BECE60527059A5"},{"hostid":"10371","host":"www.financnisprava.cz","url":"https://www.financnisprava.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10371","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10371?h=F01875ABF2AD9AEB80FE9BFF4ED9972C","urad":"Finanční
+        správa","publicname":"Finanční správa","popis":"","hash":"F01875ABF2AD9AEB80FE9BFF4ED9972C"},{"hostid":"10372","host":"www.nbu.cz","url":"http://www.nbu.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10372","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10372?h=59118FF88AC350C8D8FE367794E96364","urad":"Národní
+        bezpečnostní úřad","publicname":"Národní bezpečnostní úřad","popis":"","hash":"59118FF88AC350C8D8FE367794E96364"},{"hostid":"10373","host":"www.szrcr.cz","url":"http://www.szrcr.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10373","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10373?h=3AAA2D508098C055D67CFE363C26F4CA","urad":"SZR","publicname":"Správa
+        základních registrů","popis":"Informace o jednom ze základních registrů, jehož
+        je ČSÚ správcem. ROSu eviduje právnické osoby a organizační složky právnických
+        osob, podnikající fyzické osoby, podnikající zahraniční osoby a organizační
+        složky zahraničních osob, organizace s mezinárodním prvkem, organizační složky
+        státu a orgány veřejné moci. Vlastní obsah ROSu není prostřednictvím webu
+        přístupný.","hash":"3AAA2D508098C055D67CFE363C26F4CA"},{"hostid":"10374","host":"www.vlada.cz","url":"http://www.vlada.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10374","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10374?h=B1B8C0ADF68FC8CDE5CED092EE958D36","urad":"Úřad
+        vlády","publicname":"Úřad vlády","popis":"","hash":"B1B8C0ADF68FC8CDE5CED092EE958D36"},{"hostid":"10375","host":"HTTPS
+        cro.justice.cz funkcionari","url":"https://cro.justice.cz/verejnost/funkcionari","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10375","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10375?h=6132E06F2E0560DA56EEFA7B62E44AA7","urad":"Ministerstvo
+        spravedlnosti","publicname":"Centrální registr oznámení","popis":"Centrální
+        registr evidenčních orgánů zjednodušuje přístup veřejnosti k informacím v
+        jednotlivých registrech oznámení o činnostech, oznámení o majetku a oznámení
+        o příjmech, darech a závazcích dle zákona č. 159/2006 Sb.","hash":"6132E06F2E0560DA56EEFA7B62E44AA7"},{"hostid":"10378","host":"HTTPS
+        isdv.upv.cz glob","url":"https://isdv.upv.cz/webapp/glob.frm","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10378","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10378?h=330F8F37E5A4501C31ADF32332568C76","urad":"Úřad
+        průmyslového vlastnictví","publicname":"Patenty a prům.vzory","popis":"Elektronické
+        podávání přihlášek průmyslových práv a následných žádostí","hash":"330F8F37E5A4501C31ADF32332568C76"},{"hostid":"10379","host":"HTTPS
+        portal.gov.cz cizinec","url":"https://portal.gov.cz/cizinec/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10379","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10379?h=D19D7E73AD8328EA2705F0D414C8F9AB","urad":"Ministerstvo
+        vnitra","publicname":"Informace pro cizince v ČR","popis":"Popisy úkonů využívaných
+        cizinci v životních situacích","hash":"D19D7E73AD8328EA2705F0D414C8F9AB"},{"hostid":"10380","host":"HTTPS
+        rodos.vsb.cz","url":"https://rodos.vsb.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10380","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10380?h=EC4A670A90F253A66B5F25F3CD1FDA10","urad":"VŠB","publicname":"Doprava
+        na dálnicích","popis":"RODOS,  Aplikace projektu RODOS (Rozvoj dopravních
+        systémů) publikuje aktuální dopravní situaci na vybraných komunikacích ČR
+        formou jednoduché grafiky. Informace jsou aktualizovány každou půlminutu.","hash":"EC4A670A90F253A66B5F25F3CD1FDA10"},{"hostid":"10412","host":"mseu.mssf.cz","url":"http://mseu.mssf.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10412","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10412?h=480A0FB8200775BA9507D7CA5CE9E9A5","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"MS2014+","popis":"Systém, do kterého žadatelé
+        zadávají své žádosti o evropské dotace z ESIF, po jejich získání je v něm
+        mohou dále spravovat a jsou v něm administrovány jednotlivé operační programy.
+        Týká se všech evropských dotací v rámci programového období 2014–2020 vyjma
+        dotací v zemědělství.","hash":"480A0FB8200775BA9507D7CA5CE9E9A5"},{"hostid":"10420","host":"smlouvy.gov.cz","url":"http://smlouvy.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10420","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10420?h=11C8DE1F3A5E55FB80CE57F70C6C5042","urad":"Ministerstvo
+        vnitra","publicname":"Registr smluv","popis":"Registr smluv","hash":"11C8DE1F3A5E55FB80CE57F70C6C5042"},{"hostid":"10423","host":"www.businessinfo.cz","url":"http://www.businessinfo.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10423","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10423?h=E84EEE0DCF98B5E7BFE3C1CD67A55DD4","urad":"CzechTrade","publicname":"Portál
+        pro podnikání","popis":"Zpřístupnuje pro občany a firmy EU chtějící podnikat
+        v ČR na jednom místě veškeré postupy a podnikatelské formuláře s možností
+        cizojazyčného vyplnění i přesto, že český řád umožňuje podat data pouze v
+        českém jazyku.","hash":"E84EEE0DCF98B5E7BFE3C1CD67A55DD4"},{"hostid":"10448","host":"www.szif.cz
+        seznam-prijemcu-dotaci","url":"http://www.szif.cz/cs/seznam-prijemcu-dotaci","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10448","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10448?h=C99B3D07E50A21F66F40AC1B639AE876","urad":"Ministerstvo
+        zemědělství","publicname":"Seznam příjemců dotací","popis":"Seznam příjemců
+        dotací z fondů EU a ze státního rozpočtu ČR prostřednictvím administrace SZIF","hash":"C99B3D07E50A21F66F40AC1B639AE876"},{"hostid":"10461","host":"HTTPS
+        formulare.mpsv.cz edit","url":"https://formulare.mpsv.cz/okdavky/cs/form/edit.jsp?FN=RodP180301101&CMD=EditForm&SSID=SyP6t3KuhsRQaqveNl~NABzJCulf_oXE#body","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10461","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10461?h=52D7F83D32DEF17A8A222C9D20CA0AB3","urad":"Ministerstvo
+        práce a sociálních věcí","publicname":"Formuláře MPSV","popis":"Formuláře
+        MPSV, dostupnost testujeme na žádosti o rodičovský příspěvek","hash":"52D7F83D32DEF17A8A222C9D20CA0AB3"},{"hostid":"10116","host":"adisreg.mfcr.cz
+        dphInputForm","url":"http://adisreg.mfcr.cz/adistc/adis/irs/irep_dph/dphInputForm.faces","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10116","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10116?h=8B9C7EBD7ADF820EE1D4169A63D7B8B3","urad":"Ministerstvo
+        financí","publicname":"Registr DPH","popis":"Registr DPH","hash":"8B9C7EBD7ADF820EE1D4169A63D7B8B3"},{"hostid":"10502","host":"HTTPS
+        isir.justice.cz index","url":"https://isir.justice.cz/isir/common/index.do","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10502","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10502?h=EE4F94A20FC2321BF59C70EC549675F3","urad":"Ministerstvo
+        spravedlnosti","publicname":"Insolvenční rejstřík","popis":"Insolvenční rejstřík.
+        Jeho základní úlohou je zajistit maximální míru publicity o insolvenčních
+        řízení a umožnit sledování jejich průběhů. Prostřednictvím insolvenčního rejstříku
+        jsou zveřejňovány veškeré relevantní informace týkající se insolvenčních správců,
+        dokumenty z insolvenčních spisů i zákonem stanovené informace týkající se
+        dlužníků.","hash":"EE4F94A20FC2321BF59C70EC549675F3"},{"hostid":"10508","host":"HTTPS
+        edalnice.cz","url":"https://edalnice.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10508","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10508?h=F4CAEC4319FCC8689DC620B26D59D045","urad":"Ministerstvo
+        dopravy","publicname":"Elektronická dálniční známka","popis":"Nákup elektronické
+        dálniční známky - frontend","hash":"F4CAEC4319FCC8689DC620B26D59D045"},{"hostid":"10510","host":"HTTPS
+        reservatic.com ockovani","url":"https://reservatic.com/cs/ockovani","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10510","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10510?h=73DBDB8D910537006D169EFFFC6E708B","urad":"NAKIT","publicname":"Rezervace
+        termínu k očkování COVID-19","popis":"Rezervace termínu centrálního rezervačního
+        systemu k očkování proti COVID-19. Komeční služba Reservatic.com","hash":"73DBDB8D910537006D169EFFFC6E708B"},{"hostid":"10511","host":"HTTPS
+        registrace.mzcr.cz","url":"https://registrace.mzcr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10511","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10511?h=924C73D475D083CE66E5EC3C6F421977","urad":"Ministerstvo
+        zdravotnictví","publicname":"Registrace k očkování proti COVID-19","popis":"Centrální
+        rezervační systém - Očkování proti COVID-19, registrace do systému","hash":"924C73D475D083CE66E5EC3C6F421977"},{"hostid":"10512","host":"HTTPS
+        aisportal.mpo.cz default","url":"https://aisportal.mpo.cz/AISPortal/default","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10512","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10512?h=702442989F9C8B180CE124B6AA7416A2","urad":"Ministerstvo
+        průmyslu a obchodu","publicname":"Agendový informační systém","popis":"Portál
+        AIS MPO slouží k podávání žádostí v dotačních programech Ministerstva průmyslu
+        a obchodu (MPO).","hash":"702442989F9C8B180CE124B6AA7416A2"},{"hostid":"10376","host":"HTTPS
+        apl.cnb.cz JERRS","url":"https://apl.cnb.cz/apljerrsdad/JERRS.WEB07.INTRO_PAGE?p_lang=cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10376","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10376?h=189FF938E68989640C0411F1220E7E9E","urad":"Česká
+        národní banka","publicname":"JERRS","popis":"JERRS-Jednotná evidence regulovaných
+        a registrovaných subjektů","hash":"189FF938E68989640C0411F1220E7E9E"},{"hostid":"10377","host":"HTTPS
+        crz.policie.cz default","url":"https://crz.policie.cz/web_crz_internet/default.aspx","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10377","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10377?h=45665B2A75A9C0AEDA5E6A9BED3C96CC","urad":"Policie
+        ČR","publicname":"Centralni registr zbrani","popis":"Centralni registr zbrani","hash":"45665B2A75A9C0AEDA5E6A9BED3C96CC"},{"hostid":"10381","host":"HTTPS
+        www.coi.cz","url":"https://www.coi.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10381","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10381?h=7DC5EDE5EAA6D9D41E7977AF57E103B3","urad":"Česká
+        obchodní inspekce","publicname":"ČOI","popis":"","hash":"7DC5EDE5EAA6D9D41E7977AF57E103B3"},{"hostid":"10382","host":"HTTPS
+        www.ispop.cz","url":"https://www.ispop.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10382","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10382?h=82CA918F15EE4B2046C2FF3939CD301E","urad":"MŽP","publicname":"ISPOP","popis":"Integrovaný
+        systém plnění ohlašovacích povinností (ISPOP) umožňuje zpracování a příjem
+        vybraných hlášení (ohlašovacích povinností) z oblasti životního prostředí
+        v elektronické podobě ","hash":"82CA918F15EE4B2046C2FF3939CD301E"},{"hostid":"10383","host":"ags.cuzk.cz
+        dmr","url":"http://ags.cuzk.cz/dmr","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10383","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10383?h=B16BF76F01165E160E984A0784536D2E","urad":"Český
+        úřad zeměměřický a katastrální","publicname":"Analýzy výškopisu","popis":"Aplikace
+        pro základní analýzy výškopisných dat. Jako zdroj dat pro analýzu jsou použity
+        nové modely výškopisu území České republiky, které byly pořízeny metodou leteckého
+        laserového skenování.","hash":"B16BF76F01165E160E984A0784536D2E"},{"hostid":"10384","host":"cslav.justice.cz","url":"http://cslav.justice.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10384","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10384?h=E8267A09BC76EB8F195275A6C79C03A6","urad":"Ministerstvo
+        spravedlnosti","publicname":"Statistická ročenka justice","popis":"Zveřejňování
+        údajů ze statistických listů a výkazů soudů všech stupňů (vyjma Nejvyššího
+        soudu, který informace prezentuje na svých webových stránkách) a státních
+        zastupitelství všech stupňů.","hash":"E8267A09BC76EB8F195275A6C79C03A6"},{"hostid":"10385","host":"csnonline.unmz.cz","url":"http://csnonline.unmz.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10385","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10385?h=4329D13236C584673D2A37963BCEF35E","urad":"Úřad
+        pro technickou normalizaci, metrologii a státní zkušebnictví","publicname":"Platné
+        normy ČSN","popis":"Zpřístupnění technických norem ČSN ve formátu PDF.","hash":"4329D13236C584673D2A37963BCEF35E"},{"hostid":"10386","host":"czepos.cuzk.cz","url":"http://czepos.cuzk.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10386","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10386?h=6C73C95DD6F96AF9456CF0AB157A0CDE","urad":"Český
+        úřad zeměměřický a katastrální","publicname":"Síť stanic GNSS","popis":"Webová
+        služba Sítě permanentních stanic GNSS České republiky (CZEPOS) poskytuje uživatelům
+        GNSS korekční data pro přesné určení pozice na území České republiky.","hash":"6C73C95DD6F96AF9456CF0AB157A0CDE"},{"hostid":"10387","host":"data.ctu.cz","url":"http://data.ctu.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10387","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10387?h=E998344601AF1BD53EAA15CD0535EDBB","urad":"Český
+        telekomunikační úřad","publicname":"Open data","popis":"125 datových sad veřejně
+        dostupných","hash":"E998344601AF1BD53EAA15CD0535EDBB"},{"hostid":"10388","host":"data.cssz.cz","url":"http://data.cssz.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10388","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10388?h=E3C59C44C8FBC49F8F5668E5AA90366D","urad":"Česká
+        správa sociálního zabezpečení","publicname":"Open data","popis":"Přístup a
+        prezentace statistických dat o činnosti ČSSZ v různých oblastech","hash":"E3C59C44C8FBC49F8F5668E5AA90366D"},{"hostid":"10389","host":"data.mmr.cz","url":"http://data.mmr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10389","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10389?h=6158D1D84C352FD0DAEFAABE932FB66B","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"Open data","popis":"Otevřená komunikace MMR
+        vůči veřejnosti a v rámci veřejné kontroly nakládání s veřejnými financemi","hash":"6158D1D84C352FD0DAEFAABE932FB66B"},{"hostid":"10390","host":"data.gov.cz","url":"http://data.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10390","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10390?h=F3B6AC0C162AF46D78699551C45E8680","urad":"Ministerstvo
+        vnitra","publicname":"Open data","popis":"Místo které eviduje záznamy o otevřených
+        datech, publikovaných veřejnou správou ČR.","hash":"F3B6AC0C162AF46D78699551C45E8680"},{"hostid":"10391","host":"datalot.justice.cz
+        SearchForm","url":"http://datalot.justice.cz/justice/repznatl.nsf/$$SearchForm?OpenForm","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10391","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10391?h=6CB2132D01B3BC834DBBCBC34FF58DFA","urad":"Ministerstvo
+        spravedlnosti","publicname":"Evidence znalců a tlumočníků - prezenční část","popis":"Zpřístupnění
+        informací o soudních znalcích a soudních tlumočnících prostřednictvím internetu
+        na veřejném webu","hash":"6CB2132D01B3BC834DBBCBC34FF58DFA"},{"hostid":"10392","host":"datalot.justice.cz
+        Search","url":"http://datalot.justice.cz/justice/znust.nsf/$$Search?OpenForm","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10392","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10392?h=474EA0445E74ABFDE0683E0F645A59D6","urad":"Ministerstvo
+        spravedlnosti","publicname":"Seznam ústavů kvalifikovaných pro znaleckou činnost","popis":"Zpřístupnění
+        informací o znaleckých ústavech prostřednictvím internetu na veřejném webu","hash":"474EA0445E74ABFDE0683E0F645A59D6"},{"hostid":"10393","host":"drozd.mzv.cz","url":"http://drozd.mzv.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10393","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10393?h=4CB5C127C01B858AF1AFBE7C51790833","urad":"Ministerstvo
+        zahraničních věcí","publicname":"DROZD","popis":"Slouží k organizování pomoci
+        registrovaným občanům ČR v zahraničí v případech přírodních katastrof nebo
+        sociálních nepokojů, umožňuje registrovaným cestovatelů zasílat hromadné e-maily
+        a SMS","hash":"4CB5C127C01B858AF1AFBE7C51790833"},{"hostid":"10394","host":"drusop.nature.cz","url":"http://drusop.nature.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10394","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10394?h=BF5D138214C8A63A5B3C9C8E80F729AC","urad":"Agentura
+        ochrany přírody a krajiny ČR","publicname":"Ústřední seznam ochrany přírody","popis":"Digitální
+        registr zpřístupňuje základní informace o zvláště chráněných územích (velkoplošných,
+        maloplošných), lokalitách soustavy Natura 2000 (ptačích oblastech , evropsky
+        významných lokalitách ), památných stromech , smluvně chráněných územích a
+        smluvně chráněných památných stromech spolu s vybranou listinnou a fotografickou
+        dokumentací ze Sbírky listin Ústředního seznamu ochrany přírody 1) a Fotoarchivu","hash":"BF5D138214C8A63A5B3C9C8E80F729AC"},{"hostid":"10395","host":"eaccount.czechinvest.org","url":"http://eaccount.czechinvest.org","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10395","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10395?h=278274185499E9C6AAD05728ADDBC57A","urad":"CzechInvest/
+        Ministerstvo průmyslu a obchodu","publicname":"eaccount.czechinvest.org","popis":"eAccount
+        je internetová aplikace vytvořená pro potřeby žadatelů a příjemců dotace v
+        rámci Operačního Programu Podnikání a Inovace.","hash":"278274185499E9C6AAD05728ADDBC57A"},{"hostid":"10396","host":"eagri.cz
+        LPIS","url":"http://eagri.cz/public/web/mze/farmar/LPIS/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10396","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10396?h=399F6871E851A7BCEFF9D69B08A59654","urad":"Ministerstvo
+        zemědělství","publicname":"Evidence využití půdy podle uživatelských vztahů
+        (LPIS)","popis":"Ministerstvo zemědělství poskytuje bezplatný přístup ke svým
+        vybraným prostorovým datům přes WMS a WFS služby. Data jsou poskytována pro
+        území celé České republiky a jsou dostupná zdarma. Uživatelé mají takto přístup
+        k datům MZE a mohou si je zobrazit přes URL adresu, či v GIS prohlížeči (např.
+        QGIS).","hash":"399F6871E851A7BCEFF9D69B08A59654"},{"hostid":"10397","host":"editor.dppcr.cz
+        pk_edt","url":"http://editor.dppcr.cz/pk_edt/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10397","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10397?h=8D07530C2C61400EB960A60A4DF08BE4","urad":"Internetová
+        databáze povodňových plánů, povodňových komisí, důležitých organizací a objektů
+        povodňového plánu, pro autorizované uživatele možnost editace těchto údajů","publicname":"Seznam
+        povodňových komisí správních celků","popis":"Editor dat povodňového plánu","hash":"8D07530C2C61400EB960A60A4DF08BE4"},{"hostid":"10398","host":"eslp.justice.cz","url":"http://eslp.justice.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10398","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10398?h=0F77DE576D649A9DE5DEA6AE3956A8FB","urad":"Ministerstvo
+        spravedlnosti","publicname":"Db rozhodnutí EU soudu pro lidská práva","popis":"Možnost
+        vyhledat zařazené rozsudky a rozhodnutí Evropského soudu pro lidská práva,
+        v plném textu nebo v podobě anotace, v českém jazyce.","hash":"0F77DE576D649A9DE5DEA6AE3956A8FB"},{"hostid":"10399","host":"geoportal.gov.cz","url":"http://geoportal.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10399","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10399?h=7B8963B8DE1D6992B2467FD11FAFF42A","urad":"Česká
+        informační agentura životního prostředí","publicname":"Národního geoportálu
+        INSPIRE","popis":"Zpřístupňuje veřejnosti prostorová data a povinným poskytovatelům
+        sadu nástrojů k dalšímu zpřístupňování svých dat, mapových služeb a metadat
+        k nim.","hash":"7B8963B8DE1D6992B2467FD11FAFF42A"},{"hostid":"10400","host":"heis.vuv.cz","url":"http://heis.vuv.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10400","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10400?h=1A21195ED5B95C914EC272E778F5C33E","urad":"Výzkumný
+        ústav vodohospodářský T. G. M","publicname":"Hydroekologický IS","popis":"Vyhledávání
+        a prohlížení údajů a informací z oblasti vodního hospodářství a ochrany vod-Zpřístupnění
+        informací a údajů z oblasti voda a zpráv o stavu životního prostředí","hash":"1A21195ED5B95C914EC272E778F5C33E"},{"hostid":"10401","host":"helpdesk.cenia.cz","url":"http://helpdesk.cenia.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10401","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10401?h=150B9AC5BDEDD5F70B7A8481A478049C","urad":"CENIA","publicname":"Česká
+        informační agentura životního prostředí","popis":"Sofistikované vyhledávání
+        a poskytování informací z oblasti životního prostředí pro širokou i odbornou
+        veřejnost s podporou sledování a správy dotazu a řízení naplňování znalostní
+        báze. Podpora ohlašování do ISPOP; dále podpora REACH, odpadového hospodářství,
+        IRZ, IPPC, ad.","hash":"150B9AC5BDEDD5F70B7A8481A478049C"},{"hostid":"10402","host":"hydro.chmi.cz
+        isarrow","url":"http://hydro.chmi.cz/isarrow","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10402","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10402?h=3C901F71DC174CF675970E0D93BF4D6E","urad":"Ministerstvo
+        životního prostředí","publicname":"Monitoring vody","popis":"Slouží k ukládání
+        a zpracování výsledků programů monitoringu týkajících se sledování chemického
+        stavu povrchových i podzemních vod a ekologického stavu povrchových vod a
+        jejich prezentaci veřejnosti.","hash":"3C901F71DC174CF675970E0D93BF4D6E"},{"hostid":"10403","host":"infojednani.justice.cz
+        searchJednani","url":"http://infojednani.justice.cz/InfoSoud/public/searchJednani.jsp","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10403","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10403?h=2DEDCA3C439D5C1B855561C2F7E3E2B3","urad":"Ministerstvo
+        spravedlnosti","publicname":"Info o jednání","popis":"Zobrazení nařízených
+        jednání v příslušných jednacích síních, a to pouze na následujících 30 dnů.","hash":"2DEDCA3C439D5C1B855561C2F7E3E2B3"},{"hostid":"10404","host":"iregistr.mpsv.cz
+        hledani_sluzby","url":"http://iregistr.mpsv.cz/socreg/hledani_sluzby.do","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10404","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10404?h=DF0ABEA614AF8C3433BB43D404B7379C","urad":"Ministerstvo
+        práce a sociálních věcí","publicname":"iregistr.mpsv.cz hledani_sluzby","popis":"Registrace
+        sociálních služeb a databáze poskytovatelů soc. služeb.","hash":"DF0ABEA614AF8C3433BB43D404B7379C"},{"hostid":"10405","host":"is-prevence.msmt.cz","url":"http://is-prevence.msmt.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10405","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10405?h=399DE8F56BB2D444DFBDA777E9BA8F11","urad":"Národní
+        institut pro další vzdělávání","publicname":"is-prevence.msmt.cz","popis":"Možnost
+        podání projektové žádosti v dotačním řízení MŠMT","hash":"399DE8F56BB2D444DFBDA777E9BA8F11"},{"hostid":"10406","host":"isoh.cenia.cz
+        groupisoh","url":"http://isoh.cenia.cz/groupisoh/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10406","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10406?h=80940A7EF671B6CB3531BFB80063C32E","urad":"Česká
+        informační agentura životního prostředí","publicname":"Nakládání s odpady","popis":"Poskytuje
+        agregovaná data o produkci a nakládání s odpady, a to od roku 2002.","hash":"80940A7EF671B6CB3531BFB80063C32E"},{"hostid":"10407","host":"mediatori.justice.cz
+        FR003_ZverejneniVybranychUdaju","url":"http://mediatori.justice.cz/MediatorPublic/Public/FR003_ZverejneniVybranychUdaju.aspx","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10407","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10407?h=7FA38FB5EE3B0EA81C45E5149BBAA16F","urad":"Ministerstvo
+        spravedlnosti","publicname":"Mediátoři","popis":"Zpřístupnění seznamu mediátorů
+        prostřednictvím internetu na veřejném webu","hash":"7FA38FB5EE3B0EA81C45E5149BBAA16F"},{"hostid":"10408","host":"isoh.mzp.cz","url":"http://isoh.mzp.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10408","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10408?h=78F5C84AD3B62EB69A515BCA66158DC0","urad":"Ministerstvo
+        životního prostředí","publicname":"IS odpad.hospodářství","popis":"Poskytování
+        a správa informací o způsobu plnění povinností výrobců elektrozařízení (českých
+        i zahraničních), pověřených zástupců a kolektivních systémů v oblasti zpětného
+        odběru elektrozařízení a odděleného sběru elektroodpadů.","hash":"78F5C84AD3B62EB69A515BCA66158DC0"},{"hostid":"10409","host":"isop.nature.cz","url":"http://isop.nature.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10409","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10409?h=AC6BF85DE2295C09DD5A15C9AB207621","urad":"Agentura
+        ochrany přírody a krajiny ČR","publicname":"IS ochrany přírody","popis":"Portál
+        Informačního systému ochrany přírody - Rozhraní popisující a zpřístupňující
+        všechny informační zdroje a aplikace, které jsou uživateli k dispozici. Slouží
+        ke sledování stavu druhů a biotopů - je povinnost členských států ES.","hash":"AC6BF85DE2295C09DD5A15C9AB207621"},{"hostid":"10410","host":"mapy.vumop.cz","url":"http://mapy.vumop.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10410","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10410?h=E12B10F329D1C7473F6EE7E9FE525A76","urad":"Výzkumný
+        ústav meliorací a ochrany půdy","publicname":"Mapy","popis":"GIS data k vodní
+        erozi, vetrné erozi, BPEJ, data k opatření k ochraně půdy","hash":"E12B10F329D1C7473F6EE7E9FE525A76"},{"hostid":"10411","host":"mapy.geology.cz","url":"http://mapy.geology.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10411","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10411?h=5B684C95598177434B730B2F953C75CB","urad":"Česká
+        geologická služba","publicname":"Mapové aplikace","popis":"Zpřístupnění primárních
+        mapových podkladů, aplikovaných dat a informací o geologické prozkoumanosti
+        území ČR","hash":"5B684C95598177434B730B2F953C75CB"},{"hostid":"10413","host":"portal.cenia.cz
+        eia100_cr","url":"http://portal.cenia.cz/eiasea/view/eia100_cr","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10413","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10413?h=2AEFFDDE0431FC672B4870BF13E5BA84","urad":"Česká
+        informační agentura životního prostředí","publicname":"Informační systém EIA","popis":"Vedení
+        evidence posuzovaných záměrů a zveřejňování dokumentů souvisejících s procesem
+        posuzování vlivů na životní prostředí na internetu.","hash":"2AEFFDDE0431FC672B4870BF13E5BA84"},{"hostid":"10414","host":"portal.csicr.cz","url":"http://portal.csicr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10414","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10414?h=A1834608F66CFAE5493B28CE1115DDC6","urad":"Česká
+        školní inspekce","publicname":"InspIS PORTÁL","popis":"Informační portál pro
+        snadné a efektivní vyhledávání škol a informací o nich. Na jednom místě jsou
+        soustředěny důležité a užitečné informace o školách, doplněné o inspekční
+        zprávy či další výstupy.","hash":"A1834608F66CFAE5493B28CE1115DDC6"},{"hostid":"10415","host":"portal.justice.cz
+        zastupci","url":"http://portal.justice.cz/Justice2/Zastupci/zastupci.html","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10415","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10415?h=6CD0CC277E6032E3E3374FB02646B759","urad":"Ministerstvo
+        spravedlnosti","publicname":"Přehled státních zástupců","popis":"Zpřístupnění
+        přehledu státních zástupců prostřednictvím internetu na veřejném webu","hash":"6CD0CC277E6032E3E3374FB02646B759"},{"hostid":"10416","host":"portal.justice.cz
+        soudci","url":"http://portal.justice.cz/Justice2/Soudci/soudci.html","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10416","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10416?h=4B73DD146EA925FDFE0D5733A9AF725C","urad":"Ministerstvo
+        spravedlnosti","publicname":"Přehled soudců","popis":"Zpřístupnění přehledu
+        soudců prostřednictvím internetu na veřejném webu","hash":"4B73DD146EA925FDFE0D5733A9AF725C"},{"hostid":"10417","host":"portal.mpsv.cz
+        vmjedno","url":"http://portal.mpsv.cz/sz/obcane/vmjedno","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10417","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10417?h=0AF1D8AA1ED21966715461DAEBDBE472","urad":"Úřad
+        práce","publicname":"Hledání volných míst","popis":"","hash":"0AF1D8AA1ED21966715461DAEBDBE472"},{"hostid":"10418","host":"rvvi.msmt.cz","url":"http://rvvi.msmt.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10418","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10418?h=FAEF5B859C64B5EB5997584D3CFFA6AE","urad":"Služba
+        umožňuje vyhledat subjekt dle mnoha kriterií (názvu, IČ , místa, součásti…)","publicname":"Rejstřík
+        veřejných výzkumných institucí","popis":"Služba umožňuje vyhledat subjekt
+        dle mnoha kriterií (názvu, IČ , místa, součásti…)","hash":"FAEF5B859C64B5EB5997584D3CFFA6AE"},{"hostid":"10419","host":"portal.mpsv.cz
+        zamkonkurz","url":"http://portal.mpsv.cz/sz/obcane/insolvence/zamkonkurz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10419","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10419?h=BBF5307F3B6EED7F0A4314E74B6E7567","urad":"Úřad
+        práce","publicname":"Zaměstnavatelé v insolvenci","popis":"Možnost vyhledávání
+        z evidence: Zaměstnavatelé, na které bylo vyhlášeno moratorium před zahájením
+        insolvenčního řízení nebo byl podán insolvenční návrh a nevypršela u nich
+        lhůta pro uplatňování mzdových nároků.","hash":"BBF5307F3B6EED7F0A4314E74B6E7567"},{"hostid":"10421","host":"vzdelavaniaprace.cz","url":"http://vzdelavaniaprace.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10421","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10421?h=88A87D52304C02B1A4629C4FF943C297","urad":"MŠMT","publicname":"Vzdělávání
+        a práce","popis":"Portál www.vzdelavaniaprace.cz je to pro všechny, kteří
+        potřebují pomoc na trhu práce. Pomáhá jednotlivcům najít novou profesi, práci
+        nebo vzdělávací kurz. Pomáhá zaměstnavatelům najít nové kvalifikované zaměstnance.
+        A pomáhá vzdělávacím firmám oslovit zájemce o rekvalifikaci. ","hash":"88A87D52304C02B1A4629C4FF943C297"},{"hostid":"10422","host":"vdb.czso.cz
+        vdbvo2","url":"http://vdb.czso.cz/vdbvo2/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10422","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10422?h=2EBEED9039F57F769A2314C35AD05B87","urad":"Český
+        statistický úřad","publicname":"Veřejné DB ČSÚ","popis":"VDB je nástroj umožňující
+        přístup ke statistickým údajům Českého statistického úřadu. Data jsou členěna
+        tematicky, je k nim také možné přistupovat i podle jednotlivých území. Nabízí
+        se možnost vlastního výběru dat, exporty do různých formátů.","hash":"2EBEED9039F57F769A2314C35AD05B87"},{"hostid":"10424","host":"www.celnisprava.cz
+        eoriadhoc","url":"http://www.celnisprava.cz/cz/aplikace/Stranky/eoriadhoc.aspx","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10424","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10424?h=6740271E642857801F1044BDA2C6CA2F","urad":"Celní
+        správa","publicname":"Přidělování EORI čísel","popis":"Registrace nepodnikajících
+        fyzických osob pro účely celního řízení","hash":"6740271E642857801F1044BDA2C6CA2F"},{"hostid":"10425","host":"www.cenia.cz","url":"http://www.cenia.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10425","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10425?h=F42C96925AE351764304C5CE35ADA2D8","urad":"CENIA","publicname":"EnviHelp","popis":"","hash":"F42C96925AE351764304C5CE35ADA2D8"},{"hostid":"10426","host":"www.cermat.cz","url":"http://www.cermat.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10426","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10426?h=82072F8E46189233B0053B63B6DF4635","urad":"CERMAT","publicname":"Cermat","popis":"Centrum
+        pro zjišťování výsledků vzdělávání","hash":"82072F8E46189233B0053B63B6DF4635"},{"hostid":"10427","host":"www.csks.cz","url":"http://www.csks.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10427","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10427?h=B8BE8964B02FFAFA63FFBAC2CDF6B6CB","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"Český systém kvality služeb","popis":"Zvyšování
+        kvality služeb v organizacích v oblasti cestovního ruchu a v navazujících
+        službách","hash":"B8BE8964B02FFAFA63FFBAC2CDF6B6CB"},{"hostid":"10428","host":"www.csicr.cz","url":"http://www.csicr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10428","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10428?h=D6EBEB4A6CBDE6B10F83BE72ADDE9E8C","urad":"Česká
+        školní inspekce","publicname":"www.csicr.cz","popis":"Možnost zaslání podání
+        elektronickou cestou na adresu posta@csicr.cz","hash":"D6EBEB4A6CBDE6B10F83BE72ADDE9E8C"},{"hostid":"10429","host":"www.czso.cz
+        otevrena_data","url":"http://www.czso.cz/csu/czso/otevrena_data","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10429","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10429?h=BEEEEC0FA3144D68AA42F23F625C1E35","urad":"Český
+        statistický úřad","publicname":"www.czso.cz otevrena_data","popis":"Služba
+        nabízí vybrané statistické informace ve formátu otevřených dat. Jsou zde data
+        z voleb, sčítání lidu, klasifikace a číselníky, nejnovější ekonomické údaje.","hash":"BEEEEC0FA3144D68AA42F23F625C1E35"},{"hostid":"10430","host":"www.europass.cz","url":"http://www.europass.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10430","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10430?h=B741025F9625E5599A2C0F4DD9B43310","urad":"Národní
+        ústav pro vzdělávání","publicname":"Europass","popis":"Soubor dokladů o vzdělání,
+        osobních kompetencích, jazykových dovednostech, odborné kvalifikaci a pracovních
+        zkušenostech","hash":"B741025F9625E5599A2C0F4DD9B43310"},{"hostid":"10431","host":"www.financnisprava.cz
+        databaze-aktualnich-danovych-tiskopisu","url":"https://www.financnisprava.cz/cs/danove-tiskopisy/databaze-aktualnich-danovych-tiskopisu","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10431","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10431?h=F952C58335D2C3EE38151F10D104ABAE","urad":"Finanční
+        správa","publicname":"DB daňových tiskopisů","popis":"Databáze interaktivních
+        tiskopisů slouží pro vyplnění formuláře ke konkrétní vybrané dani v elektronické
+        podobě ve formátu PDF.","hash":"F952C58335D2C3EE38151F10D104ABAE"},{"hostid":"10432","host":"HTTPS
+        drazby.financnisprava.cz mydesk","url":"https://drazby.financnisprava.cz/mwclient/mydesk.html","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10432","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10432?h=C560A45BC08CD68C591CAACFA7DE3609","urad":"Finanční
+        správa","publicname":"Dražby finančních úřadů","popis":"Tato aplikace nabízí
+        informace k aktuálně pořádaným dražbám orgánů Finanční správy ČR.","hash":"C560A45BC08CD68C591CAACFA7DE3609"},{"hostid":"10433","host":"www.mfcr.cz
+        uredni-deska","url":"http://www.mfcr.cz/cs/o-ministerstvu/sluzby-verejnosti/uredni-deska","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10433","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10433?h=D06908C6A79F2A0C1F8F65C6D496624F","urad":"Ministerstvo
+        financí","publicname":"Úřední deska","popis":"Publikované dokumenty ve smyslu
+        zákona č.500/2004 Sb. o správním řádu. Oznámení o přijatých písemnostech a
+        důležitá aktuální sdělení úřadu Ministerstva financí. Informace pro veřejnost.","hash":"D06908C6A79F2A0C1F8F65C6D496624F"},{"hostid":"10434","host":"www.kariera.army.cz","url":"http://www.kariera.army.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10434","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10434?h=C96CF3BA3EBB15694521B79742CE1B18","urad":"Ministerstvo
+        obrany","publicname":"Nábor do armády","popis":"Informace o AČR, Vyplněním
+        registračního formuláře s registrací do DB zájemců.","hash":"C96CF3BA3EBB15694521B79742CE1B18"},{"hostid":"10435","host":"www.mzcr.cz
+        HlukoveMapy","url":"http://www.mzcr.cz/HlukoveMapy","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10435","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10435?h=029A941215FC88C0DF34A5A454077AF6","urad":"Ministerstvo
+        zdravotnictví","publicname":"Hlukové mapy","popis":"Hluková mapa České republiky","hash":"029A941215FC88C0DF34A5A454077AF6"},{"hostid":"10436","host":"www.novamaturita.cz","url":"http://www.novamaturita.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10436","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10436?h=0C24622CEFC93CA6EE543E5CDAAFFF45","urad":"CERMAT","publicname":"Nová
+        maturita","popis":"Aktuální zprávy o dění okolo nové maturitní zkoušky","hash":"0C24622CEFC93CA6EE543E5CDAAFFF45"},{"hostid":"10437","host":"www.nkp.cz","url":"http://www.nkp.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10437","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10437?h=F0899FFB5F6AA3AA9C79175ECBFB1AD6","urad":"Národní
+        knihovna","publicname":"Národní knihovna","popis":"Narodni knihovna","hash":"F0899FFB5F6AA3AA9C79175ECBFB1AD6"},{"hostid":"10438","host":"www.nsoud.cz
+        webSpreadSearch","url":"http://www.nsoud.cz/Judikaturans_new/judikatura_vks.nsf/webSpreadSearch","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10438","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10438?h=AD25CEB28FD2589DC6C6C945569A29A7","urad":"Ministerstvo
+        spravedlnosti","publicname":"Evidence soudních rozhodnutí","popis":"Zpřístupnění
+        evidence vybraných anonymizovaných soudních rozhodnutí vrchních a krajských
+        soudů prostřednictvím internetu na veřejném webu","hash":"AD25CEB28FD2589DC6C6C945569A29A7"},{"hostid":"10439","host":"www.novazelenausporam.cz","url":"http://www.novazelenausporam.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10439","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10439?h=9FF4CA7F357984453AA54579E105C148","urad":"Státní
+        fond životního prostředí","publicname":"Zelená úsporám","popis":"Zpracování
+        formulářů žádostí o dotaci programu Nová Zelená úsporám s navazujícím životním
+        cyklem administrace.","hash":"9FF4CA7F357984453AA54579E105C148"},{"hostid":"10440","host":"www.olecich.cz","url":"http://www.olecich.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10440","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10440?h=4D15E065EAF9712964D8B5A6E0E35FA9","urad":"Státní
+        ústav pro kontrolu léčiv","publicname":"O lécích","popis":"O lecich","hash":"4D15E065EAF9712964D8B5A6E0E35FA9"},{"hostid":"10441","host":"www.opzp.cz","url":"http://www.opzp.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10441","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10441?h=971B4FC7312545BB209266373762C2A7","urad":"Státní
+        fond životního prostředí","publicname":"Operační program ŽP","popis":"Kalkulačka
+        pro výpočet vylučovacího ekonomického kriteria pro žadatele a příjemce podpory
+        v Operačním programu Životní prostředí pro období 2014 - 2020","hash":"971B4FC7312545BB209266373762C2A7"},{"hostid":"10442","host":"www.nuv.cz","url":"http://www.nuv.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10442","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10442?h=D689C7E361A4463CB179C87F8BCD941B","urad":"Národní
+        ústav pro vzdělávání","publicname":"Národní ústav pro vzdělávání","popis":"NUV","hash":"D689C7E361A4463CB179C87F8BCD941B"},{"hostid":"10443","host":"www.pgrlf.cz","url":"http://www.pgrlf.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10443","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10443?h=F00B2C1074E3E72C522C838B108C3EF1","urad":"Podpůrný
+        a garanční rolnický a lesnický fond","publicname":"PGRLF","popis":"Podpůrný
+        a garanční rolnický a lesnický fond","hash":"F00B2C1074E3E72C522C838B108C3EF1"},{"hostid":"10444","host":"www.portalobydleni.cz
+        home","url":"http://www.portalobydleni.cz/home","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10444","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10444?h=12247DD493C3207CFB44C6983C476ED6","urad":"Státní
+        fond rozvoje bydlení","publicname":"Portál o bydlení","popis":"Informace o
+        bydlení, k dispozici např. kalkulačky (kapacity plynu, faktur za elektřinu,…),
+        vzory smluv, cenové mapy,…","hash":"12247DD493C3207CFB44C6983C476ED6"},{"hostid":"10445","host":"www.risy.cz","url":"http://www.risy.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10445","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10445?h=311326017D8A275102891854A4EBA593","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"Regionální info servis","popis":"Regionálního
+        informačního servisu","hash":"311326017D8A275102891854A4EBA593"},{"hostid":"10446","host":"www.sukl.cz
+        apotheke","url":"http://www.sukl.cz/modules/apotheke/search.php","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10446","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10446?h=79789E7AAB748825BEABC6CFCCD1E3F3","urad":"Státní
+        ústav pro kontrolu léčiv","publicname":"Databáze lékáren","popis":"Databáze
+        lékáren","hash":"79789E7AAB748825BEABC6CFCCD1E3F3"},{"hostid":"10447","host":"www.sukl.cz
+        medication","url":"http://www.sukl.cz/modules/medication/search.php","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10447","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10447?h=EC94970AAEE7EB9CD2CE381A9B35AAF5","urad":"Státní
+        ústav pro kontrolu léčiv","publicname":"Databáze léků","popis":"Databáze léků","hash":"EC94970AAEE7EB9CD2CE381A9B35AAF5"},{"hostid":"10449","host":"www.umpod.cz","url":"http://www.umpod.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10449","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10449?h=9F00C3C94887BC0493793A82857055EB","urad":"Úřad
+        pro mezinárodněprávní ochranu dětí","publicname":"Úřad pro mezinárodněprav.
+        ochranu dětí","popis":"Sdílení dobré praxe a know-how, manulál v oblasti agend
+        ÚMPOD s odborníky a institucemi","hash":"9F00C3C94887BC0493793A82857055EB"},{"hostid":"10450","host":"www.uzis.cz","url":"http://www.uzis.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10450","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10450?h=DB5F679BBE5C8DF00EF1D9F617F17887","urad":"Ústav
+        zdravotnických informací a statistiky ČR","publicname":"www.uzis.cz","popis":"Ústav
+        zdravotnických informací a statistiky České republiky (ÚZIS ČR) dlouhodobě
+        zpracovává podrobné údaje z jednotlivých oblastí zdravotnictví.","hash":"DB5F679BBE5C8DF00EF1D9F617F17887"},{"hostid":"10451","host":"www.uur.cz
+        iLAS","url":"http://www.uur.cz/iLAS/iLAS.asp","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10451","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10451?h=BE320C01B45B8B818460A3334FBCD648","urad":"Ústav
+        územního rozvoje","publicname":"Územní plány obcí","popis":"Aplikace slouží
+        pro evidenci územně plánovací činnosti obcí","hash":"BE320C01B45B8B818460A3334FBCD648"},{"hostid":"10452","host":"www.uzis.cz
+        nrpzs","url":"http://www.uzis.cz/registry-nzis/nrpzs","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10452","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10452?h=D7CDAE6FF6A41CC2F591216B4FFA5D12","urad":"Ústav
+        zdravotnických informací a statistiky ČR","publicname":"NRPZS","popis":"Registr
+        obsahuje informace o poskytovatelích zdravotních služeb, poskytovatelích sociálních
+        služeb, kteří poskytují zdravotní služby, a o hostujících osobách. U jednotlivých
+        poskytovatelů obsahuje registr údaje o oprávněních k poskytování zdravotních
+        služeb, odborných zástupcích, místech poskytování a podrobné informace o provozovaných
+        zdravotnických zařízeních.","hash":"D7CDAE6FF6A41CC2F591216B4FFA5D12"},{"hostid":"10457","host":"heis.vuv.cz
+        isapi","url":"http://heis.vuv.cz/data/webmap/isapi.dll?map=mp_heis_voda&TMPL=AJAX_MAIN&IFRAME=1","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10457","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10457?h=18D57EEE87C718054AA0709782A3CE2B","urad":"Výzkumný
+        ústav vodohospodářský T. G. M","publicname":"Mapa VH a ochrana vod","popis":"Mapa
+        obsahuje údaje z oblasti vodního hospodářství a ochrany vod, tj. údaje týkající
+        se struktury a základních charakteristik povrchových a podzemních vod, vymezení
+        chráněných území s vazbou na vody, užívání vod a vlivů na jejich stav a sledování
+        a hodnocení stavu vod. Mapový pohled je doplněn referenčními podkladovými
+        mapami (v rastrovém formátu), zejména základními mapami ČR v měřítku 1:10000
+        a 1:50000 ČÚZK.","hash":"18D57EEE87C718054AA0709782A3CE2B"},{"hostid":"10464","host":"archivnimapy.cuzk.cz","url":"http://archivnimapy.cuzk.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10464","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10464?h=B0FA2BE8E9499505FF0720CCC5FBB848","urad":"Český
+        úřad zeměměřický a katastrální","publicname":"Archivní mapy ČR","popis":"Aplikace
+        umožňuje bezplatné prohlížení archivních map a dokumentů Ústředního archivu
+        zeměměřictví a katastru (ÚAZK).","hash":"B0FA2BE8E9499505FF0720CCC5FBB848"},{"hostid":"10467","host":"HTTPS
+        rpsd.mdcr.cz undertaker","url":"https://rpsd.mdcr.cz/undertaker/search","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10467","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10467?h=F66306EBC377E49492D9A86E1C3C0954","urad":"Ministerstvo
+        dopravy","publicname":"Podnikatelé v dopravě","popis":"Zpřístupňuje údaje
+        o podnikatelích v silniční dopravě, které zákon ukládá zveřejnit. Jedná se
+        o identifikační údaje podnikatele, údaje o jeho koncesi, počtu velkých vozidel,
+        eurolicencích a o odpovědných zástupcích. Právnická nebo fyzická osoba může
+        požádat o výpis z Rejstříku podnikatelů v silniční dopravě, který bude obsahovat
+        údaje o této osobě v informačním systému vedené.","hash":"F66306EBC377E49492D9A86E1C3C0954"},{"hostid":"10117","host":"infodeska.justice.cz","url":"http://infodeska.justice.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10117","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10117?h=9E02243ADEC3C39FB0525A5DBFB29D70","urad":"Ministerstvo
+        spravedlnosti","publicname":"Elektronická úřední deska resortu justice","popis":"Info
+        Deska je elektronickou úřední deskou resortu justice. Informace zveřejněné
+        v aplikaci infoDeska nemají charakter úřední listiny.","hash":"9E02243ADEC3C39FB0525A5DBFB29D70"},{"hostid":"10487","host":"apl.czso.cz
+        rocenka","url":"http://apl.czso.cz/pll/rocenka/rocenka.indexnu","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10487","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10487?h=EC7D60EB7B77939BE4F0324875F85D50","urad":"Český
+        statistický úřad","publicname":"Databáze národních účtů","popis":"Služba je
+        specifickým nástrojem pro prezentaci podrobných statistických dat z oblasti
+        národních účtů. Databáze národních účtů poskytuje detailní makroekonomické
+        údaje členěné podle jednotlivých složek systému národních účtů. Umožňuje výběr
+        tabulek podle různých časových kritérií.","hash":"EC7D60EB7B77939BE4F0324875F85D50"},{"hostid":"10489","host":"apl.czso.cz
+        home","url":"http://apl.czso.cz/iSMS/home.jsp","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10489","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10489?h=2D90F9B312B5B7B19BCD25AEBBD9C36A","urad":"Český
+        statistický úřad","publicname":"Statistický metainformační systém","popis":"Služba
+        umožňuje vyhledávat, prohlížet a stahovat statistické klasifikace, číselníky
+        a proměnné","hash":"2D90F9B312B5B7B19BCD25AEBBD9C36A"},{"hostid":"10490","host":"ciselnik.nipez.cz
+        login","url":"http://ciselnik.nipez.cz/faces/login.xhtml","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10490","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10490?h=376895E3AC538256AA0375663209DB40","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"NIPEZ CPV kódy","popis":"Aplikace je založena
+        CPV kódech, které prostřednictvím čísla určuji/definují předmět veřejné zakázky.
+        Číselník NIPEZ (Národní infrastruktury pro elektronické zadávání veřejných
+        zakázek)","hash":"376895E3AC538256AA0375663209DB40"},{"hostid":"10491","host":"HTTPS
+        www.etrzby.cz Informace-o-provozu","url":"https://www.etrzby.cz/cs/Informace-o-provozu","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10491","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10491?h=7A043F448E957EA96759749196EDD880","urad":"GFŘ","publicname":"eTržby
+        - informační web EET","popis":"Informační web o EET pro občany, obchodníky
+        i dodavatele technologií","hash":"7A043F448E957EA96759749196EDD880"},{"hostid":"10494","host":"apl.czso.cz
+        irso4","url":"http://apl.czso.cz/irso4/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10494","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10494?h=4861FBCC105AF01CC46C3741AB7E02D1","urad":"Český
+        statistický úřad","publicname":"Registr sčítacích obvodů a budov","popis":"Služba
+        umožňuje vyhledávat budovy a údaje o nich a také územní celky se základními
+        vlastnostmi - budovy a územní celky s atributy lze také zobrazovat v mapě
+        Registr eviduje soustavu územních prvků a územně evidenčních jednotek, budov
+        nebo jejich částí s přidělenými popisnými nebo evidenčními čísly, adresy a
+        byty.","hash":"4861FBCC105AF01CC46C3741AB7E02D1"},{"hostid":"10496","host":"HTTPS
+        www.uctenkovka.cz novauctenka","url":"https://www.uctenkovka.cz/novauctenka","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10496","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10496?h=A5B53355AA362964729F04BB3179A8DB","urad":"Ministerstvo
+        financí","publicname":"Účtenkovka","popis":"Účtenková loterie s účtenkami
+        EET","hash":"A5B53355AA362964729F04BB3179A8DB"},{"hostid":"10507","host":"www.praha.eu","url":"http://www.praha.eu","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10507","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10507?h=CA8428306923E5ACF0A3581D833EDAF2","urad":"Magistrát
+        Praha","publicname":"Portál hlavního města Prahy","popis":"","hash":"CA8428306923E5ACF0A3581D833EDAF2"},{"hostid":"10509","host":"HTTPS
+        oneticket.cz","url":"https://oneticket.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10509","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10509?h=415B46534281C5A0F8D7B353DD8FD620","urad":"Ministerstvo
+        dopravy","publicname":"OneTicket/JednaJízdenka","popis":"OneTicket platí napříč
+        dopravci, ve všech spojích. Snadno přestoupíte mezi vlaky různých společností.","hash":"415B46534281C5A0F8D7B353DD8FD620"},{"hostid":"10472","host":"HTTPS
+        code.gov.cz","url":"https://code.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10472","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10472?h=934D30F583CD6AE228BBAC837D04AAEB","urad":"Ministerstvo
+        vnitra","publicname":"Státní Open source","popis":"Státní open source repozitory","hash":"934D30F583CD6AE228BBAC837D04AAEB"},{"hostid":"10486","host":"HTTPS
+        data.army.cz","url":"https://data.army.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10486","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10486?h=FBB7261E639AB517A2BA94B0497C87F6","urad":"Ministerstvo
+        obrany","publicname":"Otevřená data MO ČR","popis":"","hash":"FBB7261E639AB517A2BA94B0497C87F6"},{"hostid":"10363","host":"HTTPS
+        nkod.opendata.cz","url":"https://nkod.opendata.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10363","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10363?h=902B1B61198735044E354E0296139BFD","urad":"Ministerstvo
+        vnitra","publicname":"Národní katalog otevřených dat","popis":"Katalogizační
+        nástroj a úložiště otevřených dat dostupný na portálu veřejné správy. Otevřená
+        data státní správy a samosprávy jsou dle zákona registrována v Národním katalogu
+        otevřených dat (NKOD), kde je také můžete vyhledávat","hash":"902B1B61198735044E354E0296139BFD"},{"hostid":"10362","host":"HTTPS
+        opendata.gov.cz","url":"https://opendata.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10362","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10362?h=DF0D228C14548148BABD8CA678E17A31","urad":"Ministerstvo
+        vnitra","publicname":"Otevřená data v ČR","popis":"Tento portál je určen orgánům
+        veřejné správy, které plánují otevřít svá data. Popisuje doporučovaný postup
+        otevírání dat a nabízí vzorové publikační plány, které obsahují (pro jednotlivé
+        typy orgánů veřejné správy) konkrétní datové sady k publikaci ve formátu otevřených
+        dat. Portál rovněž informuje o školeních připravených k tématu otevřených
+        dat.","hash":"DF0D228C14548148BABD8CA678E17A31"},{"hostid":"10468","host":"HTTPS
+        isoh.mzp.cz","url":"https://isoh.mzp.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10468","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10468?h=6DD90F9F47374E6BC33DA1E5E952CF9E","urad":"Ministerstvo
+        životního prostředí","publicname":"Informační systém odpadového hospodářství
+        (ISOH)","popis":"","hash":"6DD90F9F47374E6BC33DA1E5E952CF9E"},{"hostid":"10471","host":"HTTPS
+        intenzitadopravy.plzen.eu","url":"https://intenzitadopravy.plzen.eu","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10471","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10471?h=A65DBD16E168080A1593B221028688CB","urad":"Město
+        Plzeň","publicname":"Intenzita dopravy v Plzni","popis":"Aplikace modeluje
+        mimořádné situace v dopravě, jakými jsou například zúžení nebo uzavírky komunikací,
+        a předpovídá tak dopad těchto staveb na dopravu ve městě.","hash":"A65DBD16E168080A1593B221028688CB"},{"hostid":"10503","host":"HTTPS
+        isir.justice.cz-8443 IsirWsPublicService","url":"https://isir.justice.cz:8443/isir_public_ws/IsirWsPublicService?wsdl","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10503","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10503?h=24814D6B0401E684157E30C3DBFE460E","urad":"Ministerstvo
+        spravedlnosti","publicname":"API insolvenčního rejstříku","popis":"API insolvenčního
+        rejstříku","hash":"24814D6B0401E684157E30C3DBFE460E"},{"hostid":"10477","host":"HTTPS
+        geoportal.msk.cz","url":"https://geoportal.msk.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10477","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10477?h=0C630D85D2C640589E16D4BABC703E21","urad":"Moravskoslezský
+        kraj","publicname":"Geodata Moravskoslezského kraje","popis":"","hash":"0C630D85D2C640589E16D4BABC703E21"},{"hostid":"10499","host":"HTTPS
+        golemio.cz 506","url":"https://golemio.cz/cs/node/506","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10499","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10499?h=2E3362A30729D951D64240AAED48E59A","urad":"Operátor
+        ICT","publicname":"Datová platformy Prahy","popis":"Data, která mají přímou
+        vazbu na konkrétní potřeby hlavního města Prahy, jeho občanů a návštěvníků.","hash":"2E3362A30729D951D64240AAED48E59A"},{"hostid":"10497","host":"HTTPS
+        www.coi.cz otevrena-data","url":"https://www.coi.cz/pro-spotrebitele/otevrena-data/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10497","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10497?h=8E41A2665FE7F08FC199CEFCBF9A28B9","urad":"Česká
+        obchodní inspekce","publicname":"Open data ČOI","popis":"Open data  Česká
+        obchodní inspekce","hash":"8E41A2665FE7F08FC199CEFCBF9A28B9"},{"hostid":"10485","host":"HTTPS
+        ms14opendata.mssf.cz","url":"https://ms14opendata.mssf.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10485","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10485?h=9CCAAE55BDE2447FA8A7DB4FE28A42F7","urad":"Ministerstvo
+        pro místní rozvoj","publicname":"MS2014+ Open data","popis":"Seznam výzev
+        a projektů pro programové období 2014-2020 ve strojově čitelném formátu.","hash":"9CCAAE55BDE2447FA8A7DB4FE28A42F7"},{"hostid":"10479","host":"HTTPS
+        opendata.ostrava.cz","url":"https://opendata.ostrava.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10479","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10479?h=BF4BC7A5BD6E1F67C768C16999E51132","urad":"Město
+        Ostrava","publicname":"Open data Ostrava","popis":"","hash":"BF4BC7A5BD6E1F67C768C16999E51132"},{"hostid":"10473","host":"extranet.kr-vysocina.cz","url":"http://extranet.kr-vysocina.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10473","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10473?h=04B7B2EA94C1F08D24C53AD3E6D38C8A","urad":"Kraj
+        Vysočina","publicname":"Poskytované služby krajem Vysočina","popis":"","hash":"04B7B2EA94C1F08D24C53AD3E6D38C8A"},{"hostid":"10481","host":"cedropendata.mfcr.cz","url":"http://cedropendata.mfcr.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10481","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10481?h=06221183AF43D4B25F55F79DF24BACAF","urad":"Ministerstvo
+        financí","publicname":"Open Data CEDR III","popis":"Centrální evidence dotací
+        (CEDR III) ve strojově čitelném formátu","hash":"06221183AF43D4B25F55F79DF24BACAF"},{"hostid":"10465","host":"HTTPS
+        www.dpp.cz mimoradne-udalosti","url":"https://www.dpp.cz/rss/cz/mimoradne-udalosti.xml","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10465","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10465?h=D78D7A245CF3C38099DEA13CC212223A","urad":"Dopravní
+        podnik hlavního města Prahy","publicname":"Mimořádné události v pražské dopravě","popis":"Dopravní
+        podnik hlavního města Prahy","hash":"D78D7A245CF3C38099DEA13CC212223A"},{"hostid":"10483","host":"opendata.kr-vysocina.cz","url":"http://opendata.kr-vysocina.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10483","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10483?h=54AAD170C0CF1165EBE73293E6BB6FAA","urad":"Kraj
+        Vysočina","publicname":"Open data Vysočina","popis":"OpenData | Kraj Vysočina","hash":"54AAD170C0CF1165EBE73293E6BB6FAA"},{"hostid":"10469","host":"opendata.npsumava.cz","url":"http://opendata.npsumava.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10469","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10469?h=9E9E6DFA329DD47F278EF6598484F989","urad":"Správa
+        Národního parku Šumava","publicname":"Open data Šumava","popis":"Otevřená
+        data Sprava NPS","hash":"9E9E6DFA329DD47F278EF6598484F989"},{"hostid":"10466","host":"opendata.iprpraha.cz","url":"http://opendata.iprpraha.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10466","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10466?h=F06E017ACA724E79AE1F4233BBAC32AC","urad":"Institut
+        plánování a rozvoje hlavního města Prahy","publicname":"Geo data Praha","popis":"Pražská
+        otevřená data","hash":"F06E017ACA724E79AE1F4233BBAC32AC"},{"hostid":"10493","host":"data.nku.cz","url":"http://data.nku.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10493","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10493?h=082D8E72492AC5D71A1E2EBD881AB05F","urad":"NKÚ","publicname":"Open
+        data NKÚ","popis":"","hash":"082D8E72492AC5D71A1E2EBD881AB05F"},{"hostid":"10482","host":"opendata.mzp.cz","url":"http://opendata.mzp.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10482","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10482?h=19B3784E9243121A0A0606E716504941","urad":"Ministerstvo
+        životního prostředí","publicname":"Open data MŽP","popis":"Ministerstvo životního
+        prostředí","hash":"19B3784E9243121A0A0606E716504941"},{"hostid":"10495","host":"services.cuzk.cz","url":"http://services.cuzk.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10495","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10495?h=3253EB48B89B7389AF2B00D3D3E861A5","urad":"ČÚZK","publicname":"Geo
+        data ČÚZK","popis":"ČÚZK - Mapové služby","hash":"3253EB48B89B7389AF2B00D3D3E861A5"},{"hostid":"10478","host":"opendata.krnap.cz","url":"http://opendata.krnap.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10478","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10478?h=16579FEB68652E65622B970FC03C6990","urad":"Správa
+        Krkonošského národního parku","publicname":"Open data KRNAP","popis":"Open
+        DATA | Správa Krkonošského národního parku","hash":"16579FEB68652E65622B970FC03C6990"},{"hostid":"10492","host":"kod.opava-city.cz","url":"http://kod.opava-city.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10492","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10492?h=077AD5CE618A078A7F03A43FD8E11FBA","urad":"Město
+        Opava","publicname":"Open data Opava","popis":"Katalog otevřených dat statutárního
+        města Opavy","hash":"077AD5CE618A078A7F03A43FD8E11FBA"},{"hostid":"10488","host":"mapy.ostrava.cz","url":"http://mapy.ostrava.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10488","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10488?h=7F19DFC4D83BA8CC396325BF8D7C1888","urad":"Město
+        Ostrava","publicname":"Geo data Ostrava","popis":"Mapový portál Statutárního
+        města Ostravy | GIS | mapy | mapové služby | územní plán města | cenová mapa","hash":"7F19DFC4D83BA8CC396325BF8D7C1888"},{"hostid":"10505","host":"opendata.mfcr.cz
+        catalog","url":"http://opendata.mfcr.cz/catalog/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10505","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10505?h=7524D808A05EEDCF618B6C8976EC8523","urad":"Ministerstvo
+        financí","publicname":"MF ČR Open data","popis":"Otevřená data Ministerstva
+        financí","hash":"7524D808A05EEDCF618B6C8976EC8523"},{"hostid":"10480","host":"opendata.praha.eu","url":"http://opendata.praha.eu","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10480","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10480?h=DA2773D4137B5E9F9EE4204584BC5477","urad":"Magistrát
+        Praha","publicname":"Open data Praha","popis":"Pražská opendata","hash":"DA2773D4137B5E9F9EE4204584BC5477"},{"hostid":"10470","host":"mapy.plzen.eu","url":"http://mapy.plzen.eu","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10470","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10470?h=1B0AD8304021E7880CD75D0DE4B52648","urad":"Město
+        Plzeň","publicname":"Geo data Plzeň","popis":"","hash":"1B0AD8304021E7880CD75D0DE4B52648"},{"hostid":"10476","host":"www.czechtourism.cz
+        otevrena-data","url":"http://www.czechtourism.cz/clanky/otevrena-data/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10476","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10476?h=04124FCC2C3410FEDCFC9C2623FFD3C4","urad":"Czechtourism","publicname":"Open
+        data Czechtourism","popis":"","hash":"04124FCC2C3410FEDCFC9C2623FFD3C4"},{"hostid":"10475","host":"www.geoportalpraha.cz","url":"http://www.geoportalpraha.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10475","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10475?h=228BE53130B351D3750DD73A45989A7A","urad":"IPR
+        Praha","publicname":"Geoportal Praha","popis":"","hash":"228BE53130B351D3750DD73A45989A7A"},{"hostid":"10177","host":"HTTPS
+        data.cssz.cz","url":"https://data.cssz.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10177","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10177?h=C68D561BD75F12311AB20D5CC6C46281","urad":"ČSSZ","publicname":"Open
+        data ČSSZ","popis":"Publikace a vizualizace otevřených dat, která vlastní
+        a spravuje Česká správa sociálního zabezpečení ","hash":"C68D561BD75F12311AB20D5CC6C46281"}]'
+  recorded_at: 2021-02-20 17:52:42 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4
