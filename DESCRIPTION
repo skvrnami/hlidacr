@@ -25,5 +25,6 @@ Imports:
     purrr,
     stringr,
     curl,
-    usethis
+    usethis,
+    urltools
 VignetteBuilder: knitr
