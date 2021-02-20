@@ -1,9 +1,12 @@
-library("vcr") # *Required* as vcr is set up on loading
+library(vcr)
 
-vcr_dir <- vcr::vcr_test_path("fixtures")
+invisible(vcr::vcr_configure(
+    dir = vcr::vcr_test_path("fixtures"),
+    filter_request_headers = list(Authorization = "My token is safe")
+))
 
 if (!nzchar(Sys.getenv("HLIDAC_TOKEN"))) {
-    if (dir.exists(vcr_dir)) {
+    if (dir.exists(vcr::vcr_test_path("fixtures"))) {
         # Fake API token to fool our package
         Sys.setenv("HLIDAC_TOKEN" = "foobar")
     } else {
@@ -12,10 +15,5 @@ if (!nzchar(Sys.getenv("HLIDAC_TOKEN"))) {
              call. = FALSE)
     }
 }
-
-invisible(vcr::vcr_configure(
-    dir = vcr_dir,
-    filter_request_headers = list(Authorization = "My token is safe")
-))
 
 vcr::check_cassette_names()
