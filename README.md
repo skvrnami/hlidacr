@@ -5,8 +5,8 @@
 
 <!-- badges: start -->
 
-[![Codecov test
-coverage](https://codecov.io/gh/skvrnami/hlidacr/branch/master/graph/badge.svg)](https://codecov.io/gh/skvrnami/hlidacr?branch=master)
+[![R build
+status](https://github.com/skvrnami/hlidacr/workflows/R-CMD-check/badge.svg)](https://github.com/skvrnami/hlidacr/actions)
 <!-- badges: end -->
 
 The goal of hlidacr is to provide access to the data published by
@@ -41,9 +41,9 @@ TOKEN <- Sys.getenv("HLIDAC_TOKEN")
 datasets <- get_datasets(TOKEN)
 str(datasets, max.level = 1)
 #> List of 3
-#>  $ Total  : int 28
+#>  $ Total  : int 35
 #>  $ Page   : int 1
-#>  $ Results:'data.frame': 28 obs. of  16 variables:
+#>  $ Results:'data.frame': 35 obs. of  16 variables:
 
 head(datasets$Results[,1:2], 10)
 #>                          id                               name
