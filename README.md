@@ -7,6 +7,7 @@
 
 [![R build
 status](https://github.com/skvrnami/hlidacr/workflows/R-CMD-check/badge.svg)](https://github.com/skvrnami/hlidacr/actions)
+[![codecov](https://codecov.io/gh/skvrnami/hlidacr/branch/main/graph/badge.svg?token=FWP73F1DOL)](https://codecov.io/gh/skvrnami/hlidacr)
 <!-- badges: end -->
 
 The goal of hlidacr is to provide access to the data published by
