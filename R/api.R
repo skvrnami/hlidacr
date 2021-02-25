@@ -17,6 +17,7 @@
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_datasets <- function(token = NULL) {
   check_token(token)
@@ -49,6 +50,7 @@ get_datasets <- function(token = NULL) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_dataset_metadata <- function(dataset_id, token = NULL) {
   check_token(token)
@@ -87,6 +89,7 @@ get_dataset_metadata <- function(dataset_id, token = NULL) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_dataset_data <- function(dataset_id, token = NULL, query = NULL, page = 1, sort = NULL, desc = NULL) {
   check_token(token)
@@ -139,6 +142,7 @@ get_dataset_data <- function(dataset_id, token = NULL, query = NULL, page = 1, s
 #' @seealso
 #' \code{\link{get_dataset_data}}
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_dataset_record_detail <- function(dataset_id, item_id, token = NULL) {
   check_token(token)
@@ -175,6 +179,7 @@ get_dataset_record_detail <- function(dataset_id, item_id, token = NULL) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_company <- function(company_name, token = NULL) {
   check_token(token)
@@ -219,6 +224,7 @@ get_company <- function(company_name, token = NULL) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_person <- function(person_id, token = NULL) {
   check_token(token)
@@ -259,6 +265,7 @@ get_person <- function(person_id, token = NULL) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 search_person <- function(query, party = NULL, token = NULL){
   check_token(token)
@@ -313,6 +320,7 @@ search_person <- function(query, party = NULL, token = NULL){
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_person_social <- function(types, token){
   check_token(token)
@@ -335,7 +343,7 @@ get_person_social <- function(types, token){
 
 #' Search contract
 #'
-#' @param query Search query
+#' @param query Fulltext search query
 #' @param page Page of results
 #' @param sort Ordering of the results, the available options are the following:
 #' - 0: sort by relevance
@@ -363,7 +371,12 @@ get_person_social <- function(types, token){
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
+#'
+#' \url{https://www.hlidacstatu.cz/napoveda}
+#'
+#' \url{https://smlouvy.gov.cz/}
 search_contracts <- function(query, token = NULL, page = 1, sort = 0) {
   check_token(token)
   check_connection()
@@ -409,7 +422,10 @@ search_contracts <- function(query, token = NULL, page = 1, sort = 0) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
+#'
+#' \url{https://smlouvy.gov.cz/}
 get_contract <- function(id, token = NULL) {
   check_token(token)
   check_connection()
@@ -439,7 +455,10 @@ get_contract <- function(id, token = NULL) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
+#'
+#' \url{https://smlouvy.gov.cz/}
 get_contract_text <- function(id, token = NULL) {
   check_token(token)
   check_connection()
@@ -478,6 +497,7 @@ get_contract_text <- function(id, token = NULL) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_websites <- function(token = NULL) {
   check_token(token)
@@ -511,6 +531,7 @@ get_websites <- function(token = NULL) {
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_website_detail <- function(id, token = NULL) {
   check_token(token)

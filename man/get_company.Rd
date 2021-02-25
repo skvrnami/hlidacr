@@ -28,6 +28,7 @@ get_company("Agrofert", token = "XXXX")
 }
 \seealso{
 \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 }
 \concept{Companies}

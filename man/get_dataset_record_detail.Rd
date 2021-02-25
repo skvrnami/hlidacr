@@ -27,6 +27,7 @@ get_dataset_record_detail("ministri", item_id = 1, token = "XXXX")
 \seealso{
 \code{\link{get_dataset_data}}
 \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 
 Other Datasets: 

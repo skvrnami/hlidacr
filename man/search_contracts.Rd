@@ -41,6 +41,7 @@ search_contracts(query = "golf", token = "XXXX")
 }
 \seealso{
 \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 }
 \concept{Contracts}

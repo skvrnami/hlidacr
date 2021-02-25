@@ -3,7 +3,7 @@ Type: Package
 Title: Access Data from the Hlídač státu API
 Version: 0.1.0
 Authors@R:
-    person("Michael", "Škvrňák", email = "michael.skvrnak@protonmail.com", role = c("aut", "cre"))
+    person("Michael", "Škvrňák", email = "michael.skvrnak@protonmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0003-4647-4095"))
 Description: Provides access to datasets published by Hlídač státu, 
     a Czech watchdog NGO, via their API. 
 License: MIT + file LICENSE

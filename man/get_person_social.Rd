@@ -34,6 +34,7 @@ get_person_social(types = c("Twitter", "Instagram"), token = "XXXX")
 }
 \seealso{
 \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 
 Other Persons: 

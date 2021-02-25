@@ -27,5 +27,6 @@ get_website_detail(id = "10107", token = "XXXX")
 }
 \seealso{
 \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 }
