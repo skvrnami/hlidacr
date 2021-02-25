@@ -13,13 +13,34 @@ search_contracts(query, token = NULL, page = 1, sort = 0)
 
 \item{page}{Page of results}
 
-\item{sort}{Ordering of the results}
+\item{sort}{Ordering of the results, the available options are the following:
+- 0: sort by relevance
+- 1: recently added contracts first
+- 2: recently added contracts last
+- 3: the cheapest contracts first
+- 4: the most expensive contracts first
+- 5: recently concluded contracts first
+- 6: recently concluded contracts last
+- 7: the most defective contracts first
+- 8: sort by purchaser
+- 9: sort by supplier}
+}
+\value{
+list containing 3 elements:
+- Total: Total number of datasets available (integer)
+- Page: Page of the result (integer)
+- Results: Data.frame with data concerning the datasets
 }
 \description{
 Search contract
 }
 \examples{
 \dontrun{
-search_contracts("golf", token = "XXXX")
+search_contracts(query = "golf", token = "XXXX")
 }
 }
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
+}
+\concept{Contracts}

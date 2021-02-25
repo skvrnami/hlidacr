@@ -26,6 +26,12 @@ get_dataset_data(
 
 \item{desc}{Descending or ascending sorting}
 }
+\value{
+list containing 3 elements:
+- Total: Total number of datasets available (integer)
+- Page: Page of the result (integer), equal to the `page` argument of the function
+- Results: Data.frame with data, columns vary depending on the dataset
+}
 \description{
 Get data from the dataset
 }
@@ -35,3 +41,13 @@ get_dataset_data("ministri", token = "XXXX")
 get_dataset_data("ministri", query = "Zeman", page = 1, token = "XXXX")
 }
 }
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
+
+Other Datasets: 
+\code{\link{get_dataset_metadata}()},
+\code{\link{get_dataset_record_detail}()},
+\code{\link{get_datasets}()}
+}
+\concept{Datasets}

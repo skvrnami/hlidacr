@@ -12,11 +12,32 @@ get_person_social(types, token)
 
 \item{token}{Access token}
 }
+\value{
+data.frame with data on persons' social accounts with the
+following columns:
+- TitulPred: academic titles written before person's name
+- Jmeno: given name
+- Prijmeni: surname
+- TitulPo: academic titles written after person's name
+- NameId: person's ID
+- Profile: URL of profile at hlidacstatu.cz
+- SocialniSite: data.frame with data on social accounts (Type of social media,
+Id of the social media account, URL)
+}
 \description{
 Get person social media accounts
 }
 \examples{
 \dontrun{
-get_person_social(c("Twitter", "Instagram"), token = "XXXX")
+get_person_social(types = c("Twitter", "Instagram"), token = "XXXX")
 }
 }
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
+
+Other Persons: 
+\code{\link{get_person}()},
+\code{\link{search_person}()}
+}
+\concept{Persons}

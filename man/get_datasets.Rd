@@ -10,7 +10,11 @@ get_datasets(token = NULL)
 \item{token}{Authorization token}
 }
 \value{
-Response from the server containing list of all datasets available
+Response from the server containing list of all datasets available.
+The list contains 3 elements:
+- Total: Total number of datasets available (integer)
+- Page: Page of the result (integer)
+- Results: Data.frame with data concerning the datasets
 }
 \description{
 Get list of datasets available via Hlídač státu API
@@ -20,3 +24,13 @@ Get list of datasets available via Hlídač státu API
 get_datasets(token = "XXXX")
 }
 }
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
+
+Other Datasets: 
+\code{\link{get_dataset_data}()},
+\code{\link{get_dataset_metadata}()},
+\code{\link{get_dataset_record_detail}()}
+}
+\concept{Datasets}

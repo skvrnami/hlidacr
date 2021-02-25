@@ -11,6 +11,18 @@ get_contract_text(id, token = NULL)
 
 \item{token}{Authorization token}
 }
+\value{
+Character vector containing text of the contract
+}
 \description{
 Get contract text
+}
+\examples{
+\dontrun{
+get_contract_text(id = "1086905", token = "XXXX")
+}
+}
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
 }

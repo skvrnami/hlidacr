@@ -12,7 +12,7 @@ get_dataset_metadata(dataset_id, token = NULL)
 \item{token}{Authorization token}
 }
 \value{
-Response from the server containing metadata related to the specified dataset
+List containing metadata related to the specified dataset
 }
 \description{
 Get metadata related to specified dataset.
@@ -22,3 +22,13 @@ Get metadata related to specified dataset.
 get_dataset_metadata("ministri", token = "XXXX")
 }
 }
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
+
+Other Datasets: 
+\code{\link{get_dataset_data}()},
+\code{\link{get_dataset_record_detail}()},
+\code{\link{get_datasets}()}
+}
+\concept{Datasets}

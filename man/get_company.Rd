@@ -11,6 +11,13 @@ get_company(company_name, token = NULL)
 
 \item{token}{Access token}
 }
+\value{
+list with 3 elements:
+- ICO: ID number of the company
+- Jmeno: Name of the company
+- DatoveSchranky: Data post box - electronic repository for communication between
+public institutions and private companies/people
+}
 \description{
 Get company details
 }
@@ -19,3 +26,8 @@ Get company details
 get_company("Agrofert", token = "XXXX")
 }
 }
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
+}
+\concept{Companies}

@@ -4,20 +4,40 @@
 \alias{search_person}
 \title{Get person details}
 \usage{
-search_person(query, party, token = NULL)
+search_person(query, party = NULL, token = NULL)
 }
 \arguments{
-\item{query}{Search query for a person}
+\item{query}{Search query for a person, required parameter}
 
 \item{party}{Search query for a political party}
 
 \item{token}{Access token}
+}
+\value{
+data.frame with found persons with the following columns:
+- Jmeno: given name
+- Prijmeni: surname
+- Narozeni: date of birth
+- NameId: person's ID
+- Profile: URL of profile at hlidacstatu.cz
+- TitulPred: academic titles written before person's name
+- TitulPo: academic titles written after person's name
 }
 \description{
 Get person details
 }
 \examples{
 \dontrun{
+search_person(query = "Kalousek", token = "XXXX")
 search_person(query = "Kalousek", party = "TOP 09", token = "XXXX")
 }
 }
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
+
+Other Persons: 
+\code{\link{get_person_social}()},
+\code{\link{get_person}()}
+}
+\concept{Persons}

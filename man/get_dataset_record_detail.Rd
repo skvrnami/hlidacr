@@ -13,6 +13,9 @@ get_dataset_record_detail(dataset_id, item_id, token = NULL)
 
 \item{token}{Authorization token}
 }
+\value{
+list of vectors containing data related to the item
+}
 \description{
 Get record detail
 }
@@ -21,3 +24,14 @@ Get record detail
 get_dataset_record_detail("ministri", item_id = 1, token = "XXXX")
 }
 }
+\seealso{
+\code{\link{get_dataset_data}}
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
+
+Other Datasets: 
+\code{\link{get_dataset_data}()},
+\code{\link{get_dataset_metadata}()},
+\code{\link{get_datasets}()}
+}
+\concept{Datasets}

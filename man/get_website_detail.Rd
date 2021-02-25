@@ -11,6 +11,21 @@ get_website_detail(id, token = NULL)
 
 \item{token}{Authorization token}
 }
+\value{
+list with 2 elements:
+- Availability: data on availability of the website
+including response time and HTTP status code every minute
+- SSL: assessment of the website's SSL server configuration
+}
 \description{
 Get website detail
+}
+\examples{
+\dontrun{
+get_website_detail(id = "10107", token = "XXXX")
+}
+}
+\seealso{
+\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/api/v1/doc}
 }
