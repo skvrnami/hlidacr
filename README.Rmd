@@ -32,10 +32,21 @@ devtools::install_github("skvrnami/hlidacr")
 ```
 
 Besides the installation, you need access token for making API requests. 
-The access token is available [here](https://www.hlidacstatu.cz/api/v1/Index) after the registration
-at the Hlídač státu's website. 
+The access token is available [here](https://www.hlidacstatu.cz/api/v1/Index) 
+after the registration at the Hlídač státu's website. 
 
-## Example
+## Usage
+
+The package implements functions for accessing all publicly available API endpoints
+as defined in the [documentation](https://www.hlidacstatu.cz/api/v2/swagger/index)
+of the Hlídač státu API. 
+
+The data available via the API are related to:  
+- funding of political parties
+- transcriptions of parliamentary speeches
+- contracts between public institutions and private companies
+- availability of websites operated by public institutions
+etc.
 
 This is a basic example which shows you how to solve a common problem:
 

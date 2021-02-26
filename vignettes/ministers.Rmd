@@ -16,6 +16,24 @@ knitr::opts_chunk$set(
 )
 ```
 
+This vignette illustrates a basic workflow how to get data from
+Hlídač státu API using `hlidacr` package. 
+
+For accessing data from the API, you need to obtain API token at
+the website of [Hlídač státu](https://www.hlidacstatu.cz/api/v1/Index).
+To get a token, you need to register. 
+
+I store the token in the environment variable `HLIDAC_TOKEN`.
+
+For the purpose of the illustration, the following lines show
+how to get data from the dataset on Czech ministers' days in office
+which are stored in the dataset with id `ministri`.
+To get the data, you need to call the function `get_dataset_data` which
+returns a list with three elements: Total, Page, and Results. 
+Total indicates the total number of records, Page indicates the current
+page queried from the API and Results contain data.frame with the data. 
+Therefore, you need to iterate over all of the pages which I do using
+`purrr::map_df`. 
 
 ```{r, fig.show='hold', eval=FALSE}
 library(dplyr)
@@ -23,31 +41,22 @@ library(hlidacr)
 
 TOKEN <- Sys.getenv("HLIDAC_TOKEN")
 
-ministri <- get_dataset_data("ministri", token = TOKEN)
-total_records <- ministri$Total
-n_rows <- nrow(ministri$Results)
+ministers <- get_dataset_data("ministri", token = TOKEN)
+total_records <- ministers$Total
+n_rows <- nrow(ministers$Results)
 
 total_pages <- ceiling(total_records / n_rows)
 
 purrr::map_df(1:total_pages, function(x) {
   get_dataset_data("ministri", page = x, token = TOKEN)$Results
-}) -> ministri_all
+}) -> ministers_all
 
-
-NOW <- as.Date("2020-11-12")
-END <- as.Date("2021-02-01")
-
-REMAINING <- as.numeric(END - NOW)
-
-ministri_all %>%
+ministers_all %>%
   mutate(start_date = as.Date(zacatek, format = "%Y-%m-%dT%H:%M:%S"), 
          end_date = as.Date(konec, format = "%Y-%m-%dT%H:%M:%S"), 
-         term_days = end_date - start_date) %>%
-  mutate(term_days_higher = term_days > REMAINING) -> ministri_terms
+         term_days = end_date - start_date) -> ministers_terms
 
-table(ministri_terms$term_days_higher)
-
-implied::implied_probabilities(c(1.19, 4.05))$probabilities
-
+# Descriptive statistics of days in office
+summary(as.numeric(ministers_terms$term_days))
 ```
 
