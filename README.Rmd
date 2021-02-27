@@ -42,10 +42,10 @@ as defined in the [documentation](https://www.hlidacstatu.cz/api/v2/swagger/inde
 of the Hlídač státu API. 
 
 The data available via the API are related to:  
-- funding of political parties
-- transcriptions of parliamentary speeches
-- contracts between public institutions and private companies
-- availability of websites operated by public institutions
+- funding of political parties  
+- transcriptions of parliamentary speeches  
+- contracts between public institutions and private companies  
+- availability of websites operated by public institutions  
 etc.
 
 This is a basic example which shows you how to solve a common problem:
