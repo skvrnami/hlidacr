@@ -162,6 +162,101 @@ get_dataset_record_detail <- function(dataset_id, item_id, token = NULL) {
   jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
+#' Search subsidies
+#'
+#' @param query Search query
+#' @param page Page number
+#' @param sort Sorting of results, the available options are the following:
+#' - 0: order by relevance
+#' - 1: order by the date of signature, the most recent first
+#' - 2: order by the date of signature, the most recent last
+#' - 3: order by the size of the subsidy, the largest first
+#' - 4: order by the size of the subsidy, the largest last
+#' - 5: order by ICO in a descending order
+#' - 6: order by ICO in an ascending order
+#' @param token Authorization token
+#'
+#' @return list containing 3 elements:
+#' - Total: Total number of datasets available (integer)
+#' - Page: Page of the result (integer), equal to the `page` argument of the function
+#' - Results: Data.frame with data, columns vary depending on the dataset
+#' @export
+#' @family Subsidies
+#' @examples
+#' \dontrun{
+#' search_subsidies("golf", token = "XXXX")
+#' }
+#' @seealso
+#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
+#' \url{https://www.hlidacstatu.cz/api/v1/doc}
+search_subsidies <- function(query, page = 1, sort = NULL, token = NULL){
+  check_token(token)
+  check_connection()
+
+  if (!is.null(query)) {
+    query <- urltools::url_encode(query)
+    query <- glue::glue("dotaz={query}")
+  }
+
+  if (!is.null(page)) {
+    page <- glue::glue("strana={page}")
+  }
+
+  if (!is.null(sort)) {
+    sort <- glue::glue("razeni={sort}")
+  }
+
+  opts <- create_query(query, page, sort)
+
+  response <- httr::GET(
+    glue::glue(
+      "https://www.hlidacstatu.cz/api/v2/dotace/hledat?{opts}"
+    ),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+}
+
+#' Get subsidy
+#'
+#' @param id Subsidy ID
+#' @param token Authorization token
+#'
+#' @return list with details of the subsidy
+#' @export
+#' @family Subsidies
+#' @examples
+#' \dontrun{
+#' get_subsidy("deminimis-1000229862", token = "XXXX")
+#' }
+#' @seealso
+#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
+#' \url{https://www.hlidacstatu.cz/api/v1/doc}
+get_subsidy <- function(id, token = NULL){
+  check_token(token)
+  check_connection()
+
+  response <- httr::GET(
+    glue::glue(
+      "https://www.hlidacstatu.cz/api/v2/dotace/{id}"
+    ),
+    httr::add_headers(Authorization = token)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+}
+
 #' Get company details
 #'
 #' @param company_name Name of the company

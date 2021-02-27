@@ -1,0 +1,38 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hlidacstatu.cz/api/v2/dotace/deminimis-1000229862
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: My token is safe
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      cache-control: no-cache
+      pragma: no-cache
+      content-type: application/json; charset=utf-8
+      expires: '-1'
+      server: Microsoft-IIS/8.5
+      x-aspnet-version: 4.0.30319
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      access-control-expose-headers: Request-Context
+      x-powered-by: ASP.NET
+      access-control-allow-origin: '*'
+      date: Sat, 27 Feb 2021 13:29:53 GMT
+      content-length: '529'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"IdDotace":"deminimis-1000229862","DatumPodpisu":"2014-08-20T00:00:00","DatumAktualizace":"2016-05-05T00:00:00","NazevProjektu":"Mezinárodní
+        golfový turnaj v extrémním golfu","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"26012219","ObchodniJmeno":"ERIBOS
+        s. r. o."},"DotaceCelkem":5000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":5000.0,"CerpanoCelkem":5000.0,"JePujcka":false,"Poskytovatel":"Statutární
+        město Pardubice","Rok":2014,"Cerpani":[{"CastkaSpotrebovana":5000.0,"Rok":2014,"GuessedYear":2014}]}]}'
+  recorded_at: 2021-02-27 13:29:53 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4

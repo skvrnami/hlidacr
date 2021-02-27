@@ -52,6 +52,27 @@ test_that("get_dataset_record_detail() works", {
     testthat::expect_type(rec_detail$vlada, "character")
 })
 
+test_that("search_subsidies() works", {
+    vcr::use_cassette("search_subsidies", {
+        golf_sub <- search_subsidies("golf", page = 1,
+                                       token = Sys.getenv("HLIDAC_TOKEN"))
+    })
+
+    testthat::expect_type(golf_sub, "list")
+    testthat::expect_equal(nrow(golf_sub$Results), 25)
+})
+
+test_that("get_subsidy() works", {
+    vcr::use_cassette("get_subsidy", {
+        golf_sub1 <- get_subsidy("deminimis-1000229862",
+                                 token = Sys.getenv("HLIDAC_TOKEN"))
+    })
+
+    testthat::expect_type(golf_sub1, "list")
+    testthat::expect_type(golf_sub1$IdDotace, "character")
+    testthat::expect_type(golf_sub1$Prijemce, "list")
+})
+
 test_that("get_company() works", {
     vcr::use_cassette("get_company", {
         company <- get_company("Agrofert", token = Sys.getenv("HLIDAC_TOKEN"))

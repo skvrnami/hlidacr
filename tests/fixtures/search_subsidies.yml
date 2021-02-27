@@ -1,0 +1,119 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hlidacstatu.cz/api/v2/dotace/hledat?dotaz=golf&strana=1
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: My token is safe
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      cache-control: no-cache
+      pragma: no-cache
+      content-type: application/json; charset=utf-8
+      expires: '-1'
+      server: Microsoft-IIS/8.5
+      x-aspnet-version: 4.0.30319
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      access-control-expose-headers: Request-Context
+      x-powered-by: ASP.NET
+      access-control-allow-origin: '*'
+      date: Sat, 27 Feb 2021 13:29:52 GMT
+      content-length: '17762'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '{"Total":876,"Page":1,"Results":[{"IdDotace":"dotinfo-2ebb2071-8444-40be-8560-91af6e7fefa0","DatumPodpisu":"2019-11-19T00:00:00Z","KodProjektu":"CZ.03.1.52/0.0/0.0/19_097/0013009","NazevProjektu":"GOLF
+        CLUB U Hrádečku - podnikové vzdělávání zaměstnanců","Zdroj":{"Nazev":"dotinfo","Url":"https://www.dotinfo.cz/dotace/2ebb2071-8444-40be-8560-91af6e7fefa0"},"Prijemce":{"Ico":"25941364","ObchodniJmeno":"GOLF
+        CLUB U Hrádečku s.r.o.","Obec":"Mladé Buky","Okres":"","PSC":"54223"},"Program":{"Nazev":"GOLF","Kod":"CLUB
+        U Hrádečku - podnikové vzdělávání zaměstnanců"},"DotaceCelkem":0.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaPozadovana":522912.0,"CastkaRozhodnuta":522912.0,"JePujcka":false,"IcoPoskytovatele":"00551023","Poskytovatel":"Ministerstvo
+        práce a sociálních věcí","Cerpani":[]}],"Duplicita":"eufondy-14-20-737084126","Chyba":[]},{"IdDotace":"deminimis-1000229862","DatumPodpisu":"2014-08-20T00:00:00","DatumAktualizace":"2016-05-05T00:00:00","NazevProjektu":"Mezinárodní
+        golfový turnaj v extrémním golfu","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"26012219","ObchodniJmeno":"ERIBOS
+        s. r. o."},"DotaceCelkem":5000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":5000.0,"CerpanoCelkem":5000.0,"JePujcka":false,"Poskytovatel":"Statutární
+        město Pardubice","Rok":2014,"Cerpani":[{"CastkaSpotrebovana":5000.0,"Rok":2014,"GuessedYear":2014}]}]},{"IdDotace":"eufondy-04-06-cz-04-1-05-4-1-44-2-2970","DatumPodpisu":"2006-01-01T00:00:00","KodProjektu":"CZ.04.1.05/4.1.44.2/2970","NazevProjektu":"Golf
+        pro všechny","Zdroj":{"Nazev":"eufondy 2004-2006","Url":"https://www.dotaceeu.cz/cs/evropske-fondy-v-cr/programove-obdobi-2004-2006-(1)/vysledky-cerpani"},"Prijemce":{},"Program":{"Nazev":"Společný
+        regionální operační program","Kod":"CZ.04.1.05"},"DotaceCelkem":360555.02,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":86120.0,"CerpanoCelkem":86093.18,"Poskytovatel":"CZ","Cerpani":[{"CastkaSpotrebovana":86093.18,"GuessedYear":2006}]},{"CastkaRozhodnuta":274548.0,"CerpanoCelkem":274461.84,"Poskytovatel":"EU","Cerpani":[{"CastkaSpotrebovana":274461.84,"GuessedYear":2006}]}],"Chyba":["Chybí
+        informace o příjemci dotace."]},{"IdDotace":"deminimis-1000411828","DatumPodpisu":"2018-06-25T00:00:00","DatumAktualizace":"2019-11-15T00:00:00","NazevProjektu":"Golf
+        pro všechny","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"26907089","ObchodniJmeno":"GOLF
+        BRNO a.s."},"DotaceCelkem":200000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":200000.0,"CerpanoCelkem":200000.0,"JePujcka":false,"Poskytovatel":"Jihomoravský
+        kraj","Rok":2018,"Cerpani":[{"CastkaSpotrebovana":200000.0,"Rok":2018,"GuessedYear":2018}]}]},{"IdDotace":"deminimis-1000219471","DatumPodpisu":"2014-06-04T00:00:00","DatumAktualizace":"2016-05-05T00:00:00","KodProjektu":"OR/14/20837","NazevProjektu":"Golfový
+        turnaj","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"26012219","ObchodniJmeno":"ERIBOS
+        s. r. o."},"DotaceCelkem":30000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":30000.0,"CerpanoCelkem":30000.0,"JePujcka":false,"Poskytovatel":"Pardubický
+        kraj","Rok":2014,"Cerpani":[{"CastkaSpotrebovana":30000.0,"Rok":2014,"GuessedYear":2014}]}]},{"IdDotace":"deminimis-1000359004","DatumPodpisu":"2017-04-06T00:00:00","DatumAktualizace":"2017-04-10T00:00:00","NazevProjektu":"Mezinárodní
+        golfový turnaj 112 ANNIVERSARY GOLF TOURNAMENT","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"00516121","ObchodniJmeno":"Royal
+        Golf Club Mariánské Lázně z.s."},"DotaceCelkem":150000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":150000.0,"CerpanoCelkem":150000.0,"JePujcka":false,"Poskytovatel":"Karlovarský
+        kraj","Rok":2017,"Cerpani":[{"CastkaSpotrebovana":150000.0,"Rok":2017,"GuessedYear":2017}]}]},{"IdDotace":"deminimis-1000019853","DatumPodpisu":"2010-06-28T00:00:00","DatumAktualizace":"2010-07-01T11:49:00","KodProjektu":"70889546","NazevProjektu":"Golfový
+        turnaj mládeže 28.8.2010 - Den golfu pro mládež","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"62691899"},"DotaceCelkem":10000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":10000.0,"CerpanoCelkem":10000.0,"JePujcka":false,"Poskytovatel":"Královéhradecký
+        kraj","Rok":2010,"Cerpani":[{"CastkaSpotrebovana":10000.0,"Rok":2010,"GuessedYear":2010}]}]},{"IdDotace":"eufondy-04-06-cz-04-1-05-4-1-67-4-5632","DatumPodpisu":"2006-12-15T00:00:00","KodProjektu":"CZ.04.1.05/4.1.67.4/5632","NazevProjektu":"Poznej
+        golfový život - propagace golfové turistiky na Brněnsku","Zdroj":{"Nazev":"eufondy
+        2004-2006","Url":"https://www.dotaceeu.cz/cs/evropske-fondy-v-cr/programove-obdobi-2004-2006-(1)/vysledky-cerpani"},"Prijemce":{},"Program":{"Nazev":"Společný
+        regionální operační program","Kod":"CZ.04.1.05"},"DotaceCelkem":0.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":338749.0,"Poskytovatel":"CZ","Cerpani":[]},{"CastkaRozhodnuta":1015959.0,"Poskytovatel":"EU","Cerpani":[]}],"Chyba":["Chybí
+        informace o příjemci dotace."]},{"IdDotace":"eufondy-07-13-cz-1-14-3-3-00-03-01178","DatumPodpisu":"2009-02-04T00:00:00","KodProjektu":"CZ.1.14/3.3.00/03.01178","NazevProjektu":"Golfem
+        proti drogám","Zdroj":{"Nazev":"eufondy 2007-2013","Url":"https://dotaceeu.cz/cs/evropske-fondy-v-cr/programove-obdobi-2007-2013/cerpani-v-obdobi-2007-2013"},"Prijemce":{"Ico":"70853282","ObchodniJmeno":"Golfový
+        klub Hluboká nad Vltavou","Obec":"Hluboká nad Vltavou","PSC":"37341"},"Program":{"Nazev":"ROP
+        Jihozápad","Kod":"CZ.1.14"},"DotaceCelkem":4909407.3099999997,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":754749.0999999996,"CerpanoCelkem":736975.3899999997,"Poskytovatel":"CZ","Cerpani":[{"CastkaSpotrebovana":736975.3899999997,"GuessedYear":2009}]},{"CastkaRozhodnuta":4273058.9,"CerpanoCelkem":4172431.92,"Poskytovatel":"EU","Cerpani":[{"CastkaSpotrebovana":4172431.92,"GuessedYear":2009}]}],"Chyba":[]},{"IdDotace":"cedr-b52c4c2104900971b53d05e989b59372274d0db6","DatumPodpisu":"2010-01-01T00:00:00Z","DatumAktualizace":"2012-05-16T21:44:01Z","KodProjektu":"117D712000008","NazevProjektu":"RELAX
+        & GOLF 60 +","Zdroj":{"Nazev":"cedr","Url":"http://cedropendata.mfcr.cz/c3lod/cedr/resource/Dotace/B52C4C2104900971B53D05E989B59372274D0DB6"},"Prijemce":{"Ico":"25022962","ObchodniJmeno":"CENTRUM
+        BABYLON, a.s.","Obec":"Liberec","Okres":"Liberec","PSC":"46007"},"Program":{"Nazev":"Cestovní
+        ruch pro všechny","Kod":"117D71200"},"DotaceCelkem":0.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaPozadovana":1486105.0,"CastkaRozhodnuta":1486105.0,"CerpanoCelkem":0.0,"JePujcka":false,"Poskytovatel":"Ministerstvo
+        pro místní rozvoj","Rok":2010,"ZdrojFinanci":"Ministerstvo pro místní rozvoj","Cerpani":[{"CastkaSpotrebovana":0.0,"Rok":2010,"GuessedYear":2010}]},{"CastkaPozadovana":994750.0,"CastkaRozhodnuta":994750.0,"CerpanoCelkem":0.0,"JePujcka":false,"Poskytovatel":"Ministerstvo
+        pro místní rozvoj","Rok":2010,"ZdrojFinanci":"Ministerstvo pro místní rozvoj","Cerpani":[{"CastkaSpotrebovana":0.0,"Rok":2010,"GuessedYear":2010}]}],"Chyba":[]},{"IdDotace":"cedr-00a5c71396e213130b30d9e8bb6458e8c9d9ed12","DatumPodpisu":"2007-01-12T00:00:00Z","DatumAktualizace":"2009-10-15T08:14:27Z","KodProjektu":"CZ.04.1.05/4.1.45.3/3697","NazevProjektu":"Jižní
+        Čechy golfové","Zdroj":{"Nazev":"cedr","Url":"http://cedropendata.mfcr.cz/c3lod/cedr/resource/Dotace/00A5C71396E213130B30D9E8BB6458E8C9D9ED12"},"Prijemce":{"Ico":"26094134","ObchodniJmeno":"Ekologos,
+        o.p.s.","Obec":"České Budějovice","Okres":"České Budějovice","PSC":"37001"},"Program":{"Nazev":"Společný
+        regionální operační program","Kod":"CZ.04.1.05"},"DotaceCelkem":432180.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":108045.0,"CerpanoCelkem":108045.0,"JePujcka":false,"Poskytovatel":"Ministerstvo
+        pro místní rozvoj","Rok":2007,"ZdrojFinanci":"Evropský fond pro regionální
+        rozvoj","Cerpani":[{"CastkaSpotrebovana":108045.0,"Rok":2007,"GuessedYear":2007}]},{"CastkaRozhodnuta":324135.0,"CerpanoCelkem":324135.0,"JePujcka":false,"Poskytovatel":"Ministerstvo
+        pro místní rozvoj","Rok":2007,"ZdrojFinanci":"Evropský fond pro regionální
+        rozvoj","Cerpani":[{"CastkaSpotrebovana":324135.0,"Rok":2007,"GuessedYear":2007}]}],"Chyba":[]},{"IdDotace":"deminimis-1000133174","DatumPodpisu":"2012-11-01T00:00:00","DatumAktualizace":"2012-11-02T00:00:00","KodProjektu":"12/SML
+        1546","NazevProjektu":"Dětský golfový turnaj","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"22825029","ObchodniJmeno":"Golf
+        Club Bitozeves z.s."},"DotaceCelkem":20000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":20000.0,"CerpanoCelkem":20000.0,"JePujcka":false,"Poskytovatel":"Ústecký
+        kraj","Rok":2012,"Cerpani":[{"CastkaSpotrebovana":20000.0,"Rok":2012,"GuessedYear":2012}]}]},{"IdDotace":"eufondy-04-06-cz-04-1-05-4-1-45-3-3697","DatumPodpisu":"2006-03-01T00:00:00","KodProjektu":"CZ.04.1.05/4.1.45.3/3697","NazevProjektu":"Jižní
+        Čechy golfové","Zdroj":{"Nazev":"eufondy 2004-2006","Url":"https://www.dotaceeu.cz/cs/evropske-fondy-v-cr/programove-obdobi-2004-2006-(1)/vysledky-cerpani"},"Prijemce":{"ObchodniJmeno":"-","Obec":"Hluboká
+        nad Vltavou","PSC":"37341"},"Program":{"Nazev":"Společný regionální operační
+        program","Kod":"CZ.04.1.05"},"DotaceCelkem":432180.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":108045.0,"CerpanoCelkem":108045.0,"Poskytovatel":"CZ","Cerpani":[{"CastkaSpotrebovana":108045.0,"GuessedYear":2006}]},{"CastkaRozhodnuta":324135.0,"CerpanoCelkem":324135.0,"Poskytovatel":"EU","Cerpani":[{"CastkaSpotrebovana":324135.0,"GuessedYear":2006}]}],"Chyba":[]},{"IdDotace":"deminimis-1000313109","DatumPodpisu":"2016-04-13T00:00:00","DatumAktualizace":"2020-03-03T00:00:00","KodProjektu":"Smlouva
+        o poskytnutí dotace č. OR/16/20399 z Programu F1: Podpora volnočasových aktivit","NazevProjektu":"F1:
+        11. ročník Mezinárodního golfového turnaje v extrémním golfu","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"26012219","ObchodniJmeno":"ERIBOS
+        s. r. o."},"DotaceCelkem":20000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":20000.0,"CerpanoCelkem":20000.0,"JePujcka":false,"Poskytovatel":"Pardubický
+        kraj","Rok":2016,"Cerpani":[{"CastkaSpotrebovana":20000.0,"Rok":2016,"GuessedYear":2016}]}]},{"IdDotace":"deminimis-1000308894","DatumPodpisu":"2016-02-29T00:00:00","DatumAktualizace":"2018-12-13T00:00:00","KodProjektu":"81/2016","NazevProjektu":"golfové
+        kurzy pro děti ","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"22689915","ObchodniJmeno":"Spolek
+        přátel golfu Osík"},"DotaceCelkem":2000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":2000.0,"CerpanoCelkem":2000.0,"JePujcka":false,"Poskytovatel":"Město
+        Litomyšl","Rok":2016,"Cerpani":[{"CastkaSpotrebovana":2000.0,"Rok":2016,"GuessedYear":2016}]}]},{"IdDotace":"deminimis-1000111857","DatumPodpisu":"2012-04-30T00:00:00","DatumAktualizace":"2018-12-13T00:00:00","NazevProjektu":"výuka
+        golfu na mládež","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"22689915","ObchodniJmeno":"Spolek
+        přátel golfu Osík"},"DotaceCelkem":2000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":2000.0,"CerpanoCelkem":2000.0,"JePujcka":false,"Poskytovatel":"Město
+        Litomyšl","Rok":2012,"Cerpani":[{"CastkaSpotrebovana":2000.0,"Rok":2012,"GuessedYear":2012}]}]},{"IdDotace":"deminimis-1000229861","DatumPodpisu":"2014-08-20T00:00:00","DatumAktualizace":"2016-05-05T00:00:00","NazevProjektu":"Mezinárodní
+        golfový turnaj","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"26012219","ObchodniJmeno":"ERIBOS
+        s. r. o."},"DotaceCelkem":5000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":5000.0,"CerpanoCelkem":5000.0,"JePujcka":false,"Poskytovatel":"Statutární
+        město Pardubice","Rok":2014,"Cerpani":[{"CastkaSpotrebovana":5000.0,"Rok":2014,"GuessedYear":2014}]}]},{"IdDotace":"deminimis-1000268153","DatumPodpisu":"2015-04-24T00:00:00","DatumAktualizace":"2016-05-05T00:00:00","KodProjektu":"OR/15/21022","NazevProjektu":"10.
+        ročník golfového turnaje v extrémním golfu, Memoriál Jaromíra Kalouska","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"26012219","ObchodniJmeno":"ERIBOS
+        s. r. o."},"DotaceCelkem":20000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":20000.0,"CerpanoCelkem":20000.0,"JePujcka":false,"Poskytovatel":"Pardubický
+        kraj","Rok":2015,"Cerpani":[{"CastkaSpotrebovana":20000.0,"Rok":2015,"GuessedYear":2015}]}]},{"IdDotace":"eufondy-07-13-cz-1-11-2-2-00-02-00454","DatumPodpisu":"2008-12-15T00:00:00","KodProjektu":"CZ.1.11/2.2.00/02.00454","NazevProjektu":"Zažij
+        golfový život - propagace golfové turistiky v Jihomoravském kraji","Zdroj":{"Nazev":"eufondy
+        2007-2013","Url":"https://dotaceeu.cz/cs/evropske-fondy-v-cr/programove-obdobi-2007-2013/cerpani-v-obdobi-2007-2013"},"Prijemce":{"Ico":"26907089","ObchodniJmeno":"GOLF
+        BRNO a.s.","Obec":"Brno","PSC":"60200"},"Program":{"Nazev":"ROP NUTS II Jihovýchod","Kod":"CZ.1.11"},"DotaceCelkem":2868924.0000000001,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":473499.0,"CerpanoCelkem":430338.6000000001,"Poskytovatel":"CZ","Cerpani":[{"CastkaSpotrebovana":430338.6000000001,"GuessedYear":2008}]},{"CastkaRozhodnuta":2683161.0,"CerpanoCelkem":2438585.4,"Poskytovatel":"EU","Cerpani":[{"CastkaSpotrebovana":2438585.4,"GuessedYear":2008}]}],"Chyba":[]},{"IdDotace":"deminimis-1000415550","DatumPodpisu":"2018-07-25T00:00:00","DatumAktualizace":"2018-07-26T00:00:00","KodProjektu":"5987/SK/18","NazevProjektu":"Neinvestiční
+        dotace na \"Příspěvek na mezinárodní golfový turnaj - Golf Digest\".","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"00516121","ObchodniJmeno":"Royal
+        Golf Club Mariánské Lázně z.s."},"DotaceCelkem":60000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":60000.0,"CerpanoCelkem":60000.0,"JePujcka":false,"Poskytovatel":"Karlovarský
+        kraj","Rok":2018,"Cerpani":[{"CastkaSpotrebovana":60000.0,"Rok":2018,"GuessedYear":2018}]}]},{"IdDotace":"deminimis-1000073853","DatumPodpisu":"2011-07-07T00:00:00","DatumAktualizace":"2014-11-20T00:00:00","KodProjektu":"2192/2011","NazevProjektu":"Golfový
+        turnaj mládeže 27.8.2011 - Den golfu pro mládež, neinv. dotace","Zdroj":{"Nazev":"deminimis"},"Prijemce":{"Ico":"62691899","ObchodniJmeno":"Golf
+        Club Hradec Králové z.s."},"DotaceCelkem":22000.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":22000.0,"CerpanoCelkem":22000.0,"JePujcka":false,"Poskytovatel":"Královéhradecký
+        kraj","Rok":2011,"Cerpani":[{"CastkaSpotrebovana":22000.0,"Rok":2011,"GuessedYear":2011}]}]},{"IdDotace":"cedr-dd793dfc73a12a24ecac11837c6add0fb60176d3","DatumPodpisu":"2004-05-01T00:00:00Z","DatumAktualizace":"2005-07-15T16:19:25Z","KodProjektu":"2171120907","NazevProjektu":"Národní
+        golfové centrum Morava","Zdroj":{"Nazev":"cedr","Url":"http://cedropendata.mfcr.cz/c3lod/cedr/resource/Dotace/DD793DFC73A12A24ECAC11837C6ADD0FB60176D3"},"Prijemce":{"Ico":"00298808","ObchodniJmeno":"Obec
+        Dolany, 783 16 Dolany (okr. Olomouc)"},"Program":{"Nazev":"Podpora rozvoje
+        severozápadních Čech a Moravskoslezského regionu","Kod":"217112"},"DotaceCelkem":0.0,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaPozadovana":4000000.0,"CastkaRozhodnuta":4000000.0,"JePujcka":false,"Poskytovatel":"Ministerstvo
+        pro místní rozvoj","Rok":2002,"ZdrojFinanci":"Ministerstvo pro místní rozvoj","Cerpani":[]}],"Chyba":[]},{"IdDotace":"eufondy-07-13-cz-2-16-3-3-00-25082","DatumPodpisu":"2010-11-02T00:00:00","KodProjektu":"CZ.2.16/3.3.00/25082","NazevProjektu":"3D
+        Indoor golf centrum","Zdroj":{"Nazev":"eufondy 2007-2013","Url":"https://dotaceeu.cz/cs/evropske-fondy-v-cr/programove-obdobi-2007-2013/cerpani-v-obdobi-2007-2013"},"Prijemce":{"Ico":"28090101","ObchodniJmeno":"M&M
+        agency s.r.o.","Obec":"České Budějovice","PSC":"37001"},"Program":{"Nazev":"OP
+        Praha Konkurenceschopnost","Kod":"CZ.2.16"},"DotaceCelkem":4701449.5999999995,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":714660.0099999998,"CerpanoCelkem":705217.4399999995,"Poskytovatel":"CZ","Cerpani":[{"CastkaSpotrebovana":705217.4399999995,"GuessedYear":2010}]},{"CastkaRozhodnuta":4049739.99,"CerpanoCelkem":3996232.16,"Poskytovatel":"EU","Cerpani":[{"CastkaSpotrebovana":3996232.16,"GuessedYear":2010}]}],"Chyba":[]},{"IdDotace":"eufondy-04-06-cz-04-1-05-4-1-44-3-3650","DatumPodpisu":"2006-02-01T00:00:00","KodProjektu":"CZ.04.1.05/4.1.44.3/3650","NazevProjektu":"Marketingová
+        podpora jihočeského golfu","Zdroj":{"Nazev":"eufondy 2004-2006","Url":"https://www.dotaceeu.cz/cs/evropske-fondy-v-cr/programove-obdobi-2004-2006-(1)/vysledky-cerpani"},"Prijemce":{},"Program":{"Nazev":"Společný
+        regionální operační program","Kod":"CZ.04.1.05"},"DotaceCelkem":884394.6,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":211175.0,"CerpanoCelkem":211175.6,"Poskytovatel":"CZ","Cerpani":[{"CastkaSpotrebovana":211175.6,"GuessedYear":2006}]},{"CastkaRozhodnuta":673220.0,"CerpanoCelkem":673219.0,"Poskytovatel":"EU","Cerpani":[{"CastkaSpotrebovana":673219.0,"GuessedYear":2006}]}],"Chyba":["Chybí
+        informace o příjemci dotace."]},{"IdDotace":"eufondy-04-06-cz-04-3-07-4-3-01-3-3120","DatumPodpisu":"2006-10-01T00:00:00","KodProjektu":"CZ.04.3.07/4.3.01.3/3120","NazevProjektu":"VZDĚLÁVÁNÍ
+        V OBLASTI GOLFOVÉ TURISTIKY","Zdroj":{"Nazev":"eufondy 2004-2006","Url":"https://www.dotaceeu.cz/cs/evropske-fondy-v-cr/programove-obdobi-2004-2006-(1)/vysledky-cerpani"},"Prijemce":{"ObchodniJmeno":"-","Obec":"Praha
+        5","PSC":"15000"},"Program":{"Nazev":"Jednotný programový dokument pro Cíl
+        3 regionu hl.m.Praha","Kod":"CZ.04.3.07"},"DotaceCelkem":4738136.43,"PujckaCelkem":0.0,"Rozhodnuti":[{"CastkaRozhodnuta":2493000.0,"CerpanoCelkem":2369068.22,"Poskytovatel":"CZ","Cerpani":[{"CastkaSpotrebovana":2369068.22,"GuessedYear":2006}]},{"CastkaRozhodnuta":2493000.0,"CerpanoCelkem":2369068.21,"Poskytovatel":"EU","Cerpani":[{"CastkaSpotrebovana":2369068.21,"GuessedYear":2006}]}],"Chyba":[]}]}'
+  recorded_at: 2021-02-27 13:29:53 GMT
+  recorded_with: vcr/0.6.0, webmockr/0.7.4
