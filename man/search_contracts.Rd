@@ -7,7 +7,7 @@
 search_contracts(query, token = NULL, page = 1, sort = 0)
 }
 \arguments{
-\item{query}{Search query}
+\item{query}{Fulltext search query}
 
 \item{token}{Access token}
 
@@ -43,5 +43,9 @@ search_contracts(query = "golf", token = "XXXX")
 \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 
 \url{https://www.hlidacstatu.cz/api/v1/doc}
+
+\url{https://www.hlidacstatu.cz/napoveda}
+
+\url{https://smlouvy.gov.cz/}
 }
 \concept{Contracts}
