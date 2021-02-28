@@ -36,14 +36,15 @@ API endpoints as defined in the
 [documentation](https://www.hlidacstatu.cz/api/v2/swagger/index) of the
 Hlídač státu API.
 
-The data available via the API are related to:  
-\- funding of political parties  
-\- transcriptions of parliamentary floor debates, municipal council
-debates and other bodies - contracts between public institutions and
-private companies  
-\- subsidies - availability of websites operated by public
-institutions  
-etc.
+The data available via the API are related to:
+
+  - funding of political parties  
+  - transcriptions of parliamentary floor debates, municipal council
+    debates and other bodies  
+  - contracts between public institutions and private companies  
+  - subsidies  
+  - availability of websites operated by public institutions  
+    etc.
 
 ## Example
 
@@ -53,14 +54,6 @@ using `get_datasets()`.
 
 ``` r
 library(dplyr)
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
 library(hlidacr)
 
 # Authorization token
@@ -87,10 +80,12 @@ head(datasets$Results[,1:2], 10)
 #> 10 seznam-politickych-stran   Seznam politických stran a hnutí
 ```
 
-In general, the data are usually returned in a list with 3 elements:  
-\- Page  
-\- Total: total number of records  
-\- Results: data  
+In general, the data are usually returned in a list with 3 elements:
+
+  - Page  
+  - Total: total number of records  
+  - Results: data
+
 (Therefore, to get all the data you need to iterate over the pages by
 specifying particular page of the results you want)
 
@@ -145,13 +140,20 @@ head(golf_subsidies$Results %>% select(IdDotace, NazevProjektu, DotaceCelkem))
 ``` r
 golf_contracts <- search_contracts("golf")
 head(golf_contracts$Results %>% select(predmet, hodnotaBezDph))
-#>                                                   predmet hodnotaBezDph
-#> 1           836/OSRM/2017 smlouva o dílo - adventure golf        245000
-#> 2  Smlouva o poskytování reklamních a propagačních služeb         70000
-#> 3  Smlouva o poskytování reklamních a propagačních služeb        762000
-#> 4  Smlouva o poskytování reklamních a propagačních služeb        762000
-#> 5 Smlouva o poskytování reklamních a propagačních služeb         210000
-#> 6          Smlouva o dílo - výroba propagačního materiálu        105000
+#>                                                                                       predmet
+#> 1                                               836/OSRM/2017 smlouva o dílo - adventure golf
+#> 2                                      Smlouva o poskytování reklamních a propagačních služeb
+#> 3                                      Smlouva o poskytování reklamních a propagačních služeb
+#> 4                                      Smlouva o poskytování reklamních a propagačních služeb
+#> 5                                     Smlouva o poskytování reklamních a propagačních služeb 
+#> 6 Smlouva o dílo - Žižkova ul. – oprava chodníků – úsek Jilemnického – Novákova - Štefánikova
+#>   hodnotaBezDph
+#> 1        245000
+#> 2         70000
+#> 3        762000
+#> 4        762000
+#> 5        210000
+#> 6       2205569
 ```
 
 In addition, you can get the text of particular contract using

@@ -41,11 +41,12 @@ The package implements functions for accessing all publicly available API endpoi
 as defined in the [documentation](https://www.hlidacstatu.cz/api/v2/swagger/index)
 of the Hlídač státu API. 
 
-The data available via the API are related to:  
+The data available via the API are related to:
+
 - funding of political parties  
-- transcriptions of parliamentary floor debates, municipal council debates and other bodies
+- transcriptions of parliamentary floor debates, municipal council debates and other bodies  
 - contracts between public institutions and private companies  
-- subsidies 
+- subsidies  
 - availability of websites operated by public institutions  
 etc.
 
@@ -55,7 +56,7 @@ There are two types of datasets available at the Hlídač státu API.
 First, there are various collection of datasets whose list is available
 using `get_datasets()`.
 
-```{r example}
+```{r example, message=FALSE, warning=FALSE}
 library(dplyr)
 library(hlidacr)
 
@@ -68,10 +69,12 @@ str(datasets, max.level = 1)
 head(datasets$Results[,1:2], 10)
 ```
 
-In general, the data are usually returned in a list with 3 elements:  
+In general, the data are usually returned in a list with 3 elements:
+
 - Page  
 - Total: total number of records  
 - Results: data  
+
 (Therefore, to get all the data you need to iterate over the pages by specifying
 particular page of the results you want)
 
