@@ -19,7 +19,7 @@ Get metadata related to specified dataset.
 }
 \examples{
 \dontrun{
-get_dataset_metadata("ministri", token = "XXXX")
+get_dataset_metadata("ministri")
 }
 }
 \seealso{

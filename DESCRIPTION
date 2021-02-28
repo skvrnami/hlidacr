@@ -1,7 +1,7 @@
 Package: hlidacr
 Type: Package
 Title: Access Data from the Hlídač Státu API
-Version: 0.1.1
+Version: 0.1.2
 Authors@R:
     person("Michael", 
             "Škvrňák", 

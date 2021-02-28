@@ -19,7 +19,7 @@ Get subsidy
 }
 \examples{
 \dontrun{
-get_subsidy("deminimis-1000229862", token = "XXXX")
+get_subsidy("deminimis-1000229862")
 }
 }
 \seealso{

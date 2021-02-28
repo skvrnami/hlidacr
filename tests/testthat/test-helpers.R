@@ -15,11 +15,6 @@ test_that("checking token works", {
                  message = "No token defined.")
 })
 
-test_that("queries are created properly", {
-    expect_equal(create_query("page=1"), "page=1")
-    expect_equal(create_query("page=1", "sort=0"), "page=1&sort=0")
-})
-
 test_that("types of social is valid", {
     expect_error(check_types(NULL),
                  message = "No types specified. You need to specify at least one of the following types: 'Twitter', 'Facebook_page', 'Facebook_profile', 'Instagram', 'WWW', 'Youtube'")

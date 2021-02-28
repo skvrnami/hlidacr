@@ -32,7 +32,7 @@ Get person details
 }
 \examples{
 \dontrun{
-get_person("andrej-babis", token = "XXXX")
+get_person("andrej-babis")
 }
 }
 \seealso{

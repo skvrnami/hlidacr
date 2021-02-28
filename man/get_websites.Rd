@@ -27,7 +27,7 @@ Get websites
 }
 \examples{
 \dontrun{
-get_websites(token = "XXXX")
+get_websites()
 }
 }
 \seealso{

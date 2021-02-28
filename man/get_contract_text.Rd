@@ -19,7 +19,7 @@ Get contract text
 }
 \examples{
 \dontrun{
-get_contract_text(id = "1086905", token = "XXXX")
+get_contract_text(id = "1086905")
 }
 }
 \seealso{

@@ -38,7 +38,7 @@ Search subsidies
 }
 \examples{
 \dontrun{
-search_subsidies("golf", token = "XXXX")
+search_subsidies("golf")
 }
 }
 \seealso{

@@ -13,7 +13,7 @@
 #' @family Datasets
 #' @examples
 #' \dontrun{
-#' get_datasets(token = "XXXX")
+#' get_datasets()
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -24,7 +24,8 @@ get_datasets <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
   check_connection()
   response <- httr::GET(
     "https://www.hlidacstatu.cz/Api/v2/datasety/",
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -46,7 +47,7 @@ get_datasets <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @family Datasets
 #' @examples
 #' \dontrun{
-#' get_dataset_metadata("ministri", token = "XXXX")
+#' get_dataset_metadata("ministri")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -57,7 +58,8 @@ get_dataset_metadata <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"))
   check_connection()
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}"),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -84,8 +86,8 @@ get_dataset_metadata <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"))
 #' @family Datasets
 #' @examples
 #' \dontrun{
-#' get_dataset_data("ministri", token = "XXXX")
-#' get_dataset_data("ministri", query = "Zeman", page = 1, token = "XXXX")
+#' get_dataset_data("ministri")
+#' get_dataset_data("ministri", query = "Zeman", page = 1)
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -96,28 +98,14 @@ get_dataset_data <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"),
   check_token(token)
   check_connection()
 
-  if (!is.null(query)) {
-    query <- urltools::url_encode(query)
-    query <- glue::glue("dotaz={query}")
-  }
-
-  if (!is.null(page)) {
-    page <- glue::glue("strana={page}")
-  }
-
-  if (!is.null(sort)) {
-    sort <- glue::glue("sort={sort}")
-  }
-
-  if (!is.null(desc) && desc %in% c(0, 1)) {
-    desc <- glue::glue("desc={desc}")
-  }
-
-  opts <- create_query(query, page, sort, desc)
-
   response <- httr::GET(
-    glue::glue("https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}/hledat?{opts}"),
-    httr::add_headers(Authorization = token)
+    glue::glue("https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}/hledat"),
+    query = list(dotaz = query,
+                 strana = page,
+                 sort = sort,
+                 desc = desc),
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -138,7 +126,7 @@ get_dataset_data <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"),
 #' @family Datasets
 #' @examples
 #' \dontrun{
-#' get_dataset_record_detail("ministri", item_id = 1, token = "XXXX")
+#' get_dataset_record_detail("ministri", item_id = 1)
 #' }
 #' @seealso
 #' \code{\link{get_dataset_data}}
@@ -154,7 +142,8 @@ get_dataset_record_detail <- function(dataset_id, item_id,
     glue::glue(
       "https://www.hlidacstatu.cz/Api/v2/datasety/{dataset_id}/zaznamy/{item_id}"
     ),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -186,7 +175,7 @@ get_dataset_record_detail <- function(dataset_id, item_id,
 #' @family Subsidies
 #' @examples
 #' \dontrun{
-#' search_subsidies("golf", token = "XXXX")
+#' search_subsidies("golf")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -197,26 +186,13 @@ search_subsidies <- function(query, page = 1, sort = NULL,
   check_token(token)
   check_connection()
 
-  if (!is.null(query)) {
-    query <- urltools::url_encode(query)
-    query <- glue::glue("dotaz={query}")
-  }
-
-  if (!is.null(page)) {
-    page <- glue::glue("strana={page}")
-  }
-
-  if (!is.null(sort)) {
-    sort <- glue::glue("razeni={sort}")
-  }
-
-  opts <- create_query(query, page, sort)
-
   response <- httr::GET(
-    glue::glue(
-      "https://www.hlidacstatu.cz/api/v2/dotace/hledat?{opts}"
-    ),
-    httr::add_headers(Authorization = token)
+    "https://www.hlidacstatu.cz/api/v2/dotace/hledat",
+    query = list(dotaz = query,
+                 strana = page,
+                 razeni = sort),
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -236,7 +212,7 @@ search_subsidies <- function(query, page = 1, sort = NULL,
 #' @family Subsidies
 #' @examples
 #' \dontrun{
-#' get_subsidy("deminimis-1000229862", token = "XXXX")
+#' get_subsidy("deminimis-1000229862")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -250,7 +226,8 @@ get_subsidy <- function(id, token = Sys.getenv("HLIDAC_TOKEN")){
     glue::glue(
       "https://www.hlidacstatu.cz/api/v2/dotace/{id}"
     ),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -273,7 +250,7 @@ get_subsidy <- function(id, token = Sys.getenv("HLIDAC_TOKEN")){
 #' @family Companies
 #' @examples
 #' \dontrun{
-#' get_company("Agrofert", token = "XXXX")
+#' get_company("Agrofert")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -286,7 +263,8 @@ get_company <- function(company_name, token = Sys.getenv("HLIDAC_TOKEN")) {
   company_name <- urltools::url_encode(company_name)
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/firmy/{company_name}"),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -318,7 +296,7 @@ get_company <- function(company_name, token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @family Persons
 #' @examples
 #' \dontrun{
-#' get_person("andrej-babis", token = "XXXX")
+#' get_person("andrej-babis")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -330,7 +308,8 @@ get_person <- function(person_id, token = Sys.getenv("HLIDAC_TOKEN")) {
 
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/{person_id}"),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -358,8 +337,8 @@ get_person <- function(person_id, token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @family Persons
 #' @examples
 #' \dontrun{
-#' search_person(query = "Kalousek", token = "XXXX")
-#' search_person(query = "Kalousek", party = "TOP 09", token = "XXXX")
+#' search_person(query = "Kalousek")
+#' search_person(query = "Kalousek", party = "TOP 09")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -372,21 +351,14 @@ search_person <- function(query, party = NULL,
 
   if (is.null(query)) {
     usethis::ui_stop("Query is required.")
-  }else{
-    query <- urltools::url_encode(query)
-    query <- glue::glue("dotaz={query}")
   }
-
-  if (!is.null(party)) {
-    party <- urltools::url_encode(party)
-    party <- glue::glue("strana={party}")
-  }
-
-  opts <- create_query(query, party)
 
   response <- httr::GET(
-    glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/hledat?{opts}"),
-    httr::add_headers(Authorization = token)
+    "https://www.hlidacstatu.cz/api/v2/osoby/hledat",
+    query = list(dotaz = query,
+                 strana = party),
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -415,7 +387,7 @@ search_person <- function(query, party = NULL,
 #' @family Persons
 #' @examples
 #' \dontrun{
-#' get_person_social(types = c("Twitter", "Instagram"), token = "XXXX")
+#' get_person_social(types = c("Twitter", "Instagram"))
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -430,7 +402,8 @@ get_person_social <- function(types, token = Sys.getenv("HLIDAC_TOKEN")){
 
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/osoby/social?{opts}"),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -466,7 +439,7 @@ get_person_social <- function(types, token = Sys.getenv("HLIDAC_TOKEN")){
 #' @family Contracts
 #' @examples
 #' \dontrun{
-#' search_contracts(query = "golf", token = "XXXX")
+#' search_contracts(query = "golf")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -481,24 +454,17 @@ search_contracts <- function(query, token = Sys.getenv("HLIDAC_TOKEN"),
   check_token(token)
   check_connection()
 
-  if (!is.null(query)) {
-    query <- urltools::url_encode(query)
-    query <- glue::glue("dotaz={query}")
+  if (is.null(query)) {
+    usethis::ui_stop("Query is required.")
   }
-
-  if (!is.null(page)) {
-    page <- glue::glue("strana={page}")
-  }
-
-  if (!is.null(sort)) {
-    sort <- glue::glue("razeni={sort}")
-  }
-
-  opts <- create_query(query, page, sort)
 
   response <- httr::GET(
-    glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/hledat?{opts}"),
-    httr::add_headers(Authorization = token)
+    "https://www.hlidacstatu.cz/api/v2/smlouvy/hledat",
+    query = list(dotaz = query,
+                 strana = page,
+                 razeni = sort),
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -518,7 +484,7 @@ search_contracts <- function(query, token = Sys.getenv("HLIDAC_TOKEN"),
 #' @export
 #' @examples
 #' \dontrun{
-#' get_contract(id = "1086905", token = "XXXX")
+#' get_contract(id = "1086905")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -531,7 +497,8 @@ get_contract <- function(id, token = NULL) {
   check_connection()
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/{id}"),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -551,7 +518,7 @@ get_contract <- function(id, token = NULL) {
 #' @export
 #' @examples
 #' \dontrun{
-#' get_contract_text(id = "1086905", token = "XXXX")
+#' get_contract_text(id = "1086905")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -564,7 +531,8 @@ get_contract_text <- function(id, token = Sys.getenv("HLIDAC_TOKEN")) {
   check_connection()
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/smlouvy/text/{id}"),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -593,7 +561,7 @@ get_contract_text <- function(id, token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @export
 #' @examples
 #' \dontrun{
-#' get_websites(token = "XXXX")
+#' get_websites()
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -604,7 +572,8 @@ get_websites <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
   check_connection()
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/Weby"),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {
@@ -627,7 +596,7 @@ get_websites <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @export
 #' @examples
 #' \dontrun{
-#' get_website_detail(id = "10107", token = "XXXX")
+#' get_website_detail(id = "10107")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
@@ -638,7 +607,8 @@ get_website_detail <- function(id, token = Sys.getenv("HLIDAC_TOKEN")) {
   check_connection()
   response <- httr::GET(
     glue::glue("https://www.hlidacstatu.cz/api/v2/Weby/{id}"),
-    httr::add_headers(Authorization = token)
+    httr::add_headers(Authorization = token,
+                      user_agent)
   )
 
   if (response$status_code != 200) {

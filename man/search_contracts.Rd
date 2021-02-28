@@ -7,7 +7,7 @@
 search_contracts(query, token = Sys.getenv("HLIDAC_TOKEN"), page = 1, sort = 0)
 }
 \arguments{
-\item{query}{Fulltext search query}
+\item{query}{Full-text search query}
 
 \item{token}{Access token}
 
@@ -36,7 +36,7 @@ Search contract
 }
 \examples{
 \dontrun{
-search_contracts(query = "golf", token = "XXXX")
+search_contracts(query = "golf")
 }
 }
 \seealso{
