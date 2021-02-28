@@ -442,7 +442,7 @@ get_person_social <- function(types, token = Sys.getenv("HLIDAC_TOKEN")){
 
 #' Search contract
 #'
-#' @param query Fulltext search query
+#' @param query Full-text search query
 #' @param page Page of results
 #' @param sort Ordering of the results, the available options are the following:
 #' - 0: sort by relevance
