@@ -87,14 +87,15 @@ head(datasets$Results[,1:2], 10)
 #> 10 seznam-politickych-stran   Seznam politických stran a hnutí
 ```
 
-The data from these datasets can be obtained by `get_dataset_data`
-function using dataset’s ID. In general, the data are usually returned
-in a list with 3 elements:  
+In general, the data are usually returned in a list with 3 elements:  
 \- Page  
 \- Total: total number of records  
 \- Results: data  
 (Therefore, to get all the data you need to iterate over the pages by
-specifying particular page of the results you want) For example:
+specifying particular page of the results you want)
+
+The data from these datasets can be obtained by `get_dataset_data`
+function using dataset’s ID. For example:
 
 ``` r
 ministers <- get_dataset_data("ministri", page = 1)
@@ -144,20 +145,13 @@ head(golf_subsidies$Results %>% select(IdDotace, NazevProjektu, DotaceCelkem))
 ``` r
 golf_contracts <- search_contracts("golf")
 head(golf_contracts$Results %>% select(predmet, hodnotaBezDph))
-#>                                                                                       predmet
-#> 1                                               836/OSRM/2017 smlouva o dílo - adventure golf
-#> 2                                      Smlouva o poskytování reklamních a propagačních služeb
-#> 3                                      Smlouva o poskytování reklamních a propagačních služeb
-#> 4                                      Smlouva o poskytování reklamních a propagačních služeb
-#> 5                                     Smlouva o poskytování reklamních a propagačních služeb 
-#> 6 Smlouva o dílo - Žižkova ul. – oprava chodníků – úsek Jilemnického – Novákova - Štefánikova
-#>   hodnotaBezDph
-#> 1        245000
-#> 2         70000
-#> 3        762000
-#> 4        762000
-#> 5        210000
-#> 6       2205569
+#>                                                   predmet hodnotaBezDph
+#> 1           836/OSRM/2017 smlouva o dílo - adventure golf        245000
+#> 2  Smlouva o poskytování reklamních a propagačních služeb         70000
+#> 3  Smlouva o poskytování reklamních a propagačních služeb        762000
+#> 4  Smlouva o poskytování reklamních a propagačních služeb        762000
+#> 5 Smlouva o poskytování reklamních a propagačních služeb         210000
+#> 6          Smlouva o dílo - výroba propagačního materiálu        105000
 ```
 
 In addition, you can get the text of particular contract using
@@ -177,7 +171,7 @@ cat(substr(con_text[1], 1500, 2000))
 #> specifikovány v příloze č. 1 této Smlouvy (dále jen
 ```
 
-Searching for a person is done using `search_function`. For instance:
+Searching for a person is done using `search_person`. For instance:
 
 ``` r
 babis <- search_person("Babiš")
@@ -198,10 +192,10 @@ head(babis)
 #> 6 /osoba/alexandr-babic-2
 ```
 
-`get_person` function provides data on a person such as their donations
-to political parties, service in public and private institutions and
-their social media accounts. The example below shows Andrej Babiš’s
-donations to political parties.
+`get_person` function provides data related to a person such as their
+donations to political parties, service in public and private
+institutions and their social media accounts. The example below shows
+Andrej Babiš’s donations to political parties.
 
 ``` r
 ab <- get_person("andrej-babis")
