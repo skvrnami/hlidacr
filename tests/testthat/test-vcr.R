@@ -6,7 +6,6 @@ test_that("get_datasets() works", {
     testthat::expect_type(datasets$Total, "integer")
     testthat::expect_true(datasets$Total > 0)
     testthat::expect_type(datasets$Page, "integer")
-    testthat::expect_true(inherits(datasets$Results, "data.frame"))
     testthat::expect_equal(datasets$Total, nrow(datasets$Results))
 })
 
@@ -32,13 +31,13 @@ test_that("get_dataset_data() works", {
     testthat::expect_type(dataset_data$Total, "integer")
     testthat::expect_true(dataset_data$Total > 0)
     testthat::expect_type(dataset_data$Page, "integer")
-    testthat::expect_true(inherits(dataset_data$Results, "data.frame"))
+    testthat::expect_gt(nrow(dataset_data$Results), 0)
 
     testthat::expect_type(dataset_query, "list")
     testthat::expect_type(dataset_query$Total, "integer")
     testthat::expect_true(dataset_query$Total > 0)
     testthat::expect_type(dataset_query$Page, "integer")
-    testthat::expect_true(inherits(dataset_query$Results, "data.frame"))
+    testthat::expect_gt(nrow(dataset_query$Results), 0)
 
 })
 
@@ -91,9 +90,9 @@ test_that("get_person() works", {
     testthat::expect_type(person, "list")
     testthat::expect_type(person$Jmeno, "character")
     testthat::expect_type(person$Prijmeni, "character")
-    testthat::expect_true(inherits(person$SocialniSite, "data.frame"))
-    testthat::expect_true(inherits(person$Sponzoring, "data.frame"))
-    testthat::expect_true(inherits(person$Udalosti, "data.frame"))
+    testthat::expect_gt(nrow(person$SocialniSite), 0)
+    testthat::expect_gt(nrow(person$Sponzoring), 0)
+    testthat::expect_gt(nrow(person$Udalosti), 0)
 })
 
 test_that("search_person() works", {
@@ -103,7 +102,7 @@ test_that("search_person() works", {
                                        token = Sys.getenv("HLIDAC_TOKEN"))
     })
 
-    testthat::expect_true(inherits(found_person1, "data.frame"))
+    testthat::expect_gt(nrow(found_person1), 0)
 })
 
 test_that("get_person_social() works", {
@@ -112,7 +111,7 @@ test_that("get_person_social() works", {
                                      token = Sys.getenv("HLIDAC_TOKEN"))
     })
 
-    testthat::expect_true(inherits(socials, "data.frame"))
+    testthat::expect_gt(nrow(socials), 0)
 })
 
 test_that("search_contracts() works", {
@@ -124,7 +123,7 @@ test_that("search_contracts() works", {
     testthat::expect_type(contracts, "list")
     testthat::expect_type(contracts$Total, "integer")
     testthat::expect_type(contracts$Page, "integer")
-    testthat::expect_true(inherits(contracts$Results, "data.frame"))
+    testthat::expect_gt(nrow(contracts$Results), 0)
 })
 
 test_that("get_contract() works", {
@@ -150,7 +149,7 @@ test_that("get_websites() works", {
         webs <- get_websites(token = Sys.getenv("HLIDAC_TOKEN"))
     })
 
-    testthat::expect_true(inherits(webs, "data.frame"))
+    testthat::expect_gt(nrow(webs), 0)
 })
 
 test_that("get_website_detail() works", {
@@ -161,5 +160,5 @@ test_that("get_website_detail() works", {
 
     testthat::expect_type(web, "list")
     testthat::expect_type(web$SSL, "list")
-    testthat::expect_true(inherits(web$Availability$Data, "data.frame"))
+    testthat::expect_gt(nrow(web$Availability$Data), 0)
 })
