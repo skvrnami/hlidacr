@@ -4,7 +4,7 @@
 \alias{get_dataset_metadata}
 \title{Get dataset's metadata}
 \usage{
-get_dataset_metadata(dataset_id, token = NULL)
+get_dataset_metadata(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{dataset_id}{ID of dataset}

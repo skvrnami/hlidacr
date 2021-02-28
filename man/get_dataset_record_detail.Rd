@@ -4,7 +4,11 @@
 \alias{get_dataset_record_detail}
 \title{Get record detail}
 \usage{
-get_dataset_record_detail(dataset_id, item_id, token = NULL)
+get_dataset_record_detail(
+  dataset_id,
+  item_id,
+  token = Sys.getenv("HLIDAC_TOKEN")
+)
 }
 \arguments{
 \item{dataset_id}{ID of dataset}

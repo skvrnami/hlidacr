@@ -43,22 +43,97 @@ of the Hlídač státu API.
 
 The data available via the API are related to:  
 - funding of political parties  
-- transcriptions of parliamentary speeches  
+- transcriptions of parliamentary floor debates, municipal council debates and other bodies
 - contracts between public institutions and private companies  
+- subsidies 
 - availability of websites operated by public institutions  
 etc.
 
-This is a basic example which shows you how to solve a common problem:
+## Example
+
+There are two types of datasets available at the Hlídač státu API.
+First, there are various collection of datasets whose list is available
+using `get_datasets()`.
 
 ```{r example}
+library(dplyr)
 library(hlidacr)
 
 # Authorization token
 TOKEN <- Sys.getenv("HLIDAC_TOKEN")
 
-datasets <- get_datasets(TOKEN)
+datasets <- get_datasets(token = TOKEN)
 str(datasets, max.level = 1)
 
 head(datasets$Results[,1:2], 10)
+```
+
+The data from these datasets can be obtained by `get_dataset_data` function
+using dataset's ID. 
+In general, the data are usually returned in a list with 3 elements:  
+- Page  
+- Total: total number of records  
+- Results: data  
+(Therefore, to get all the data you need to iterate over the pages by specifying
+particular page of the results you want)
+For example:
+
+```{r}
+ministers <- get_dataset_data("ministri", page = 1)
+head(ministers$Results %>% select(resort, jmeno, strana, zacatek))
+```
+
+Second, there are specific datasets that are available via specific routes
+and therefore specific functions. These include datasets related to 
+contracts between public institutions and private companies, subsidies, companies, 
+persons and websites. 
+
+For example:
+
+```{r}
+golf_subsidies <- search_subsidies("golf")
+head(golf_subsidies$Results %>% select(IdDotace, NazevProjektu, DotaceCelkem))
+```
+
+```{r}
+golf_contracts <- search_contracts("golf")
+head(golf_contracts$Results %>% select(predmet, hodnotaBezDph))
+```
+
+In addition, you can get the text of particular contract using `get_contract_text`
+using the ID of the contract that is stored in the column `Id` in the
+data.frame returned by `search_contracts`.
+
+```{r}
+con_text <- get_contract_text(id = "9934567")
+cat(substr(con_text[1], 1500, 2000))
+```
+
+Searching for a person is done using `search_function`. For instance:
+
+```{r}
+babis <- search_person("Babiš")
+head(babis)
+```
+
+`get_person` function provides data on a person such as their donations to 
+political parties, service in public and private institutions and their social
+media accounts. 
+The example below shows Andrej Babiš's donations to political parties.
+
+```{r}
+ab <- get_person("andrej-babis")
+head(ab$Sponzoring %>% arrange(desc(Castka)))
+```
+
+Besides getting social media accounts for a particular person using the 
+`get_person` function, you can obtain social media accounts of Czech politicians, 
+using `get_person_social`. 
+It returns a data.frame with a data.frame nested in the `SocialniSite` variable.
+For instance: 
+
+```{r}
+twitter_insta <- get_person_social(types = c("Instagram", "Twitter"))
+twitter_insta$SocialniSite[1]
 ```
 

@@ -4,7 +4,7 @@
 \alias{get_websites}
 \title{Get websites}
 \usage{
-get_websites(token = NULL)
+get_websites(token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{token}{Authorization token}

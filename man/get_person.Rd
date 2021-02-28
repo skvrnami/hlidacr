@@ -4,7 +4,7 @@
 \alias{get_person}
 \title{Get person details}
 \usage{
-get_person(person_id, token = NULL)
+get_person(person_id, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{person_id}{Person's ID}

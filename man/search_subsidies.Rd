@@ -4,7 +4,12 @@
 \alias{search_subsidies}
 \title{Search subsidies}
 \usage{
-search_subsidies(query, page = 1, sort = NULL, token = NULL)
+search_subsidies(
+  query,
+  page = 1,
+  sort = NULL,
+  token = Sys.getenv("HLIDAC_TOKEN")
+)
 }
 \arguments{
 \item{query}{Search query}

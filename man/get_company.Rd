@@ -4,7 +4,7 @@
 \alias{get_company}
 \title{Get company details}
 \usage{
-get_company(company_name, token = NULL)
+get_company(company_name, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{company_name}{Name of the company}

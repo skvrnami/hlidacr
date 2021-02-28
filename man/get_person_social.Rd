@@ -4,7 +4,7 @@
 \alias{get_person_social}
 \title{Get person social media accounts}
 \usage{
-get_person_social(types, token)
+get_person_social(types, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{types}{Types of social media accounts, only the following types are allowed:

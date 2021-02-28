@@ -19,7 +19,7 @@
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_datasets <- function(token = NULL) {
+get_datasets <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
   check_token(token)
   check_connection()
   response <- httr::GET(
@@ -52,7 +52,7 @@ get_datasets <- function(token = NULL) {
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_dataset_metadata <- function(dataset_id, token = NULL) {
+get_dataset_metadata <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN")) {
   check_token(token)
   check_connection()
   response <- httr::GET(
@@ -91,7 +91,8 @@ get_dataset_metadata <- function(dataset_id, token = NULL) {
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_dataset_data <- function(dataset_id, token = NULL, query = NULL, page = 1, sort = NULL, desc = NULL) {
+get_dataset_data <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"),
+                             query = NULL, page = 1, sort = NULL, desc = NULL) {
   check_token(token)
   check_connection()
 
@@ -144,7 +145,8 @@ get_dataset_data <- function(dataset_id, token = NULL, query = NULL, page = 1, s
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_dataset_record_detail <- function(dataset_id, item_id, token = NULL) {
+get_dataset_record_detail <- function(dataset_id, item_id,
+                                      token = Sys.getenv("HLIDAC_TOKEN")) {
   check_token(token)
   check_connection()
 
@@ -190,7 +192,8 @@ get_dataset_record_detail <- function(dataset_id, item_id, token = NULL) {
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-search_subsidies <- function(query, page = 1, sort = NULL, token = NULL){
+search_subsidies <- function(query, page = 1, sort = NULL,
+                             token = Sys.getenv("HLIDAC_TOKEN")){
   check_token(token)
   check_connection()
 
@@ -239,7 +242,7 @@ search_subsidies <- function(query, page = 1, sort = NULL, token = NULL){
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_subsidy <- function(id, token = NULL){
+get_subsidy <- function(id, token = Sys.getenv("HLIDAC_TOKEN")){
   check_token(token)
   check_connection()
 
@@ -276,7 +279,7 @@ get_subsidy <- function(id, token = NULL){
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_company <- function(company_name, token = NULL) {
+get_company <- function(company_name, token = Sys.getenv("HLIDAC_TOKEN")) {
   check_token(token)
   check_connection()
 
@@ -321,7 +324,7 @@ get_company <- function(company_name, token = NULL) {
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_person <- function(person_id, token = NULL) {
+get_person <- function(person_id, token = Sys.getenv("HLIDAC_TOKEN")) {
   check_token(token)
   check_connection()
 
@@ -362,7 +365,8 @@ get_person <- function(person_id, token = NULL) {
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-search_person <- function(query, party = NULL, token = NULL){
+search_person <- function(query, party = NULL,
+                          token = Sys.getenv("HLIDAC_TOKEN")){
   check_token(token)
   check_connection()
 
@@ -417,7 +421,7 @@ search_person <- function(query, party = NULL, token = NULL){
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_person_social <- function(types, token){
+get_person_social <- function(types, token = Sys.getenv("HLIDAC_TOKEN")){
   check_token(token)
   check_connection()
 
@@ -472,7 +476,8 @@ get_person_social <- function(types, token){
 #' \url{https://www.hlidacstatu.cz/napoveda}
 #'
 #' \url{https://smlouvy.gov.cz/}
-search_contracts <- function(query, token = NULL, page = 1, sort = 0) {
+search_contracts <- function(query, token = Sys.getenv("HLIDAC_TOKEN"),
+                             page = 1, sort = 0) {
   check_token(token)
   check_connection()
 
@@ -554,7 +559,7 @@ get_contract <- function(id, token = NULL) {
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 #'
 #' \url{https://smlouvy.gov.cz/}
-get_contract_text <- function(id, token = NULL) {
+get_contract_text <- function(id, token = Sys.getenv("HLIDAC_TOKEN")) {
   check_token(token)
   check_connection()
   response <- httr::GET(
@@ -594,7 +599,7 @@ get_contract_text <- function(id, token = NULL) {
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_websites <- function(token = NULL) {
+get_websites <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
   check_token(token)
   check_connection()
   response <- httr::GET(
@@ -628,7 +633,7 @@ get_websites <- function(token = NULL) {
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-get_website_detail <- function(id, token = NULL) {
+get_website_detail <- function(id, token = Sys.getenv("HLIDAC_TOKEN")) {
   check_token(token)
   check_connection()
   response <- httr::GET(

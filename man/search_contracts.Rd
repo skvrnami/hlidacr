@@ -4,7 +4,7 @@
 \alias{search_contracts}
 \title{Search contract}
 \usage{
-search_contracts(query, token = NULL, page = 1, sort = 0)
+search_contracts(query, token = Sys.getenv("HLIDAC_TOKEN"), page = 1, sort = 0)
 }
 \arguments{
 \item{query}{Fulltext search query}

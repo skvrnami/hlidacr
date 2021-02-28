@@ -7,7 +7,7 @@ check_connection <- function(){
 #'
 #' @param token API token to Hlidac statu
 check_token <- function(token){
-    if(is.null(token)) usethis::ui_stop("No token defined.")
+    if(is.null(token) || nchar(token) == 0) usethis::ui_stop("No token defined.")
 }
 
 #' Handle response other than 200

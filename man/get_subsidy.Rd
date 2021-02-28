@@ -4,7 +4,7 @@
 \alias{get_subsidy}
 \title{Get subsidy}
 \usage{
-get_subsidy(id, token = NULL)
+get_subsidy(id, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{id}{Subsidy ID}

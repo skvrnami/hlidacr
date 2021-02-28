@@ -8,6 +8,12 @@ test_that("error is handled properly", {
                    message = "HTTP Error 404 when connecting to Hlidac statu. Not found.")
 })
 
+test_that("checking token works", {
+    expect_error(check_token(NULL),
+                 message = "No token defined.")
+    expect_error(check_token(""),
+                 message = "No token defined.")
+})
 
 test_that("queries are created properly", {
     expect_equal(create_query("page=1"), "page=1")

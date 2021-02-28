@@ -6,7 +6,7 @@
 \usage{
 get_dataset_data(
   dataset_id,
-  token = NULL,
+  token = Sys.getenv("HLIDAC_TOKEN"),
   query = NULL,
   page = 1,
   sort = NULL,

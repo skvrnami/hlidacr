@@ -4,7 +4,7 @@
 \alias{search_person}
 \title{Get person details}
 \usage{
-search_person(query, party = NULL, token = NULL)
+search_person(query, party = NULL, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{query}{Search query for a person, required parameter}

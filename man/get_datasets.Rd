@@ -4,7 +4,7 @@
 \alias{get_datasets}
 \title{Get list of datasets}
 \usage{
-get_datasets(token = NULL)
+get_datasets(token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{token}{Authorization token}

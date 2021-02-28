@@ -4,7 +4,7 @@
 \alias{get_website_detail}
 \title{Get website detail}
 \usage{
-get_website_detail(id, token = NULL)
+get_website_detail(id, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \arguments{
 \item{id}{Website id}
