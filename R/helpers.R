@@ -30,13 +30,6 @@ handle_error_response <- function(response){
     usethis::ui_stop(msg)
 }
 
-#' Create query string
-#'
-#' @param ... query variables
-create_query <- function(...){
-    paste0(purrr::compact(list(...)), collapse = "&")
-}
-
 #' Check if all social media account types are valid
 #'
 #' @param types Vector with types of social media accounts

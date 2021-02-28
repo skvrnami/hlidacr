@@ -1,5 +1,9 @@
 # NEWS
 
+## hlidacr 0.1.2
+- add User Agent to headers
+- use query in httr GETs in search functions
+
 ## hlidacr 0.1.1
 
 - use environment variable `HLIDAC_TOKEN` by default as token in all functions

@@ -29,7 +29,7 @@ Get person social media accounts
 }
 \examples{
 \dontrun{
-get_person_social(types = c("Twitter", "Instagram"), token = "XXXX")
+get_person_social(types = c("Twitter", "Instagram"))
 }
 }
 \seealso{

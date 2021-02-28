@@ -23,7 +23,7 @@ Get company details
 }
 \examples{
 \dontrun{
-get_company("Agrofert", token = "XXXX")
+get_company("Agrofert")
 }
 }
 \seealso{

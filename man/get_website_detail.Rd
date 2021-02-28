@@ -22,7 +22,7 @@ Get website detail
 }
 \examples{
 \dontrun{
-get_website_detail(id = "10107", token = "XXXX")
+get_website_detail(id = "10107")
 }
 }
 \seealso{

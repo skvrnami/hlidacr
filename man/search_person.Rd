@@ -28,8 +28,8 @@ Get person details
 }
 \examples{
 \dontrun{
-search_person(query = "Kalousek", token = "XXXX")
-search_person(query = "Kalousek", party = "TOP 09", token = "XXXX")
+search_person(query = "Kalousek")
+search_person(query = "Kalousek", party = "TOP 09")
 }
 }
 \seealso{

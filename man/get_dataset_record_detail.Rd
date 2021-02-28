@@ -25,7 +25,7 @@ Get record detail
 }
 \examples{
 \dontrun{
-get_dataset_record_detail("ministri", item_id = 1, token = "XXXX")
+get_dataset_record_detail("ministri", item_id = 1)
 }
 }
 \seealso{

@@ -21,7 +21,7 @@ Get list of datasets available via Hlídač státu API
 }
 \examples{
 \dontrun{
-get_datasets(token = "XXXX")
+get_datasets()
 }
 }
 \seealso{
