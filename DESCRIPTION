@@ -2,9 +2,10 @@ Package: hlidacr
 Type: Package
 Title: Access Data from the Hlídač Státu API
 Version: 0.1.2
+Date: 2021-03-01
 Authors@R:
-    person("Michael", 
-            "Škvrňák", 
+    person(given = "Michael", 
+            family = "Škvrňák", 
             email = "michael.skvrnak@protonmail.com", 
             role = c("aut", "cre"), 
             comment = c(ORCID = "0000-0003-4647-4095"))
