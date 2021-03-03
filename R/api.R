@@ -290,7 +290,7 @@ get_company <- function(company_name, token = Sys.getenv("HLIDAC_TOKEN")) {
 #' by the person
 #' - Udalosti: events related to the person such as party membership and
 #' running in election, serving in political bodies and relations to private
-#' companies (sharesholder, serving on a board)
+#' companies (shareholder, serving on a board)
 #' - SocialniSite: data.frame with data on social media accounts
 #' @export
 #' @family Persons
