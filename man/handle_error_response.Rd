@@ -9,6 +9,9 @@ handle_error_response(response)
 \arguments{
 \item{response}{Response from the server}
 }
+\value{
+No return value, called for side effects
+}
 \description{
 Handle response other than 200
 }

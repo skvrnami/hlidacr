@@ -1,5 +1,10 @@
 # NEWS
 
+## hlidacr 0.1.3
+- updates based on CRAN submission
+    - update DESCRIPTION
+    - update documentation
+
 ## hlidacr 0.1.2
 - add User Agent to headers
 - use query in httr GETs in search functions

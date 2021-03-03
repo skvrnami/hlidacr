@@ -9,6 +9,9 @@ check_types(types)
 \arguments{
 \item{types}{Vector with types of social media accounts}
 }
+\value{
+No return value, called for side effects
+}
 \description{
 Check if all social media account types are valid
 }

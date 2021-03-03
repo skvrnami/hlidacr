@@ -12,7 +12,7 @@ get_dataset_metadata(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"))
 \item{token}{Authorization token}
 }
 \value{
-List containing metadata related to the specified dataset
+a list containing metadata related to the specified dataset
 }
 \description{
 Get metadata related to specified dataset.

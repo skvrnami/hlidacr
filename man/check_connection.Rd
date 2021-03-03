@@ -6,6 +6,9 @@
 \usage{
 check_connection()
 }
+\value{
+No return value, called for side effects
+}
 \description{
 Check internet connection
 }

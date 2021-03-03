@@ -1,14 +1,14 @@
 #' Get list of datasets
 #'
-#' Get list of datasets available via Hlídač státu API
+#' Get list of datasets available via 'Hlídač státu' API
 #'
 #' @param token Authorization token
 #'
-#' @return Response from the server containing list of all datasets available.
+#' @return Response from the server containing a list of all datasets available.
 #' The list contains 3 elements:
 #' - Total: Total number of datasets available (integer)
 #' - Page: Page of the result (integer)
-#' - Results: Data.frame with data concerning the datasets
+#' - Results: data concerning the datasets (data.frame)
 #' @export
 #' @family Datasets
 #' @examples
@@ -42,7 +42,7 @@ get_datasets <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @param dataset_id ID of dataset
 #' @param token Authorization token
 #'
-#' @return List containing metadata related to the specified dataset
+#' @return a list containing metadata related to the specified dataset
 #' @export
 #' @family Datasets
 #' @examples

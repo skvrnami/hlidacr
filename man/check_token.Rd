@@ -9,6 +9,9 @@ check_token(token)
 \arguments{
 \item{token}{API token to Hlidac statu}
 }
+\value{
+No return value, called for side effects
+}
 \description{
 Check API token
 }

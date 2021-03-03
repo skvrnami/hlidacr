@@ -9,6 +9,9 @@ create_type(types)
 \arguments{
 \item{types}{Vector with types of social media accounts}
 }
+\value{
+String for querying API
+}
 \description{
 Create query string for osoby/social API endpoint
 }

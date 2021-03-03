@@ -10,14 +10,14 @@ get_datasets(token = Sys.getenv("HLIDAC_TOKEN"))
 \item{token}{Authorization token}
 }
 \value{
-Response from the server containing list of all datasets available.
+Response from the server containing a list of all datasets available.
 The list contains 3 elements:
 - Total: Total number of datasets available (integer)
 - Page: Page of the result (integer)
-- Results: Data.frame with data concerning the datasets
+- Results: data concerning the datasets (data.frame)
 }
 \description{
-Get list of datasets available via Hlídač státu API
+Get list of datasets available via 'Hlídač státu' API
 }
 \examples{
 \dontrun{
