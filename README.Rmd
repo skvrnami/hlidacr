@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # hlidacr
 
 <!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/hlidacr)](https://CRAN.R-project.org/package=hlidacr)
 [![R build status](https://github.com/skvrnami/hlidacr/workflows/R-CMD-check/badge.svg)](https://github.com/skvrnami/hlidacr/actions)
 [![codecov](https://codecov.io/gh/skvrnami/hlidacr/branch/main/graph/badge.svg?token=FWP73F1DOL)](https://codecov.io/gh/skvrnami/hlidacr)
 <!-- badges: end -->
@@ -23,6 +24,13 @@ knitr::opts_chunk$set(
 The goal of hlidacr is to provide access to the data published by [Hlídač státu](https://www.hlidacstatu.cz/) provided by their [API](https://www.hlidacstatu.cz/api/v2/swagger/index). 
 
 ## Installation
+
+You can install the package from CRAN:
+
+``` r
+install.packages("hlidacr")
+```
+
 
 You can install the development version from [GitHub](https://github.com/) with:
 

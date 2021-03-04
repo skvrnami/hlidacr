@@ -5,6 +5,8 @@
 
 <!-- badges: start -->
 
+[![CRAN
+status](https://www.r-pkg.org/badges/version/hlidacr)](https://CRAN.R-project.org/package=hlidacr)
 [![R build
 status](https://github.com/skvrnami/hlidacr/workflows/R-CMD-check/badge.svg)](https://github.com/skvrnami/hlidacr/actions)
 [![codecov](https://codecov.io/gh/skvrnami/hlidacr/branch/main/graph/badge.svg?token=FWP73F1DOL)](https://codecov.io/gh/skvrnami/hlidacr)
@@ -15,6 +17,12 @@ The goal of hlidacr is to provide access to the data published by
 [API](https://www.hlidacstatu.cz/api/v2/swagger/index).
 
 ## Installation
+
+You can install the package from CRAN:
+
+``` r
+install.packages("hlidacr")
+```
 
 You can install the development version from
 [GitHub](https://github.com/) with:
@@ -140,20 +148,13 @@ head(golf_subsidies$Results %>% select(IdDotace, NazevProjektu, DotaceCelkem))
 ``` r
 golf_contracts <- search_contracts("golf")
 head(golf_contracts$Results %>% select(predmet, hodnotaBezDph))
-#>                                                                                       predmet
-#> 1                                               836/OSRM/2017 smlouva o dílo - adventure golf
-#> 2                                      Smlouva o poskytování reklamních a propagačních služeb
-#> 3                                      Smlouva o poskytování reklamních a propagačních služeb
-#> 4                                      Smlouva o poskytování reklamních a propagačních služeb
-#> 5                                     Smlouva o poskytování reklamních a propagačních služeb 
-#> 6 Smlouva o dílo - Žižkova ul. – oprava chodníků – úsek Jilemnického – Novákova - Štefánikova
-#>   hodnotaBezDph
-#> 1        245000
-#> 2         70000
-#> 3        762000
-#> 4        762000
-#> 5        210000
-#> 6       2205569
+#>                                                   predmet hodnotaBezDph
+#> 1           836/OSRM/2017 smlouva o dílo - adventure golf        245000
+#> 2  Smlouva o poskytování reklamních a propagačních služeb         70000
+#> 3  Smlouva o poskytování reklamních a propagačních služeb        762000
+#> 4  Smlouva o poskytování reklamních a propagačních služeb        762000
+#> 5 Smlouva o poskytování reklamních a propagačních služeb         210000
+#> 6          Smlouva o dílo - výroba propagačního materiálu        105000
 ```
 
 In addition, you can get the text of particular contract using
