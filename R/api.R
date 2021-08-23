@@ -388,7 +388,8 @@ search_person <- function(query, page = NULL,
 #' @family Persons
 #' @examples
 #' \dontrun{
-#' search_person_by_parameters(first_name = "Miroslav", last_name = "Kalousek", birth_date = "1960-12-17")
+#' search_person_by_parameters(first_name = "Miroslav", last_name = "Kalousek",
+#' birth_date = "1960-12-17")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}

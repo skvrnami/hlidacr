@@ -38,7 +38,8 @@ Search person by name and date of birth
 }
 \examples{
 \dontrun{
-search_person_by_parameters(first_name = "Miroslav", last_name = "Kalousek", birth_date = "1960-12-17")
+search_person_by_parameters(first_name = "Miroslav", last_name = "Kalousek",
+birth_date = "1960-12-17")
 }
 }
 \seealso{
