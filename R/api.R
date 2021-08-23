@@ -6,9 +6,9 @@
 #'
 #' @return Response from the server containing a list of all datasets available.
 #' The list contains 3 elements:
-#' - Total: Total number of datasets available (integer)
-#' - Page: Page of the result (integer)
-#' - Results: data concerning the datasets (data.frame)
+#' - total: Total number of datasets available (integer)
+#' - page: Page of the result (integer)
+#' - results: data concerning the datasets (data.frame)
 #' @export
 #' @family Datasets
 #' @examples
@@ -74,14 +74,14 @@ get_dataset_metadata <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"))
 #' @param dataset_id ID of dataset
 #' @param token Authorization token
 #' @param query Search query
-#' @param page Number of page
+#' @param page Number of page (Please note that if the page parameter exceeds 200, the function returns error)
 #' @param sort Sort by column
 #' @param desc Descending or ascending sorting
 #'
 #' @return list containing 3 elements:
-#' - Total: Total number of datasets available (integer)
-#' - Page: Page of the result (integer), equal to the `page` argument of the function
-#' - Results: Data.frame with data, columns vary depending on the dataset
+#' - total: Total number of datasets available (integer)
+#' - page: Page of the result (integer), equal to the `page` argument of the function
+#' - results: Data.frame with data, columns vary depending on the dataset
 #' @export
 #' @family Datasets
 #' @examples
@@ -156,7 +156,7 @@ get_dataset_record_detail <- function(dataset_id, item_id,
 #' Search subsidies
 #'
 #' @param query Search query
-#' @param page Page number
+#' @param page Page number (Please note that if the page parameter exceeds 200, the function returns error)
 #' @param sort Sorting of results, the available options are the following:
 #' - 0: order by relevance
 #' - 1: order by the date of signature, the most recent first
@@ -168,9 +168,9 @@ get_dataset_record_detail <- function(dataset_id, item_id,
 #' @param token Authorization token
 #'
 #' @return list containing 3 elements:
-#' - Total: Total number of datasets available (integer)
-#' - Page: Page of the result (integer), equal to the `page` argument of the function
-#' - Results: Data.frame with data, columns vary depending on the dataset
+#' - total: Total number of datasets available (integer)
+#' - page: Page of the result (integer), equal to the `page` argument of the function
+#' - results: Data.frame with data, columns vary depending on the dataset
 #' @export
 #' @family Subsidies
 #' @examples
@@ -242,9 +242,9 @@ get_subsidy <- function(id, token = Sys.getenv("HLIDAC_TOKEN")){
 #' @param company_name Name of the company
 #' @param token Access token
 #' @return list with 3 elements:
-#' - ICO: ID number of the company
-#' - Jmeno: Name of the company
-#' - DatoveSchranky: Data post box - electronic repository for communication between
+#' - ico: ID number of the company
+#' - jmeno: Name of the company
+#' - datoveSchranky: Data post box - electronic repository for communication between
 #' public institutions and private companies/people
 #' @export
 #' @family Companies
@@ -279,19 +279,19 @@ get_company <- function(company_name, token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @param person_id Person's ID
 #' @param token Access token
 #' @return list with the following elements:
-#' - TitulPred: academic titles written before person's name
-#' - Jmeno: given name
-#' - Prijmeni: surname
-#' - TitulPo: academic titles written after person's name (if applicable)
-#' - Narozeni: date of birth
-#' - NameId: person's id
-#' - Profile: URL of profile at hlidacstatu.cz
-#' - Sponzoring: data.frame with data on sponsorship of political parties
+#' - titulPred: academic titles written before person's name
+#' - jmeno: given name
+#' - prijmeni: surname
+#' - titulPo: academic titles written after person's name (if applicable)
+#' - narozeni: date of birth
+#' - nameId: person's id
+#' - profile: URL of profile at hlidacstatu.cz
+#' - sponzoring: data.frame with data on sponsorship of political parties
 #' by the person
-#' - Udalosti: events related to the person such as party membership and
+#' - udalosti: events related to the person such as party membership and
 #' running in election, serving in political bodies and relations to private
 #' companies (shareholder, serving on a board)
-#' - SocialniSite: data.frame with data on social media accounts
+#' - socialniSite: data.frame with data on social media accounts
 #' @export
 #' @family Persons
 #' @examples
@@ -319,32 +319,31 @@ get_person <- function(person_id, token = Sys.getenv("HLIDAC_TOKEN")) {
   jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
 
-#' Get person details
+#' Search person
 #'
 #' @param query Search query for a person, required parameter
-#' @param party Search query for a political party
+#' @param page Page number
 #' @param token Access token
 #'
 #' @return data.frame with found persons with the following columns:
-#' - Jmeno: given name
-#' - Prijmeni: surname
-#' - Narozeni: date of birth
-#' - NameId: person's ID
-#' - Profile: URL of profile at hlidacstatu.cz
-#' - TitulPred: academic titles written before person's name
-#' - TitulPo: academic titles written after person's name
+#' - jmeno: given name
+#' - prijmeni: surname
+#' - narozeni: date of birth
+#' - nameId: person's ID
+#' - profile: URL of profile at hlidacstatu.cz
+#' - titulPred: academic titles written before person's name
+#' - titulPo: academic titles written after person's name
 #' @export
 #' @family Persons
 #' @examples
 #' \dontrun{
 #' search_person(query = "Kalousek")
-#' search_person(query = "Kalousek", party = "TOP 09")
 #' }
 #' @seealso
 #' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
-search_person <- function(query, party = NULL,
+search_person <- function(query, page = NULL,
                           token = Sys.getenv("HLIDAC_TOKEN")){
   check_token(token)
   check_connection()
@@ -354,9 +353,73 @@ search_person <- function(query, party = NULL,
   }
 
   response <- httr::GET(
+    "https://www.hlidacstatu.cz/api/v2/osoby/hledatFtx",
+    query = list(ftxDotaz = query,
+                 strana = page),
+    httr::add_headers(Authorization = token,
+                      user_agent)
+  )
+
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+}
+
+
+#' Search person by name and date of birth
+#'
+#' @param first_name Person's first name
+#' @param last_name Person's last name
+#' @param birth_date Person's date of birth (in YYYY-MM-DD format)
+#' @param ignore_diacritics Parameter indicating whether diacritics in names should be ignored (boolean)
+#' @param token Access token
+#'
+#' @return data.frame with found persons with the following columns:
+#' - jmeno: given name
+#' - prijmeni: surname
+#' - narozeni: date of birth
+#' - nameId: person's ID
+#' - profile: URL of profile at hlidacstatu.cz
+#' - titulPred: academic titles written before person's name
+#' - titulPo: academic titles written after person's name
+#' @export
+#' @family Persons
+#' @examples
+#' \dontrun{
+#' search_person_by_parameters(first_name = "Miroslav", last_name = "Kalousek", birth_date = "1960-12-17")
+#' }
+#' @seealso
+#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#'
+#' \url{https://www.hlidacstatu.cz/api/v1/doc}
+search_person_by_parameters <- function(first_name = NULL,
+                                        last_name = NULL,
+                                        birth_date = NULL,
+                                        ignore_diacritics = TRUE,
+                                        token = Sys.getenv("HLIDAC_TOKEN")){
+  check_token(token)
+  check_connection()
+
+  if (is.null(first_name)) {
+    usethis::ui_stop("first_name is required.")
+  }
+
+  if (is.null(last_name)) {
+    usethis::ui_stop("last_name is required.")
+  }
+
+  if (is.null(birth_date)) {
+    usethis::ui_stop("birth_date is required.")
+  }
+
+  response <- httr::GET(
     "https://www.hlidacstatu.cz/api/v2/osoby/hledat",
-    query = list(dotaz = query,
-                 strana = party),
+    query = list(jmeno = first_name,
+                 prijmeni = last_name,
+                 datumNarozeni = birth_date,
+                 ignoreDiakritiku = ignore_diacritics),
     httr::add_headers(Authorization = token,
                       user_agent)
   )
@@ -375,13 +438,13 @@ search_person <- function(query, party = NULL,
 #' @param token Access token
 #' @return data.frame with data on persons' social accounts with the
 #' following columns:
-#' - TitulPred: academic titles written before person's name
-#' - Jmeno: given name
-#' - Prijmeni: surname
-#' - TitulPo: academic titles written after person's name
-#' - NameId: person's ID
-#' - Profile: URL of profile at hlidacstatu.cz
-#' - SocialniSite: data.frame with data on social accounts (Type of social media,
+#' - titulPred: academic titles written before person's name
+#' - jmeno: given name
+#' - prijmeni: surname
+#' - titulPo: academic titles written after person's name
+#' - nameId: person's ID
+#' - profile: URL of profile at hlidacstatu.cz
+#' - socialniSite: data.frame with data on social accounts (Type of social media,
 #' Id of the social media account, URL)
 #' @export
 #' @family Persons
@@ -416,7 +479,7 @@ get_person_social <- function(types, token = Sys.getenv("HLIDAC_TOKEN")){
 #' Search contract
 #'
 #' @param query Full-text search query
-#' @param page Page of results
+#' @param page Page of results (Please note that if the page parameter exceeds 200, the function returns error)
 #' @param sort Ordering of the results, the available options are the following:
 #' - 0: sort by relevance
 #' - 1: recently added contracts first
@@ -589,9 +652,9 @@ get_websites <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @param token Authorization token
 #'
 #' @return list with 2 elements:
-#' - Availability: data on availability of the website
+#' - availability: data on availability of the website
 #' including response time and HTTP status code every minute
-#' - SSL: assessment of the website's SSL server configuration
+#' - ssl: assessment of the website's SSL server configuration
 #'
 #' @export
 #' @examples

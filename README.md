@@ -10,6 +10,7 @@ status](https://www.r-pkg.org/badges/version/hlidacr)](https://CRAN.R-project.or
 [![R build
 status](https://github.com/skvrnami/hlidacr/workflows/R-CMD-check/badge.svg)](https://github.com/skvrnami/hlidacr/actions)
 [![codecov](https://codecov.io/gh/skvrnami/hlidacr/branch/main/graph/badge.svg?token=FWP73F1DOL)](https://codecov.io/gh/skvrnami/hlidacr)
+[![](https://cranlogs.r-pkg.org/badges/hlidacr)](https://CRAN.R-project.org/package=hlidacr)
 <!-- badges: end -->
 
 The goal of hlidacr is to provide access to the data published by
@@ -46,12 +47,12 @@ Hlídač státu API.
 
 The data available via the API are related to:
 
-  - funding of political parties  
-  - transcriptions of parliamentary floor debates, municipal council
+-   funding of political parties  
+-   transcriptions of parliamentary floor debates, municipal council
     debates and other bodies  
-  - contracts between public institutions and private companies  
-  - subsidies  
-  - availability of websites operated by public institutions  
+-   contracts between public institutions and private companies  
+-   subsidies  
+-   availability of websites operated by public institutions  
     etc.
 
 ## Example
@@ -70,29 +71,19 @@ TOKEN <- Sys.getenv("HLIDAC_TOKEN")
 datasets <- get_datasets(token = TOKEN)
 str(datasets, max.level = 1)
 #> List of 3
-#>  $ Total  : int 35
-#>  $ Page   : int 1
-#>  $ Results:'data.frame': 35 obs. of  16 variables:
+#>  $ total  : int 31
+#>  $ page   : int 1
+#>  $ results:'data.frame': 31 obs. of  16 variables:
 
 head(datasets$Results[,1:2], 10)
-#>                          id                               name
-#> 1                  ministri                           Ministři
-#> 2         ministry-invoices            Faktury ministerstev ČR
-#> 3           rozhodnuti-uohs                    Rozhodnutí UOHS
-#> 4            prijemcidotaci                    Příjemci dotací
-#> 5    publicchargingstations Seznam veřejných dobíjecích stanic
-#> 6  faktury-mesto-plasy-2018           Faktury Město Plasy 2018
-#> 7                   dotinfo                            DotInfo
-#> 8   kvalifikovanidodavatele           Kvalifikovani dodavatele
-#> 9                stav-mostu                    Stav Mostů v ČR
-#> 10 seznam-politickych-stran   Seznam politických stran a hnutí
+#> NULL
 ```
 
 In general, the data are usually returned in a list with 3 elements:
 
-  - Page  
-  - Total: total number of records  
-  - Results: data
+-   `page`  
+-   `total`: total number of records  
+-   `results`: data
 
 (Therefore, to get all the data you need to iterate over the pages by
 specifying particular page of the results you want)
@@ -102,7 +93,7 @@ function using dataset’s ID. For example:
 
 ``` r
 ministers <- get_dataset_data("ministri", page = 1)
-head(ministers$Results %>% select(resort, jmeno, strana, zacatek))
+head(ministers$results %>% select(resort, jmeno, strana, zacatek))
 #>                                 resort            jmeno   strana
 #> 1                  Ministerstvo obrany Miloslav Výborný  KDU-ČSL
 #> 2     Ministerstvo životního prostředí   Richard Brabec ANO 2011
@@ -128,38 +119,38 @@ For example:
 
 ``` r
 golf_subsidies <- search_subsidies("golf")
-head(golf_subsidies$Results %>% select(IdDotace, NazevProjektu, DotaceCelkem))
-#>                                       IdDotace
+head(golf_subsidies$results %>% select(idDotace, nazevProjektu, dotaceCelkem))
+#>                                       idDotace
 #> 1 dotinfo-2ebb2071-8444-40be-8560-91af6e7fefa0
 #> 2                         deminimis-1000229862
-#> 3       eufondy-04-06-cz-04-1-05-4-1-44-2-2970
-#> 4                         deminimis-1000411828
+#> 3                         deminimis-1000411828
+#> 4       eufondy-04-06-cz-04-1-05-4-1-44-2-2970
 #> 5                         deminimis-1000219471
 #> 6                         deminimis-1000359004
-#>                                                NazevProjektu DotaceCelkem
+#>                                                nazevProjektu dotaceCelkem
 #> 1    GOLF CLUB U Hrádečku - podnikové vzdělávání zaměstnanců            0
 #> 2               Mezinárodní golfový turnaj v extrémním golfu         5000
-#> 3                                           Golf pro všechny       360555
-#> 4                                           Golf pro všechny       200000
+#> 3                                           Golf pro všechny       200000
+#> 4                                           Golf pro všechny       360555
 #> 5                                             Golfový turnaj        30000
 #> 6 Mezinárodní golfový turnaj 112 ANNIVERSARY GOLF TOURNAMENT       150000
 ```
 
 ``` r
 golf_contracts <- search_contracts("golf")
-head(golf_contracts$Results %>% select(predmet, hodnotaBezDph))
+head(golf_contracts$results %>% select(predmet, hodnotaBezDph))
 #>                                                   predmet hodnotaBezDph
 #> 1           836/OSRM/2017 smlouva o dílo - adventure golf        245000
 #> 2  Smlouva o poskytování reklamních a propagačních služeb         70000
-#> 3  Smlouva o poskytování reklamních a propagačních služeb        762000
+#> 3          Smlouva o dílo - výroba propagačního materiálu        105000
 #> 4  Smlouva o poskytování reklamních a propagačních služeb        762000
-#> 5 Smlouva o poskytování reklamních a propagačních služeb         210000
-#> 6          Smlouva o dílo - výroba propagačního materiálu        105000
+#> 5  Smlouva o poskytování reklamních a propagačních služeb        762000
+#> 6 Smlouva o poskytování reklamních a propagačních služeb         210000
 ```
 
 In addition, you can get the text of particular contract using
 `get_contract_text` using the ID of the contract that is stored in the
-column `Id` in the data.frame returned by `search_contracts`.
+column `id` in the data.frame returned by `search_contracts`.
 
 ``` r
 con_text <- get_contract_text(id = "9934567")
@@ -179,19 +170,19 @@ Searching for a person is done using `search_person`. For instance:
 ``` r
 babis <- search_person("Babiš")
 head(babis)
-#>      Jmeno Prijmeni            Narozeni           NameId
-#> 1   Patrik    Babiš 1973-05-01T00:00:00     patrik-babis
-#> 2    Pavel    Babiš 1975-02-20T00:00:00      pavel-babis
-#> 3    Miloš    Babiš 1960-05-12T00:00:00      milos-babis
-#> 4   Patrik    Babiš 1972-04-17T00:00:00   patrik-babis-1
-#> 5   Andrej    Babiš 1954-09-02T00:00:00     andrej-babis
-#> 6 Alexandr    Babic 1975-11-07T00:00:00 alexandr-babic-2
-#>                   Profile TitulPred TitulPo
-#> 1     /osoba/patrik-babis      <NA>    <NA>
-#> 2      /osoba/pavel-babis                  
-#> 3      /osoba/milos-babis                  
-#> 4   /osoba/patrik-babis-1      <NA>    <NA>
-#> 5     /osoba/andrej-babis      Ing.    <NA>
+#>   titulPred    jmeno prijmeni titulPo            narozeni           nameId
+#> 1      <NA>   Patrik    Babiš    <NA> 1973-05-01T00:00:00     patrik-babis
+#> 2              Pavel    Babiš         1975-02-20T00:00:00      pavel-babis
+#> 3              Miloš    Babiš         1960-05-12T00:00:00      milos-babis
+#> 4      <NA>   Patrik    Babiš    <NA> 1972-04-17T00:00:00   patrik-babis-1
+#> 5      Ing.   Andrej    Babiš    <NA> 1954-09-02T00:00:00     andrej-babis
+#> 6           Alexandr    Babic         1975-11-07T00:00:00 alexandr-babic-2
+#>                   profile
+#> 1     /osoba/patrik-babis
+#> 2      /osoba/pavel-babis
+#> 3      /osoba/milos-babis
+#> 4   /osoba/patrik-babis-1
+#> 5     /osoba/andrej-babis
 #> 6 /osoba/alexandr-babic-2
 ```
 
@@ -202,26 +193,26 @@ Andrej Babiš’s donations to political parties.
 
 ``` r
 ab <- get_person("andrej-babis")
-head(ab$Sponzoring %>% arrange(desc(Castka)))
-#>       Typ Organizace  Castka             DatumOd             DatumDo
-#> 1 sponzor        ANO 8000000 2012-01-01T00:00:00 2012-01-01T00:00:00
-#> 2 sponzor        ANO 2500000 2012-01-01T00:00:00 2012-01-01T00:00:00
-#> 3 sponzor        ANO 2500000 2012-01-01T00:00:00 2012-01-01T00:00:00
-#> 4 sponzor        ANO 2000000 2012-01-01T00:00:00 2012-01-01T00:00:00
-#> 5 sponzor        ANO 2000000 2012-01-01T00:00:00 2012-01-01T00:00:00
-#> 6 sponzor        ANO 2000000 2012-01-01T00:00:00 2012-01-01T00:00:00
+head(ab$sponzoring %>% arrange(desc(castka)))
+#>       typ organizace role  castka             datumOd             datumDo
+#> 1 sponzor        ANO   NA 8000000 2012-01-01T00:00:00 2012-01-01T00:00:00
+#> 2 sponzor        ANO   NA 2500000 2012-01-01T00:00:00 2012-01-01T00:00:00
+#> 3 sponzor        ANO   NA 2500000 2012-01-01T00:00:00 2012-01-01T00:00:00
+#> 4 sponzor        ANO   NA 2000000 2012-01-01T00:00:00 2012-01-01T00:00:00
+#> 5 sponzor        ANO   NA 2000000 2012-01-01T00:00:00 2012-01-01T00:00:00
+#> 6 sponzor        ANO   NA 2000000 2012-01-01T00:00:00 2012-01-01T00:00:00
 ```
 
 Besides getting social media accounts for a particular person using the
 `get_person` function, you can obtain social media accounts of Czech
 politicians, using `get_person_social`. It returns a data.frame with a
-data.frame nested in the `SocialniSite` variable. For instance:
+data.frame nested in the `socialniSite` variable. For instance:
 
 ``` r
 twitter_insta <- get_person_social(types = c("Instagram", "Twitter"))
-twitter_insta$SocialniSite[1]
+twitter_insta$socialniSite[2]
 #> [[1]]
-#>        Type           Id                                    Url
+#>        type           id                                    url
 #> 1   Twitter PatrikNacher       https://twitter.com/PatrikNacher
 #> 2 Instagram nacherpatrik https://www.instagram.com/nacherpatrik
 ```

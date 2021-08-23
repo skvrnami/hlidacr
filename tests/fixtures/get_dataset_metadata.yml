@@ -8,6 +8,7 @@ http_interactions:
     headers:
       Accept: application/json, text/xml, application/xml, */*
       Authorization: My token is safe
+      User-Agent: github.com/skvrnami/hlidacr
   response:
     status:
       status_code: 200
@@ -15,28 +16,23 @@ http_interactions:
       reason: OK
       message: 'Success: (200) OK'
     headers:
-      cache-control: no-cache
-      pragma: no-cache
+      content-length: '3347'
       content-type: application/json; charset=utf-8
-      expires: '-1'
       server: Microsoft-IIS/8.5
-      x-aspnet-version: 4.0.30319
       request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
-      access-control-expose-headers: Request-Context
+      strict-transport-security: max-age=2592000
       x-powered-by: ASP.NET
-      access-control-allow-origin: '*'
-      date: Sat, 20 Feb 2021 13:58:55 GMT
-      content-length: '3186'
+      date: Mon, 23 Aug 2021 12:30:07 GMT
     body:
       encoding: UTF-8
       file: no
-      string: '{"id":"ministri","name":"Ministři","datasetId":"ministri","origUrl":"https://cs.wikipedia.org/wiki/Seznam_ministr%C5%AF_%C4%8Cesk%C3%A9_republiky","description":"Jak
+      string: '{"id":"ministri","name":"Ministři","datasetId":"ministri","origUrl":"https://cs.wikipedia.org/wiki/Seznam_ministr%C5%AF_%C4%8Cesk%C3%A9_republiky","sourcecodeUrl":null,"description":"Jak
         dlouho zodpovídají jednotlivé politické strany za fungování státu a jednotlivé
         resorty?\r\nKteré strany jsou tradiční a které se jimi stávají?\r\nZde je
         seznam ministrů českých vlád od 1992. Zdrojem dat je seznam ministrů vlád
-        ČR z Wikipedie , který jsme vyčistily a znormalizovali pomocí OpenRefine.
-        \r\nNázvy resortů jsme sjednotili či jednodušili tehdy, pokud politická pozice
-        odpovídala za obdobné oblasti, jen se trochu lišil.\r\n","jsonSchema":"{\r\n  \"type\":
+        ČR z Wikipedie, který jsme vyčistili a znormalizovali pomocí OpenRefine. \r\nNázvy
+        resortů jsme sjednotili či jednodušili tehdy, pokud politická pozice odpovídala
+        za obdobné oblasti, jen se trochu lišili.\r\n","jsonSchema":"{\r\n  \"type\":
         \"object\",\r\n  \"properties\": {\r\n    \"id\": {\r\n      \"type\": [\r\n        \"number\",\r\n        \"null\"\r\n      ]\r\n    },\r\n    \"vlada\":
         {\r\n      \"type\": [\r\n        \"string\",\r\n        \"null\"\r\n      ]\r\n    },\r\n    \"pozice\":
         {\r\n      \"type\": [\r\n        \"string\",\r\n        \"null\"\r\n      ]\r\n    },\r\n    \"resort\":
@@ -45,19 +41,19 @@ http_interactions:
         {\r\n      \"type\": [\r\n        \"string\",\r\n        \"null\"\r\n      ]\r\n    },\r\n    \"zacatek\":
         {\r\n      \"type\": [\r\n        \"string\",\r\n        \"null\"\r\n      ],\r\n      \"format\":
         \"date-time\"\r\n    },\r\n    \"konec\": {\r\n      \"type\": [\r\n        \"string\",\r\n        \"null\"\r\n      ],\r\n      \"format\":
-        \"date-time\"\r\n    }\r\n  }\r\n}","createdBy":"michal@michalblaha.cz","created":"2020-01-05T21:06:00.7875344+01:00","betaversion":false,"allowWriteAccess":false,"hidden":false,"searchResultTemplate":{"body":"<!--
+        \"date-time\"\r\n    }\r\n  }\r\n}","createdBy":"michal@michalblaha.cz","created":"2021-08-06T19:32:25.6843149+02:00","betaversion":false,"allowWriteAccess":false,"hidden":false,"searchResultTemplate":{"header":null,"body":"<!--
         scriban {{ date.now }} --> \r\n<table class=\"table table-hover\">\r\n                        <thead>\r\n                            <tr>\r\n<th>Detail</th>\r\n<th>Vláda</th>\r\n<th>Resort</th>\r\n<th>Jmeno</th>\r\n<th>Strana</th>\r\n<th>Od</th>\r\n<th>Do</th>\r\n</tr>\r\n                        </thead>\r\n                        <tbody>\r\n{{
         for item in model.Result }}\r\n<tr>\r\n<td ><a href=\"{{ fn_DatasetItemUrl
         item.id }}\">Detail</a></td>\r\n<td >{{ item.vlada }}</td>\r\n<td >{{ item.resort
         }}</td>\r\n<td >{{ item.jmeno }}</td>\r\n<td >{{ item.strana }}</td>\r\n<td>{{
         fn_FormatDate item.zacatek }}</td>\r\n<td>{{ fn_FormatDate item.konec }}</td>\r\n\r\n</tr>\r\n{{
-        end }}\r\n\r\n</tbody></table>"},"detailTemplate":{"body":"<!-- scriban {{
-        date.now }} --> \r\n {{this.item = model}}\r\n<table class=\"table table-hover\"><tbody>\r\n<tr><td>ID</td><td
-        >{{ fn_FormatNumber item.id }}</td></tr>\r\n<tr><td>Vláda</td><td >{{ item.vlada
-        }}</td></tr>\r\n<tr><td>Pozice</td><td >{{ item.pozice }}</td></tr>\r\n<tr><td>Resort</td><td
+        end }}\r\n\r\n</tbody></table>","footer":null,"title":null,"properties":null},"detailTemplate":{"header":null,"body":"<!--
+        scriban {{ date.now }} --> \r\n {{this.item = model}}\r\n<table class=\"table
+        table-hover\"><tbody>\r\n<tr><td>ID</td><td >{{ fn_FormatNumber item.id }}</td></tr>\r\n<tr><td>Vláda</td><td
+        >{{ item.vlada }}</td></tr>\r\n<tr><td>Pozice</td><td >{{ item.pozice }}</td></tr>\r\n<tr><td>Resort</td><td
         >{{ item.resort }}</td></tr>\r\n<tr><td>Jmeno</td><td >{{ item.jmeno }}</td></tr>\r\n<tr><td>Strana</td><td
         >{{ item.strana }}</td></tr>\r\n<tr><td>Od</td><td >{{ fn_FormatDate item.zacatek
-        }}</td></tr>\r\n<tr><td>Do</td><td >{{ fn_FormatDate item.konec }}</td></tr>\r\n</table>\r\n"},"orderList":[["Datumu
+        }}</td></tr>\r\n<tr><td>Do</td><td >{{ fn_FormatDate item.konec }}</td></tr>\r\n</table>\r\n","footer":null,"title":null,"properties":null},"defaultOrderBy":null,"orderList":[["Datumu
         importu do db","DbCreated"]]}'
-  recorded_at: 2021-02-20 13:58:55 GMT
-  recorded_with: vcr/0.6.0, webmockr/0.7.4
+  recorded_at: 2021-08-23 12:30:08 GMT
+  recorded_with: vcr/1.0.0, webmockr/0.8.0

@@ -8,6 +8,7 @@ http_interactions:
     headers:
       Accept: application/json, text/xml, application/xml, */*
       Authorization: My token is safe
+      User-Agent: github.com/skvrnami/hlidacr
   response:
     status:
       status_code: 200
@@ -15,22 +16,17 @@ http_interactions:
       reason: OK
       message: 'Success: (200) OK'
     headers:
-      cache-control: no-cache
-      pragma: no-cache
-      content-type: application/json; charset=utf-8
-      expires: '-1'
-      server: Microsoft-IIS/8.5
-      x-aspnet-version: 4.0.30319
-      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
-      access-control-expose-headers: Request-Context
-      x-powered-by: ASP.NET
-      access-control-allow-origin: '*'
-      date: Sat, 20 Feb 2021 13:58:55 GMT
       content-length: '7390'
+      content-type: application/json; charset=utf-8
+      server: Microsoft-IIS/8.5
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      strict-transport-security: max-age=2592000
+      x-powered-by: ASP.NET
+      date: Mon, 23 Aug 2021 12:30:07 GMT
     body:
       encoding: UTF-8
       file: no
-      string: '{"Total":353,"Page":1,"Results":[{"id":53.0,"vlada":"Klaus II.","pozice":"Ministr
+      string: '{"total":353,"page":1,"results":[{"id":53.0,"vlada":"Klaus II.","pozice":"Ministr
         obrany","resort":"Ministerstvo obrany","jmeno":"Miloslav Výborný","strana":"KDU-ČSL","zacatek":"1996-07-04T00:00:00+02:00","konec":"1998-01-02T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.6585149Z","DbCreatedBy":null},{"id":342.0,"vlada":"Babiš
         II.","pozice":"Ministr životního prostředí","resort":"Ministerstvo životního
         prostředí","jmeno":"Richard Brabec","strana":"ANO 2011","zacatek":"2018-06-27T00:00:00+02:00","konec":null,"DbCreated":"2020-01-03T16:46:08.6741477Z","DbCreatedBy":null},{"id":76.0,"vlada":"Zeman","pozice":"Místopředseda
@@ -72,8 +68,8 @@ http_interactions:
         Dobeš","strana":"VV","zacatek":"2010-07-13T00:00:00+02:00","konec":"2012-03-31T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7210138Z","DbCreatedBy":null},{"id":293.0,"vlada":"Sobotka","pozice":"Ministr
         průmyslu a obchodu","resort":"Ministerstvo průmyslu a obchodu","jmeno":"Jan
         Mládek","strana":"ČSSD","zacatek":"2014-01-29T00:00:00+01:00","konec":"2017-02-28T00:00:00+01:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null}]}'
-  recorded_at: 2021-02-20 13:58:56 GMT
-  recorded_with: vcr/0.6.0, webmockr/0.7.4
+  recorded_at: 2021-08-23 12:30:10 GMT
+  recorded_with: vcr/1.0.0, webmockr/0.8.0
 - request:
     method: get
     uri: https://www.hlidacstatu.cz/Api/v2/datasety/ministri/hledat?dotaz=Zeman&strana=1
@@ -83,6 +79,7 @@ http_interactions:
     headers:
       Accept: application/json, text/xml, application/xml, */*
       Authorization: My token is safe
+      User-Agent: github.com/skvrnami/hlidacr
   response:
     status:
       status_code: 200
@@ -90,22 +87,17 @@ http_interactions:
       reason: OK
       message: 'Success: (200) OK'
     headers:
-      cache-control: no-cache
-      pragma: no-cache
       content-type: application/json; charset=utf-8
-      expires: '-1'
       server: Microsoft-IIS/8.5
-      x-aspnet-version: 4.0.30319
       request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
-      access-control-expose-headers: Request-Context
+      strict-transport-security: max-age=2592000
       x-powered-by: ASP.NET
-      access-control-allow-origin: '*'
-      date: Sat, 20 Feb 2021 13:58:55 GMT
+      date: Mon, 23 Aug 2021 12:30:09 GMT
       content-length: '7183'
     body:
       encoding: UTF-8
       file: no
-      string: '{"Total":27,"Page":1,"Results":[{"id":96.0,"vlada":"Zeman","pozice":"Ministr
+      string: '{"total":27,"page":1,"results":[{"id":96.0,"vlada":"Zeman","pozice":"Ministr
         obrany","resort":"Ministerstvo obrany","jmeno":"Jaroslav Tvrdík","strana":"ČSSD","zacatek":"2001-05-04T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8147591Z","DbCreatedBy":null},{"id":94.0,"vlada":"Zeman","pozice":"Ministr
         financí","resort":"Ministerstvo financí","jmeno":"Jiří Rusnok","strana":"ČSSD","zacatek":"2001-04-13T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7679724Z","DbCreatedBy":null},{"id":99.0,"vlada":"Zeman","pozice":"Ministr
         bez portfeje","resort":"Ministr bez portfeje","jmeno":"Karel Březina","strana":"ČSSD","zacatek":"2000-03-23T00:00:00+01:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.7991562Z","DbCreatedBy":null},{"id":86.0,"vlada":"Zeman","pozice":"Ministr
@@ -140,5 +132,5 @@ http_interactions:
         financí","jmeno":"Pavel Mertlík","strana":"ČSSD","zacatek":"1998-07-22T00:00:00+02:00","konec":"2001-04-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.736637Z","DbCreatedBy":null},{"id":89.0,"vlada":"Zeman","pozice":"Ministr
         vnitra","resort":"Ministerstvo vnitra","jmeno":"Stanislav Gross","strana":"ČSSD","zacatek":"2000-04-05T00:00:00+02:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.6741477Z","DbCreatedBy":null},{"id":81.0,"vlada":"Zeman","pozice":"Ministr
         spravedlnosti","resort":"Ministerstvo spravedlnosti","jmeno":"Jaroslav Bureš","strana":"nestraník","zacatek":"2001-02-02T00:00:00+01:00","konec":"2002-07-12T00:00:00+02:00","DbCreated":"2020-01-03T16:46:08.8616378Z","DbCreatedBy":null}]}'
-  recorded_at: 2021-02-20 13:58:56 GMT
-  recorded_with: vcr/0.6.0, webmockr/0.7.4
+  recorded_at: 2021-08-23 12:30:10 GMT
+  recorded_with: vcr/1.0.0, webmockr/0.8.0
