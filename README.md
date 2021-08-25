@@ -75,8 +75,18 @@ str(datasets, max.level = 1)
 #>  $ page   : int 1
 #>  $ results:'data.frame': 31 obs. of  16 variables:
 
-head(datasets$Results[,1:2], 10)
-#> NULL
+head(datasets$results[,1:2], 10)
+#>                          id                                           name
+#> 1         ministry-invoices                        Faktury ministerstev ČR
+#> 2           rozhodnuti-uohs                                Rozhodnutí UOHS
+#> 3            prijemcidotaci                                Příjemci dotací
+#> 4    publicchargingstations             Seznam veřejných dobíjecích stanic
+#> 5   kvalifikovanidodavatele                       Kvalifikovani dodavatele
+#> 6                stav-mostu                                Stav Mostů v ČR
+#> 7  seznam-politickych-stran               Seznam politických stran a hnutí
+#> 8                    veklep   Elektronická knihovna legislativního procesu
+#> 9          stenozaznamy-psp Stenozáznamy Poslanecké sněmovny Parlamentu ČR
+#> 10 tiskove-konference-vlady                    Tiskové konference vlády ČR
 ```
 
 In general, the data are usually returned in a list with 3 elements:
@@ -85,8 +95,10 @@ In general, the data are usually returned in a list with 3 elements:
 -   `total`: total number of records  
 -   `results`: data
 
-(Therefore, to get all the data you need to iterate over the pages by
-specifying particular page of the results you want)
+(Therefore, to get the data you need to iterate over the pages by
+specifying particular page of the results you want. However, be aware of
+the fact that the API returns error if the parameter `page` exceeds
+200.)
 
 The data from these datasets can be obtained by `get_dataset_data`
 function using dataset’s ID. For example:
@@ -171,15 +183,15 @@ Searching for a person is done using `search_person`. For instance:
 babis <- search_person("Babiš")
 head(babis)
 #>   titulPred    jmeno prijmeni titulPo            narozeni           nameId
-#> 1      <NA>   Patrik    Babiš    <NA> 1973-05-01T00:00:00     patrik-babis
-#> 2              Pavel    Babiš         1975-02-20T00:00:00      pavel-babis
+#> 1              Pavel    Babiš         1975-02-20T00:00:00      pavel-babis
+#> 2      <NA>   Patrik    Babiš    <NA> 1973-05-01T00:00:00     patrik-babis
 #> 3              Miloš    Babiš         1960-05-12T00:00:00      milos-babis
 #> 4      <NA>   Patrik    Babiš    <NA> 1972-04-17T00:00:00   patrik-babis-1
 #> 5      Ing.   Andrej    Babiš    <NA> 1954-09-02T00:00:00     andrej-babis
 #> 6           Alexandr    Babic         1975-11-07T00:00:00 alexandr-babic-2
 #>                   profile
-#> 1     /osoba/patrik-babis
-#> 2      /osoba/pavel-babis
+#> 1      /osoba/pavel-babis
+#> 2     /osoba/patrik-babis
 #> 3      /osoba/milos-babis
 #> 4   /osoba/patrik-babis-1
 #> 5     /osoba/andrej-babis

@@ -1,7 +1,7 @@
 Package: hlidacr
 Type: Package
 Title: Access Data from the 'Hlídač Státu' API
-Version: 0.2.0.9000
+Version: 0.2.0
 Date: 2021-08-25
 Authors@R:
     person(given = "Michael", 

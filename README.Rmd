@@ -84,8 +84,9 @@ In general, the data are usually returned in a list with 3 elements:
 - `total`: total number of records  
 - `results`: data  
 
-(Therefore, to get all the data you need to iterate over the pages by specifying
-particular page of the results you want)
+(Therefore, to get the data you need to iterate over the pages by specifying
+particular page of the results you want. However, be aware of the fact that 
+the API returns error if the parameter `page` exceeds 200.)
 
 The data from these datasets can be obtained by `get_dataset_data` function
 using dataset's ID. 
