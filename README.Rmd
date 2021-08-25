@@ -75,7 +75,7 @@ TOKEN <- Sys.getenv("HLIDAC_TOKEN")
 datasets <- get_datasets(token = TOKEN)
 str(datasets, max.level = 1)
 
-head(datasets$Results[,1:2], 10)
+head(datasets$results[,1:2], 10)
 ```
 
 In general, the data are usually returned in a list with 3 elements:

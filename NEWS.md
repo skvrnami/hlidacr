@@ -1,5 +1,13 @@
 # NEWS
 
+## hlidacr 0.2.0
+- make error message more informative
+- update documentation 
+    - inform users about `page` limits
+    - update for changes in API
+    - update README
+- add `search_person_by_parameters` function
+
 ## hlidacr 0.1.3
 - updates based on CRAN submission
     - update DESCRIPTION
