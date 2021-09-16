@@ -15,13 +15,13 @@ get_person_social(types, token = Sys.getenv("HLIDAC_TOKEN"))
 \value{
 data.frame with data on persons' social accounts with the
 following columns:
-- TitulPred: academic titles written before person's name
-- Jmeno: given name
-- Prijmeni: surname
-- TitulPo: academic titles written after person's name
-- NameId: person's ID
-- Profile: URL of profile at hlidacstatu.cz
-- SocialniSite: data.frame with data on social accounts (Type of social media,
+- titulPred: academic titles written before person's name
+- jmeno: given name
+- prijmeni: surname
+- titulPo: academic titles written after person's name
+- nameId: person's ID
+- profile: URL of profile at hlidacstatu.cz
+- socialniSite: data.frame with data on social accounts (Type of social media,
 Id of the social media account, URL)
 }
 \description{
@@ -39,6 +39,7 @@ get_person_social(types = c("Twitter", "Instagram"))
 
 Other Persons: 
 \code{\link{get_person}()},
+\code{\link{search_person_by_parameters}()},
 \code{\link{search_person}()}
 }
 \concept{Persons}

@@ -8,6 +8,7 @@ http_interactions:
     headers:
       Accept: application/json, text/xml, application/xml, */*
       Authorization: My token is safe
+      User-Agent: github.com/skvrnami/hlidacr
   response:
     status:
       status_code: 200
@@ -15,18 +16,13 @@ http_interactions:
       reason: OK
       message: 'Success: (200) OK'
     headers:
-      cache-control: no-cache
-      pragma: no-cache
+      content-length: '106907'
       content-type: application/json; charset=utf-8
-      expires: '-1'
       server: Microsoft-IIS/8.5
-      x-aspnet-version: 4.0.30319
       request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
-      access-control-expose-headers: Request-Context
+      strict-transport-security: max-age=2592000
       x-powered-by: ASP.NET
-      access-control-allow-origin: '*'
-      date: Sat, 20 Feb 2021 17:52:41 GMT
-      content-length: '105769'
+      date: Mon, 23 Aug 2021 12:32:06 GMT
     body:
       encoding: UTF-8
       file: no
@@ -51,7 +47,7 @@ http_interactions:
         informací z meteorologických družic; přenos informací na servery ČHMÚ; tvorba
         produktů pro interní a externí uživatele; prezentace operativních produktů
         na webu ČHMÚ","hash":"F1578A7A2599BF7AE0323FAC218B1A89"},{"hostid":"10133","host":"HTTPS
-        www.mojedatovaschranka.cz searchList","url":"https://www.mojedatovaschranka.cz/sds/searchList?start=null&extendedSearch=no&searchCriterion=ovm_name_of_subject&searchValue=dm","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10133","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10133?h=069F6A4358DB3D0F3FD94ABF09E1E5D9","urad":"Ministerstvo
+        www.mojedatovaschranka.cz searchList","url":"https://www.mojedatovaschranka.cz/sds/searchList","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10133","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10133?h=069F6A4358DB3D0F3FD94ABF09E1E5D9","urad":"Ministerstvo
         vnitra","publicname":"Datove schranky","popis":"Seznam držitelů datových schránek","hash":"069F6A4358DB3D0F3FD94ABF09E1E5D9"},{"hostid":"10245","host":"www.mojedatovaschranka.cz","url":"http://www.mojedatovaschranka.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10245","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10245?h=4429F6399A95092295C20853235A4296","urad":"Ministerstvo
         vnitra","publicname":"Moje datová schránka","popis":"Systém datových schránek,
         web rozhraní.","hash":"4429F6399A95092295C20853235A4296"},{"hostid":"10131","host":"HTTPS
@@ -89,7 +85,7 @@ http_interactions:
         zdravotnictví","publicname":"Přehled situace v ČR: COVID-19","popis":"Zejména
         statistická data","hash":"47551BB397B93BB84C839F63AAB954C4"},{"hostid":"10504","host":"HTTPS
         crs.uzis.cz","url":"https://crs.uzis.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10504","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10504?h=33FD3ABED794973EB15F1B9BE0D9B85A","urad":"Ministerstvo
-        zdravotnictví","publicname":"Centrální rezervační systém odběrových míst COVID-19","popis":"Přehled
+        zdravotnictví","publicname":"Centrální rezervační systém odběrových","popis":"Přehled
         odběrových míst v jednotlivých krajích a odkazy, kde je možné si termín zarezervovat,
         data o vytížení odběrových míst a možnost rezervace. ","hash":"33FD3ABED794973EB15F1B9BE0D9B85A"},{"hostid":"10506","host":"HTTPS
         obcan.portal.gov.cz","url":"https://obcan.portal.gov.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10506","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10506?h=9A2B8DEB6C2F8865EB5D8C91A218C92D","urad":"Ministerstvo
@@ -100,7 +96,11 @@ http_interactions:
         financí","publicname":"API EET","popis":"API EET se kterým komunikují pokladny
         obchodníků","hash":"4EF6E65DBEC8941B23A03D46770F2F6F"},{"hostid":"10463","host":"NEN
         API","url":"https://portalnen.nipez.cz/","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10463","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10463?h=D093ACAB494DAA8C979AC24573F84E24","urad":"MMR","publicname":"NEN
-        aplikace","popis":"NEN Silverlight aplikace","hash":"D093ACAB494DAA8C979AC24573F84E24"},{"hostid":"10118","host":"hydro.chmi.cz
+        aplikace","popis":"NEN Silverlight aplikace","hash":"D093ACAB494DAA8C979AC24573F84E24"},{"hostid":"10513","host":"MS2014
+        Aplikace","url":"https://mseu.mssf.cz/sd/registrace.aspx","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10513","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10513?h=B7B09B02CE1A5C6101BE29ACACEC18C9","urad":"MMR","publicname":"MS2014+
+        aplikace","popis":"Portál IS KP14+, část MS2014+ aplikace","hash":"B7B09B02CE1A5C6101BE29ACACEC18C9"},{"hostid":"10513","host":"MS2014
+        Aplikace","url":"https://mseu.mssf.cz/sd/registrace.aspx","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10513","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10513?h=B7B09B02CE1A5C6101BE29ACACEC18C9","urad":"MMR","publicname":"MS2014+
+        aplikace","popis":"Portál IS KP14+, část MS2014+ aplikace","hash":"B7B09B02CE1A5C6101BE29ACACEC18C9"},{"hostid":"10118","host":"hydro.chmi.cz
         hpps","url":"http://hydro.chmi.cz/hpps","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10118","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10118?h=F9A5C299DEE18031266E96FD8DA961C7","urad":"Český
         hydrometeorologický ústav","publicname":"Hlásná/předpovědní povodň.služba","popis":"Zpřístupňuje
         operativní a podpůrná data v rámci hlásné a předpovědní povodňové služby ČHMÚ.
@@ -678,6 +678,9 @@ http_interactions:
         Praha","publicname":"Geoportal Praha","popis":"","hash":"228BE53130B351D3750DD73A45989A7A"},{"hostid":"10177","host":"HTTPS
         data.cssz.cz","url":"https://data.cssz.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10177","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10177?h=C68D561BD75F12311AB20D5CC6C46281","urad":"ČSSZ","publicname":"Open
         data ČSSZ","popis":"Publikace a vizualizace otevřených dat, která vlastní
-        a spravuje Česká správa sociálního zabezpečení ","hash":"C68D561BD75F12311AB20D5CC6C46281"}]'
-  recorded_at: 2021-02-20 17:52:42 GMT
-  recorded_with: vcr/0.6.0, webmockr/0.7.4
+        a spravuje Česká správa sociálního zabezpečení ","hash":"C68D561BD75F12311AB20D5CC6C46281"},{"hostid":"10514","host":"HTTPS
+        dataor.justice.cz","url":"https://dataor.justice.cz","opendataUrl":"https://www.hlidacstatu.cz/api/v2/Weby/10514","pageUrl":"https://www.hlidacstatu.cz/StatniWeby/Info/10514?h=79C7DDC183916F71E6566D1AEDD57A3B","urad":"Ministerstvo
+        spravedlnosti","publicname":"Otevřená data Ministerstva spravedlnosti","popis":"Server
+        poskytujici open data z justice, zejmena obchodni rejstřík","hash":"79C7DDC183916F71E6566D1AEDD57A3B"}]'
+  recorded_at: 2021-08-23 12:32:06 GMT
+  recorded_with: vcr/1.0.0, webmockr/0.8.0

@@ -19,6 +19,7 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/hlidacr)](https://CRAN.R-project.org/package=hlidacr)
 [![R build status](https://github.com/skvrnami/hlidacr/workflows/R-CMD-check/badge.svg)](https://github.com/skvrnami/hlidacr/actions)
 [![codecov](https://codecov.io/gh/skvrnami/hlidacr/branch/main/graph/badge.svg?token=FWP73F1DOL)](https://codecov.io/gh/skvrnami/hlidacr)
+[![](https://cranlogs.r-pkg.org/badges/hlidacr)](https://CRAN.R-project.org/package=hlidacr)
 <!-- badges: end -->
 
 The goal of hlidacr is to provide access to the data published by [Hlídač státu](https://www.hlidacstatu.cz/) provided by their [API](https://www.hlidacstatu.cz/api/v2/swagger/index). 
@@ -74,17 +75,18 @@ TOKEN <- Sys.getenv("HLIDAC_TOKEN")
 datasets <- get_datasets(token = TOKEN)
 str(datasets, max.level = 1)
 
-head(datasets$Results[,1:2], 10)
+head(datasets$results[,1:2], 10)
 ```
 
 In general, the data are usually returned in a list with 3 elements:
 
-- Page  
-- Total: total number of records  
-- Results: data  
+- `page`  
+- `total`: total number of records  
+- `results`: data  
 
-(Therefore, to get all the data you need to iterate over the pages by specifying
-particular page of the results you want)
+(Therefore, to get the data you need to iterate over the pages by specifying
+particular page of the results you want. However, be aware of the fact that 
+the API returns error if the parameter `page` exceeds 200.)
 
 The data from these datasets can be obtained by `get_dataset_data` function
 using dataset's ID. 
@@ -92,7 +94,7 @@ For example:
 
 ```{r}
 ministers <- get_dataset_data("ministri", page = 1)
-head(ministers$Results %>% select(resort, jmeno, strana, zacatek))
+head(ministers$results %>% select(resort, jmeno, strana, zacatek))
 ```
 
 Second, there are specific datasets that are available via specific routes
@@ -104,16 +106,16 @@ For example:
 
 ```{r}
 golf_subsidies <- search_subsidies("golf")
-head(golf_subsidies$Results %>% select(IdDotace, NazevProjektu, DotaceCelkem))
+head(golf_subsidies$results %>% select(idDotace, nazevProjektu, dotaceCelkem))
 ```
 
 ```{r}
 golf_contracts <- search_contracts("golf")
-head(golf_contracts$Results %>% select(predmet, hodnotaBezDph))
+head(golf_contracts$results %>% select(predmet, hodnotaBezDph))
 ```
 
 In addition, you can get the text of particular contract using `get_contract_text`
-using the ID of the contract that is stored in the column `Id` in the
+using the ID of the contract that is stored in the column `id` in the
 data.frame returned by `search_contracts`.
 
 ```{r}
@@ -135,17 +137,17 @@ The example below shows Andrej Babiš's donations to political parties.
 
 ```{r}
 ab <- get_person("andrej-babis")
-head(ab$Sponzoring %>% arrange(desc(Castka)))
+head(ab$sponzoring %>% arrange(desc(castka)))
 ```
 
 Besides getting social media accounts for a particular person using the 
 `get_person` function, you can obtain social media accounts of Czech politicians, 
 using `get_person_social`. 
-It returns a data.frame with a data.frame nested in the `SocialniSite` variable.
+It returns a data.frame with a data.frame nested in the `socialniSite` variable.
 For instance: 
 
 ```{r}
 twitter_insta <- get_person_social(types = c("Instagram", "Twitter"))
-twitter_insta$SocialniSite[1]
+twitter_insta$socialniSite[2]
 ```
 

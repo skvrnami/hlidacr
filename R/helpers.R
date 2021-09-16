@@ -20,6 +20,11 @@ handle_error_response <- function(response){
     msg <- paste("HTTP Error", response$status_code,
                  "when connecting to Hlidac statu.")
 
+    if(response$status_code == 400){
+        hs_msg <- stringr::str_conv(response$content, "UTF-8")
+        msg <- paste(msg, "Error message from Hlidac statu:", hs_msg)
+    }
+
     if(response$status_code == 401){
         msg <- paste(msg, "Probably invalid token.")
     }

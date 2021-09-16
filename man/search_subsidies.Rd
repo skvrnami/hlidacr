@@ -14,7 +14,7 @@ search_subsidies(
 \arguments{
 \item{query}{Search query}
 
-\item{page}{Page number}
+\item{page}{Page number (Please note that if the page parameter exceeds 200, the function returns error)}
 
 \item{sort}{Sorting of results, the available options are the following:
 - 0: order by relevance
@@ -29,9 +29,9 @@ search_subsidies(
 }
 \value{
 list containing 3 elements:
-- Total: Total number of datasets available (integer)
-- Page: Page of the result (integer), equal to the `page` argument of the function
-- Results: Data.frame with data, columns vary depending on the dataset
+- total: Total number of datasets available (integer)
+- page: Page of the result (integer), equal to the `page` argument of the function
+- results: Data.frame with data, columns vary depending on the dataset
 }
 \description{
 Search subsidies

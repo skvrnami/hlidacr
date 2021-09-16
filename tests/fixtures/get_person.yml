@@ -8,6 +8,7 @@ http_interactions:
     headers:
       Accept: application/json, text/xml, application/xml, */*
       Authorization: My token is safe
+      User-Agent: github.com/skvrnami/hlidacr
   response:
     status:
       status_code: 200
@@ -15,111 +16,106 @@ http_interactions:
       reason: OK
       message: 'Success: (200) OK'
     headers:
-      cache-control: no-cache
-      pragma: no-cache
       content-type: application/json; charset=utf-8
-      expires: '-1'
       server: Microsoft-IIS/8.5
-      x-aspnet-version: 4.0.30319
       request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
-      access-control-expose-headers: Request-Context
+      strict-transport-security: max-age=2592000
       x-powered-by: ASP.NET
-      access-control-allow-origin: '*'
-      date: Sat, 20 Feb 2021 13:58:56 GMT
-      content-length: '16199'
+      date: Mon, 23 Aug 2021 12:31:55 GMT
+      content-length: '18273'
     body:
       encoding: UTF-8
       file: no
-      string: '{"TitulPred":"Ing.","Jmeno":"Andrej","Prijmeni":"Babiš","Narozeni":"1954-09-02T00:00:00","NameId":"andrej-babis","Profile":"/osoba/andrej-babis","Sponzoring":[{"Typ":"sponzor","Organizace":"ANO","Castka":50000.000000000,"DatumOd":"2015-01-01T00:00:00","DatumDo":"2015-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":50000.000000000,"DatumOd":"2014-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":50000.000000000,"DatumOd":"2016-01-01T00:00:00","DatumDo":"2016-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":5082.000000000,"DatumOd":"2017-01-01T00:00:00","DatumDo":"2017-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":50000.000000000,"DatumOd":"2017-01-01T00:00:00","DatumDo":"2017-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":50000.000000000,"DatumOd":"2018-01-01T00:00:00","DatumDo":"2018-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":19400.000000000,"DatumOd":"2018-01-01T00:00:00","DatumDo":"2018-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":69400.000000000,"DatumOd":"2019-01-01T00:00:00","DatumDo":"2019-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":8000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":2500000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":2500000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":2000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":2000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":2000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":2000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":2000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":2000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":1000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":1000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":1000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":1000000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"sponzor","Organizace":"ANO","Castka":500000.000000000,"DatumOd":"2012-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"}],"Udalosti":[{"Typ":"Politická","Organizace":"KSČ","Role":"člen
-        strany","DatumOd":"1980-01-01T00:00:00","DatumDo":"1989-01-01T00:00:00"},{"Typ":"Politická","Organizace":"ANO","Role":"zakladatel","DatumOd":"2011-01-01T00:00:00","DatumDo":"2011-12-31T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT a.s.","Role":"akcionář","DatumOd":"2004-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"SynBiol, a.s.","Role":"akcionář","DatumOd":"2008-01-01T00:00:00","DatumDo":"2017-01-01T00:00:00"},{"Typ":"Jiné","Organizace":"AIESEC","Role":"prezident"},{"Typ":"Politická","Organizace":"Komunistická
-        strana Slovenska","Role":"člen strany","DatumOd":"1980-01-01T00:00:00","DatumDo":"1989-01-01T00:00:00"},{"Typ":"Politická","Organizace":"ANO","Role":"předseda
-        strany","DatumOd":"2012-08-01T00:00:00"},{"Typ":"Soukromá pracovní","Organizace":"AGROFERT,
-        a.s.","Role":"akcionář","DatumOd":"2005-01-01T00:00:00","DatumDo":"2017-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGRIPLAST, s.r.o.","Role":"jednatel","DatumOd":"1993-01-01T00:00:00","DatumDo":"1997-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGRIPLAST, s.r.o.","Role":"statutární orgán","DatumOd":"1993-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGRIPLAST, s.r.o.","Role":"společník","DatumOd":"1993-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Lovochemie, a.s.","Role":"statutární orgán","DatumOd":"1993-01-01T00:00:00","DatumDo":"2002-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Lovochemie, a.s.","Role":"člen představenstva","DatumOd":"1993-01-01T00:00:00","DatumDo":"1996-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Lovochemie, a.s.","Role":"předseda představenstva","DatumOd":"1997-01-01T00:00:00","DatumDo":"2002-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Lovochemie, a.s.","Role":"předseda představenstva","DatumOd":"2008-01-01T00:00:00","DatumDo":"2009-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Lovochemie, a.s.","Role":"místopředseda představenstva","DatumOd":"1995-01-01T00:00:00","DatumDo":"1996-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Lovochemie, a.s.","Role":"člen dozorčí rady","DatumOd":"1997-01-01T00:00:00","DatumDo":"1997-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT, spol. s r.o.","Role":"jednatel","DatumOd":"1993-01-01T00:00:00","DatumDo":"1994-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROUHLÍ CR, spol. s r.o.","Role":"jednatel","DatumOd":"1994-01-01T00:00:00","DatumDo":"1995-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"OSVČ","Role":"soukromý podnikatel","DatumOd":"1998-01-01T00:00:00","DatumDo":"2008-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROTER s.r.o.","Role":"jednatel a společník","DatumOd":"1994-01-01T00:00:00","DatumDo":"2004-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROPROFIT spol. s r.o.","Role":"jednatel","DatumOd":"1994-01-01T00:00:00","DatumDo":"2001-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT a.s.","Role":"statutární orgán","DatumOd":"2000-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT a.s.","Role":"předseda představenstva","DatumOd":"2000-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROBOHEMIE a.s.","Role":"předseda představenstva","DatumOd":"1995-01-01T00:00:00","DatumDo":"2008-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECOLOR, a.s.","Role":"předseda představenstva","DatumOd":"1995-01-01T00:00:00","DatumDo":"2002-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"ZEMPOS, a.s.","Role":"předseda dozorčí rady","DatumOd":"1995-01-01T00:00:00","DatumDo":"1996-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"IMOBA spol. s r.o.","Role":"jednatel","DatumOd":"1995-01-01T00:00:00","DatumDo":"1999-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGRONOVA CS s.r.o.","Role":"jednatel","DatumOd":"1995-01-01T00:00:00","DatumDo":"1996-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Zemědělské zásobování a nákup, a.s., Česká Skalice","Role":"člen
-        předsednictva","DatumOd":"1995-01-01T00:00:00","DatumDo":"1996-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"ZEMAP - INVEST, První investiční společnost a.s. v
-        likvidaci","DatumOd":"1995-01-01T00:00:00","DatumDo":"1997-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PROFERTA, a.s.","Role":"předseda představenstva","DatumOd":"1997-01-01T00:00:00","DatumDo":"1999-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECHEZA a.s.","Role":"statutární orgán","DatumOd":"2006-01-01T00:00:00","DatumDo":"2009-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECHEZA a.s.","Role":"předseda představenstva","DatumOd":"2008-01-01T00:00:00","DatumDo":"2009-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECHEZA a.s.","Role":"statutární orgán","DatumOd":"1997-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECHEZA a.s.","Role":"člen dozorčí rady","DatumOd":"2006-01-01T00:00:00","DatumDo":"2008-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECHEZA a.s.","Role":"předseda dozorčí rady","DatumOd":"2008-01-01T00:00:00","DatumDo":"2009-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"IMOBA spol. s r.o.","Role":"jednatel","DatumOd":"1995-01-01T00:00:00","DatumDo":"1999-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT HOLDING, a.s.","Role":"předseda představenstva","DatumOd":"2002-01-01T00:00:00","DatumDo":"2004-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGFTRADING, spol. s r.o.","Role":"jednatel","DatumOd":"1999-01-01T00:00:00","DatumDo":"2000-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Synthesia, a.s.","Role":"statutární orgán","DatumOd":"2000-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Synthesia, a.s.","Role":"předseda představenstva","DatumOd":"2004-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Synthesia, a.s.","Role":"člen dozorčí rady","DatumOd":"2000-01-01T00:00:00","DatumDo":"2004-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGF - K, a.s.","Role":"předseda představenstva","DatumOd":"2004-01-01T00:00:00","DatumDo":"2006-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Fatra, a.s.","Role":"předseda dozorčí rady","DatumOd":"2005-01-01T00:00:00","DatumDo":"2008-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PROFROST a.s.","Role":"předseda představenstva","DatumOd":"2006-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"SynBiol, a.s.","Role":"statutární orgán","DatumOd":"2008-01-01T00:00:00","DatumDo":"2017-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"SynBiol, a.s.","Role":"člen představenstva","DatumOd":"2008-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PZO Chemapol Bratislava","Role":"zaměstnanec","DatumOd":"1978-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PZO Petrimex","Role":"zaměstnanec","DatumOd":"1985-01-01T00:00:00","DatumDo":"1995-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PZO Petrimex","Role":"delegát","DatumOd":"1985-01-01T00:00:00","DatumDo":"1991-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PZO Petrimex","Role":"ředitel","DatumOd":"1991-01-01T00:00:00","DatumDo":"1995-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"HI-Medica, a.s.","Role":"člen představenstva","DatumOd":"2008-01-01T00:00:00","DatumDo":"2009-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Agropol Group, a.s.","Role":"předseda dozorčí rady","DatumOd":"2009-01-01T00:00:00","DatumDo":"2010-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT Trading, s.r.o.","Role":"jednatel","DatumOd":"2009-01-01T00:00:00","DatumDo":"2010-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Nové Průhonice s.r.o.","Role":"jednatel","DatumOd":"2010-01-01T00:00:00","DatumDo":"2011-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGF Wood, a.s.","Role":"předseda představenstva","DatumOd":"2011-01-01T00:00:00","DatumDo":"2012-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Zemědělská společnost Luže, a.s.","Role":"předseda
-        představenstva","DatumOd":"2011-01-01T00:00:00"},{"Typ":"Soukromá pracovní","Organizace":"AGF
-        Media, a.s.","Role":"předseda představenstva","DatumOd":"2011-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Hartenberg Holding, s.r.o.","Role":"jednatel","DatumOd":"2013-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Kostelecké maso uzeniny, a.s.","Role":"předseda dozorčí
-        rady","DatumOd":"2004-01-01T00:00:00","DatumDo":"2006-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Kostelecké maso uzeniny, a.s.","Role":"statutární
-        orgán","DatumOd":"2008-01-01T00:00:00"},{"Typ":"Soukromá pracovní","Organizace":"Kostelecké
-        maso uzeniny, a.s.","Role":"člen představenstva","DatumOd":"2008-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Kostelecké maso uzeniny, a.s.","Role":"akcionář","DatumOd":"2008-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"IMOBA, a.s.","Role":"předseda představenstva","DatumOd":"2007-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROSERVIS Chomutov a.s.","Role":"člen dozorčí rady","DatumOd":"1995-01-01T00:00:00","DatumDo":"1999-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Nadace AGROFERT","Role":"předseda správní rady","DatumOd":"2011-01-01T00:00:00"},{"Typ":"Politická","Organizace":"Kandidát
-        ANO ve volbách do Poslanecké sněmovny PČR ","Role":"kandidát","DatumOd":"2013-01-01T00:00:00","DatumDo":"2013-12-31T00:00:00"},{"Typ":"Politická","Organizace":"ANO","Role":"člen
-        strany","DatumOd":"2012-05-11T00:00:00"},{"Typ":"Politická pracovní","Organizace":"Vláda
-        České republiky","Role":"1. místopředseda","DatumOd":"2014-01-29T00:00:00","DatumDo":"2017-05-24T00:00:00"},{"Typ":"Politická
-        pracovní","Organizace":"Ministerstvo financí","Role":"ministr","DatumOd":"2014-01-29T00:00:00","DatumDo":"2017-05-24T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"CS CABOT, spol. s r.o.","Role":"jednatel","DatumOd":"1999-01-01T00:00:00","DatumDo":"2004-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT, a.s.","Role":"statutární orgán","DatumOd":"2000-01-01T00:00:00","DatumDo":"2017-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT, a.s.","Role":"předseda představenstva","DatumOd":"2000-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"Veřejná
-        správa jiné","Organizace":"Rozpočtový výbor - Poslanecká sněmovna PČR ","Role":"člen","DatumOd":"2013-01-01T00:00:00","DatumDo":"2014-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECHEZA a.s.","Role":"předseda dozorčí rady","DatumOd":"2002-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECHEZA a.s.","Role":"předseda dozorčí rady","DatumOd":"1997-01-01T00:00:00","DatumDo":"2000-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"PRECHEZA a.s.","Role":"předseda představenstva","DatumOd":"2000-01-01T00:00:00","DatumDo":"2001-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Kostelecké uzeniny a.s.","Role":"předseda představenstva","DatumOd":"2006-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"Kostelecké uzeniny a.s.","Role":"předseda dozorčí
-        rady","DatumOd":"2004-01-01T00:00:00","DatumDo":"2005-01-01T00:00:00"},{"Typ":"Soukromá
-        pracovní","Organizace":"AGROFERT HOLDING, a.s.","Role":"předseda představenstva","DatumOd":"1997-01-01T00:00:00","DatumDo":"1998-01-01T00:00:00"},{"Typ":"Veřejná
-        správa jiné","Organizace":"Kontrolní výbor - Poslanecká sněmovna PČR ","Role":"člen","DatumOd":"2017-06-07T00:00:00","DatumDo":"2017-10-26T00:00:00"},{"Typ":"Politická","Organizace":"kandidát
-        ANO ve volbách do Poslanecké sněmovny Parlamentu ČR","Role":" kandidát","DatumOd":"2017-01-01T00:00:00","DatumDo":"2017-12-31T00:00:00"},{"Typ":"Politická
-        pracovní","Organizace":"Vláda České republiky","Role":"premiér","DatumOd":"2017-12-06T00:00:00"},{"Typ":"Volená
-        funkce","Organizace":"Poslanecká sněmovna PČR","Role":"poslanec","DatumOd":"2013-01-01T00:00:00"},{"Typ":"Politická","Organizace":"Poslanecký
-        klub ANO 2011","Role":"člen","DatumOd":"2013-10-30T00:00:00"}],"SocialniSite":[{"Type":"Facebook_page","Id":"andrejbabis","Url":"https://www.facebook.com/andrejbabis"},{"Type":"Twitter","Id":"andrejbabis","Url":"https://twitter.com/andrejbabis"},{"Type":"youtube","Id":"https://www.youtube.com/user/anobudelip","Url":""}]}'
-  recorded_at: 2021-02-20 13:58:56 GMT
-  recorded_with: vcr/0.6.0, webmockr/0.7.4
+      string: '{"titulPred":"Ing.","jmeno":"Andrej","prijmeni":"Babiš","titulPo":null,"narozeni":"1954-09-02T00:00:00","nameId":"andrej-babis","profile":"/osoba/andrej-babis","sponzoring":[{"typ":"sponzor","organizace":"ANO","role":null,"castka":50000.000000000,"datumOd":"2015-01-01T00:00:00","datumDo":"2015-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":50000.000000000,"datumOd":"2014-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":50000.000000000,"datumOd":"2016-01-01T00:00:00","datumDo":"2016-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":8000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":2500000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":2500000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":2000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":2000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":2000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":2000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":2000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":2000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":1000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":1000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":1000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":1000000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":500000.000000000,"datumOd":"2012-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":50000.000000000,"datumOd":"2017-01-01T00:00:00","datumDo":"2017-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":500000.000000000,"datumOd":"2017-01-01T00:00:00","datumDo":"2017-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":5082.000000000,"datumOd":"2017-01-01T00:00:00","datumDo":"2017-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":19400.000000000,"datumOd":"2018-01-01T00:00:00","datumDo":"2018-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":50000.000000000,"datumOd":"2018-01-01T00:00:00","datumDo":"2018-01-01T00:00:00"},{"typ":"sponzor","organizace":"ANO","role":null,"castka":69400.000000000,"datumOd":"2019-01-01T00:00:00","datumDo":"2019-01-01T00:00:00"}],"udalosti":[{"typ":"Politická","organizace":"KSČ","role":"člen
+        strany","castka":null,"datumOd":"1980-01-01T00:00:00","datumDo":"1989-01-01T00:00:00"},{"typ":"Politická","organizace":"ANO","role":"zakladatel","castka":null,"datumOd":"2011-01-01T00:00:00","datumDo":"2011-12-31T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT a.s.","role":"akcionář","castka":null,"datumOd":"2004-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"SynBiol, a.s.","role":"akcionář","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":"2017-01-01T00:00:00"},{"typ":"Jiné","organizace":"AIESEC","role":"prezident","castka":null,"datumOd":null,"datumDo":null},{"typ":"Politická","organizace":"Komunistická
+        strana Slovenska","role":"člen strany","castka":null,"datumOd":"1980-01-01T00:00:00","datumDo":"1989-01-01T00:00:00"},{"typ":"Politická","organizace":"ANO","role":"předseda
+        strany","castka":null,"datumOd":"2012-08-01T00:00:00","datumDo":null},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT, a.s.","role":"akcionář","castka":null,"datumOd":"2005-01-01T00:00:00","datumDo":"2017-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGRIPLAST, s.r.o.","role":"jednatel","castka":null,"datumOd":"1993-01-01T00:00:00","datumDo":"1997-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGRIPLAST, s.r.o.","role":"statutární orgán","castka":null,"datumOd":"1993-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGRIPLAST, s.r.o.","role":"společník","castka":null,"datumOd":"1993-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Lovochemie, a.s.","role":"statutární orgán","castka":null,"datumOd":"1993-01-01T00:00:00","datumDo":"2002-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Lovochemie, a.s.","role":"člen představenstva","castka":null,"datumOd":"1993-01-01T00:00:00","datumDo":"1996-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Lovochemie, a.s.","role":"předseda představenstva","castka":null,"datumOd":"1997-01-01T00:00:00","datumDo":"2002-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Lovochemie, a.s.","role":"předseda představenstva","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":"2009-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Lovochemie, a.s.","role":"místopředseda představenstva","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"1996-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Lovochemie, a.s.","role":"člen dozorčí rady","castka":null,"datumOd":"1997-01-01T00:00:00","datumDo":"1997-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT, spol. s r.o.","role":"jednatel","castka":null,"datumOd":"1993-01-01T00:00:00","datumDo":"1994-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROUHLÍ CR, spol. s r.o.","role":"jednatel","castka":null,"datumOd":"1994-01-01T00:00:00","datumDo":"1995-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"OSVČ","role":"soukromý podnikatel","castka":null,"datumOd":"1998-01-01T00:00:00","datumDo":"2008-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROTER s.r.o.","role":"jednatel a společník","castka":null,"datumOd":"1994-01-01T00:00:00","datumDo":"2004-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROPROFIT spol. s r.o.","role":"jednatel","castka":null,"datumOd":"1994-01-01T00:00:00","datumDo":"2001-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT a.s.","role":"statutární orgán","castka":null,"datumOd":"2000-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT a.s.","role":"předseda představenstva","castka":null,"datumOd":"2000-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROBOHEMIE a.s.","role":"předseda představenstva","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"2008-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECOLOR, a.s.","role":"předseda představenstva","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"2002-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"ZEMPOS, a.s.","role":"předseda dozorčí rady","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"1996-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"IMOBA spol. s r.o.","role":"jednatel","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"1999-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGRONOVA CS s.r.o.","role":"jednatel","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"1996-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Zemědělské zásobování a nákup, a.s., Česká Skalice","role":"člen
+        předsednictva","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"1996-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"ZEMAP - INVEST, První investiční společnost a.s. v
+        likvidaci","role":null,"castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"1997-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PROFERTA, a.s.","role":"předseda představenstva","castka":null,"datumOd":"1997-01-01T00:00:00","datumDo":"1999-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECHEZA a.s.","role":"statutární orgán","castka":null,"datumOd":"2006-01-01T00:00:00","datumDo":"2009-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECHEZA a.s.","role":"předseda představenstva","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":"2009-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECHEZA a.s.","role":"statutární orgán","castka":null,"datumOd":"1997-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECHEZA a.s.","role":"člen dozorčí rady","castka":null,"datumOd":"2006-01-01T00:00:00","datumDo":"2008-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECHEZA a.s.","role":"předseda dozorčí rady","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":"2009-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"IMOBA spol. s r.o.","role":"jednatel","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"1999-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT HOLDING, a.s.","role":"předseda představenstva","castka":null,"datumOd":"2002-01-01T00:00:00","datumDo":"2004-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGFTRADING, spol. s r.o.","role":"jednatel","castka":null,"datumOd":"1999-01-01T00:00:00","datumDo":"2000-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Synthesia, a.s.","role":"statutární orgán","castka":null,"datumOd":"2000-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Synthesia, a.s.","role":"předseda představenstva","castka":null,"datumOd":"2004-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Synthesia, a.s.","role":"člen dozorčí rady","castka":null,"datumOd":"2000-01-01T00:00:00","datumDo":"2004-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGF - K, a.s.","role":"předseda představenstva","castka":null,"datumOd":"2004-01-01T00:00:00","datumDo":"2006-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Fatra, a.s.","role":"předseda dozorčí rady","castka":null,"datumOd":"2005-01-01T00:00:00","datumDo":"2008-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PROFROST a.s.","role":"předseda představenstva","castka":null,"datumOd":"2006-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"SynBiol, a.s.","role":"statutární orgán","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":"2017-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"SynBiol, a.s.","role":"člen představenstva","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PZO Chemapol Bratislava","role":"zaměstnanec","castka":null,"datumOd":"1978-01-01T00:00:00","datumDo":null},{"typ":"Soukromá
+        pracovní","organizace":"PZO Petrimex","role":"zaměstnanec","castka":null,"datumOd":"1985-01-01T00:00:00","datumDo":"1995-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PZO Petrimex","role":"delegát","castka":null,"datumOd":"1985-01-01T00:00:00","datumDo":"1991-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PZO Petrimex","role":"ředitel","castka":null,"datumOd":"1991-01-01T00:00:00","datumDo":"1995-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"HI-Medica, a.s.","role":"člen představenstva","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":"2009-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Agropol Group, a.s.","role":"předseda dozorčí rady","castka":null,"datumOd":"2009-01-01T00:00:00","datumDo":"2010-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT Trading, s.r.o.","role":"jednatel","castka":null,"datumOd":"2009-01-01T00:00:00","datumDo":"2010-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Nové Průhonice s.r.o.","role":"jednatel","castka":null,"datumOd":"2010-01-01T00:00:00","datumDo":"2011-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGF Wood, a.s.","role":"předseda představenstva","castka":null,"datumOd":"2011-01-01T00:00:00","datumDo":"2012-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Zemědělská společnost Luže, a.s.","role":"předseda
+        představenstva","castka":null,"datumOd":"2011-01-01T00:00:00","datumDo":null},{"typ":"Soukromá
+        pracovní","organizace":"AGF Media, a.s.","role":"předseda představenstva","castka":null,"datumOd":"2011-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Hartenberg Holding, s.r.o.","role":"jednatel","castka":null,"datumOd":"2013-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Kostelecké maso uzeniny, a.s.","role":"předseda dozorčí
+        rady","castka":null,"datumOd":"2004-01-01T00:00:00","datumDo":"2006-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Kostelecké maso uzeniny, a.s.","role":"statutární
+        orgán","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":null},{"typ":"Soukromá
+        pracovní","organizace":"Kostelecké maso uzeniny, a.s.","role":"člen představenstva","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Kostelecké maso uzeniny, a.s.","role":"akcionář","castka":null,"datumOd":"2008-01-01T00:00:00","datumDo":null},{"typ":"Soukromá
+        pracovní","organizace":"IMOBA, a.s.","role":"předseda představenstva","castka":null,"datumOd":"2007-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROSERVIS Chomutov a.s.","role":"člen dozorčí rady","castka":null,"datumOd":"1995-01-01T00:00:00","datumDo":"1999-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Nadace AGROFERT","role":"předseda správní rady","castka":null,"datumOd":"2011-01-01T00:00:00","datumDo":null},{"typ":"Politická","organizace":"Kandidát
+        ANO ve volbách do Poslanecké sněmovny PČR ","role":"kandidát","castka":null,"datumOd":"2013-01-01T00:00:00","datumDo":"2013-12-31T00:00:00"},{"typ":"Politická","organizace":"ANO","role":"člen
+        strany","castka":null,"datumOd":"2012-05-11T00:00:00","datumDo":null},{"typ":"Politická
+        pracovní","organizace":"Vláda České republiky","role":"1. místopředseda","castka":null,"datumOd":"2014-01-29T00:00:00","datumDo":"2017-05-24T00:00:00"},{"typ":"Politická
+        pracovní","organizace":"Ministerstvo financí","role":"ministr","castka":null,"datumOd":"2014-01-29T00:00:00","datumDo":"2017-05-24T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"CS CABOT, spol. s r.o.","role":"jednatel","castka":null,"datumOd":"1999-01-01T00:00:00","datumDo":"2004-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT, a.s.","role":"statutární orgán","castka":null,"datumOd":"2000-01-01T00:00:00","datumDo":"2017-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT, a.s.","role":"předseda představenstva","castka":null,"datumOd":"2000-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"Veřejná
+        správa jiné","organizace":"Rozpočtový výbor - Poslanecká sněmovna PČR ","role":"člen","castka":null,"datumOd":"2013-01-01T00:00:00","datumDo":"2014-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECHEZA a.s.","role":"předseda dozorčí rady","castka":null,"datumOd":"2002-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECHEZA a.s.","role":"předseda dozorčí rady","castka":null,"datumOd":"1997-01-01T00:00:00","datumDo":"2000-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"PRECHEZA a.s.","role":"předseda představenstva","castka":null,"datumOd":"2000-01-01T00:00:00","datumDo":"2001-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"Kostelecké uzeniny a.s.","role":"předseda představenstva","castka":null,"datumOd":"2006-01-01T00:00:00","datumDo":null},{"typ":"Soukromá
+        pracovní","organizace":"Kostelecké uzeniny a.s.","role":"předseda dozorčí
+        rady","castka":null,"datumOd":"2004-01-01T00:00:00","datumDo":"2005-01-01T00:00:00"},{"typ":"Soukromá
+        pracovní","organizace":"AGROFERT HOLDING, a.s.","role":"předseda představenstva","castka":null,"datumOd":"1997-01-01T00:00:00","datumDo":"1998-01-01T00:00:00"},{"typ":"Veřejná
+        správa jiné","organizace":"Kontrolní výbor - Poslanecká sněmovna PČR ","role":"člen","castka":null,"datumOd":"2017-06-07T00:00:00","datumDo":"2017-10-26T00:00:00"},{"typ":"Politická","organizace":"kandidát
+        ANO ve volbách do Poslanecké sněmovny Parlamentu ČR","role":" kandidát","castka":null,"datumOd":"2017-01-01T00:00:00","datumDo":"2017-12-31T00:00:00"},{"typ":"Politická
+        pracovní","organizace":"Vláda České republiky","role":"premiér","castka":null,"datumOd":"2017-12-06T00:00:00","datumDo":null},{"typ":"Volená
+        funkce","organizace":"Poslanecká sněmovna PČR","role":"poslanec","castka":null,"datumOd":"2013-01-01T00:00:00","datumDo":null},{"typ":"Politická","organizace":"Poslanecký
+        klub ANO 2011","role":"člen","castka":null,"datumOd":"2013-10-30T00:00:00","datumDo":null}],"socialniSite":[{"type":"Facebook_page","id":"andrejbabis","url":"https://www.facebook.com/andrejbabis"},{"type":"Twitter","id":"andrejbabis","url":"https://twitter.com/andrejbabis"},{"type":"Youtube","id":"https://www.youtube.com/playlist?list=UURY08efUE2gOJukt7XboXOg","url":"https://www.youtube.com/playlist?list=UURY08efUE2gOJukt7XboXOg"},{"type":"Youtube","id":"https://www.youtube.com/playlist?list=UUQEPR23yCIME2NcyNvBqjdg","url":"https://www.youtube.com/playlist?list=UUQEPR23yCIME2NcyNvBqjdg"}]}'
+  recorded_at: 2021-08-23 12:31:56 GMT
+  recorded_with: vcr/1.0.0, webmockr/0.8.0

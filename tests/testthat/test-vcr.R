@@ -3,10 +3,10 @@ test_that("get_datasets() works", {
         datasets <- get_datasets(token = Sys.getenv("HLIDAC_TOKEN"))
     })
     testthat::expect_type(datasets, "list")
-    testthat::expect_type(datasets$Total, "integer")
-    testthat::expect_true(datasets$Total > 0)
-    testthat::expect_type(datasets$Page, "integer")
-    testthat::expect_equal(datasets$Total, nrow(datasets$Results))
+    testthat::expect_type(datasets$total, "integer")
+    testthat::expect_true(datasets$total > 0)
+    testthat::expect_type(datasets$page, "integer")
+    testthat::expect_equal(datasets$total, nrow(datasets$results))
 })
 
 test_that("get_dataset_metadata() works", {
@@ -28,16 +28,16 @@ test_that("get_dataset_data() works", {
     })
 
     testthat::expect_type(dataset_data, "list")
-    testthat::expect_type(dataset_data$Total, "integer")
-    testthat::expect_true(dataset_data$Total > 0)
-    testthat::expect_type(dataset_data$Page, "integer")
-    testthat::expect_gt(nrow(dataset_data$Results), 0)
+    testthat::expect_type(dataset_data$total, "integer")
+    testthat::expect_true(dataset_data$total > 0)
+    testthat::expect_type(dataset_data$page, "integer")
+    testthat::expect_gt(nrow(dataset_data$results), 0)
 
     testthat::expect_type(dataset_query, "list")
-    testthat::expect_type(dataset_query$Total, "integer")
-    testthat::expect_true(dataset_query$Total > 0)
-    testthat::expect_type(dataset_query$Page, "integer")
-    testthat::expect_gt(nrow(dataset_query$Results), 0)
+    testthat::expect_type(dataset_query$total, "integer")
+    testthat::expect_true(dataset_query$total > 0)
+    testthat::expect_type(dataset_query$page, "integer")
+    testthat::expect_gt(nrow(dataset_query$results), 0)
 
 })
 
@@ -58,7 +58,7 @@ test_that("search_subsidies() works", {
     })
 
     testthat::expect_type(golf_sub, "list")
-    testthat::expect_equal(nrow(golf_sub$Results), 25)
+    testthat::expect_equal(nrow(golf_sub$results), 25)
 })
 
 test_that("get_subsidy() works", {
@@ -68,8 +68,8 @@ test_that("get_subsidy() works", {
     })
 
     testthat::expect_type(golf_sub1, "list")
-    testthat::expect_type(golf_sub1$IdDotace, "character")
-    testthat::expect_type(golf_sub1$Prijemce, "list")
+    testthat::expect_type(golf_sub1$idDotace, "character")
+    testthat::expect_type(golf_sub1$prijemce, "list")
 })
 
 test_that("get_company() works", {
@@ -78,8 +78,8 @@ test_that("get_company() works", {
     })
 
     testthat::expect_type(company, "list")
-    testthat::expect_type(company$ICO, "character")
-    testthat::expect_type(company$Jmeno, "character")
+    testthat::expect_type(company$ico, "character")
+    testthat::expect_type(company$jmeno, "character")
 })
 
 test_that("get_person() works", {
@@ -88,18 +88,28 @@ test_that("get_person() works", {
     })
 
     testthat::expect_type(person, "list")
-    testthat::expect_type(person$Jmeno, "character")
-    testthat::expect_type(person$Prijmeni, "character")
-    testthat::expect_gt(nrow(person$SocialniSite), 0)
-    testthat::expect_gt(nrow(person$Sponzoring), 0)
-    testthat::expect_gt(nrow(person$Udalosti), 0)
+    testthat::expect_type(person$jmeno, "character")
+    testthat::expect_type(person$prijmeni, "character")
+    testthat::expect_gt(nrow(person$socialniSite), 0)
+    testthat::expect_gt(nrow(person$sponzoring), 0)
+    testthat::expect_gt(nrow(person$udalosti), 0)
 })
 
 test_that("search_person() works", {
     vcr::use_cassette("search_person", {
         found_person1 <- search_person(query = "Kalousek",
-                                       party = "TOP 09",
                                        token = Sys.getenv("HLIDAC_TOKEN"))
+    })
+
+    testthat::expect_gt(nrow(found_person1), 0)
+})
+
+test_that("search_person_by_parameters() works", {
+    vcr::use_cassette("search_person_by_parameters", {
+        found_person1 <- search_person_by_parameters(first_name = "Miroslav",
+                                                     last_name = "Kalousek",
+                                                     birth_date = "1960-12-17",
+                                                     token = Sys.getenv("HLIDAC_TOKEN"))
     })
 
     testthat::expect_gt(nrow(found_person1), 0)
@@ -121,9 +131,9 @@ test_that("search_contracts() works", {
     })
 
     testthat::expect_type(contracts, "list")
-    testthat::expect_type(contracts$Total, "integer")
-    testthat::expect_type(contracts$Page, "integer")
-    testthat::expect_gt(nrow(contracts$Results), 0)
+    testthat::expect_type(contracts$total, "integer")
+    testthat::expect_type(contracts$page, "integer")
+    testthat::expect_gt(nrow(contracts$results), 0)
 })
 
 test_that("get_contract() works", {
@@ -159,6 +169,6 @@ test_that("get_website_detail() works", {
     })
 
     testthat::expect_type(web, "list")
-    testthat::expect_type(web$SSL, "list")
-    testthat::expect_gt(nrow(web$Availability$Data), 0)
+    testthat::expect_type(web$ssl, "list")
+    testthat::expect_gt(nrow(web$availability$data), 0)
 })

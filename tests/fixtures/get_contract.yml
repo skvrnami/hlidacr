@@ -8,6 +8,7 @@ http_interactions:
     headers:
       Accept: application/json, text/xml, application/xml, */*
       Authorization: My token is safe
+      User-Agent: github.com/skvrnami/hlidacr
   response:
     status:
       status_code: 200
@@ -15,30 +16,26 @@ http_interactions:
       reason: OK
       message: 'Success: (200) OK'
     headers:
-      cache-control: no-cache
-      pragma: no-cache
       content-type: application/json; charset=utf-8
-      expires: '-1'
       server: Microsoft-IIS/8.5
-      x-aspnet-version: 4.0.30319
       request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
-      access-control-expose-headers: Request-Context
+      strict-transport-security: max-age=2592000
       x-powered-by: ASP.NET
-      access-control-allow-origin: '*'
-      date: Sat, 20 Feb 2021 17:52:41 GMT
-      content-length: '1966'
+      date: Mon, 23 Aug 2021 12:32:05 GMT
+      content-length: '2315'
     body:
       encoding: UTF-8
       file: no
-      string: '{"identifikator":{"idSmlouvy":"3322596","idVerze":"3583464"},"CalculatedPriceWithVATinCZK":296450.0,"CalcutatedPriceQuality":1,"casZverejneni":"2017-10-30T08:35:51+01:00","cisloSmlouvy":"
-        /MMH/93458/2017","ConfidenceValue":0.0,"datumUzavreni":"2017-10-25T00:00:00","Enhancements":[{"Created":"2017-10-30T09:12:42.7476133+01:00","Title":"Text
-        přílohy extrahován přímo z dokumentu","Description":"","Changed":{"ParameterName":"item.Prilohy[0].PlainTextContent","PreviousValue":"","NewValue":""},"Public":true,"EnhancerType":"HlidacSmluv.Plugin.Enhancers.TextMiner"}],"hodnotaBezDph":245000.0,"hodnotaVcetneDph":296450.0,"Id":"3583464","Issues":[],"LastUpdate":"2020-04-01T23:29:25.3498917+02:00","odkaz":"https://smlouvy.gov.cz/smlouva/3583464","Platce":{"adresa":"Svornosti
+      string: '{"identifikator":{"idSmlouvy":"3322596","idVerze":"3583464"},"calculatedPriceWithVATinCZK":296450.0,"calcutatedPriceQuality":1,"casZverejneni":"2017-10-30T08:35:51+01:00","cisloSmlouvy":"
+        /MMH/93458/2017","ciziMena":null,"classification":null,"confidenceValue":0.0,"datumUzavreni":"2017-10-25T00:00:00","enhancements":[{"created":"2017-10-30T09:12:42.7476133+01:00","title":"Text
+        přílohy extrahován přímo z dokumentu","description":"","changed":{"parameterName":"item.Prilohy[0].PlainTextContent","previousValue":"","newValue":""},"public":true,"enhancerType":"HlidacSmluv.Plugin.Enhancers.TextMiner"}],"hodnotaBezDph":245000.0,"hodnotaVcetneDph":296450.0,"id":"3583464","issues":[],"lastUpdate":"2020-04-01T23:29:25.3498917+02:00","navazanyZaznam":null,"odkaz":"https://smlouvy.gov.cz/smlouva/3583464","platce":{"adresa":"Svornosti
         86/2, 73601 Havířov, CZ","datovaSchranka":"7zhb6tn","ico":"00297488","nazev":"Statutární
-        město Havířov"},"platnyZaznam":true,"PravniRamec":2,"predmet":"836/OSRM/2017
-        smlouva o dílo - adventure golf","Prijemce":[{"adresa":"Hřbitovní 651/8\n
+        město Havířov","utvar":null},"platnyZaznam":true,"pravniRamec":2,"predmet":"836/OSRM/2017
+        smlouva o dílo - adventure golf","prijemce":[{"adresa":"Hřbitovní 651/8\n
         735 42  Těrlicko","datovaSchranka":"9gg5ymn","ico":"27858782","nazev":"ŠNAPKA
-        SLUŽBY s.r.o."}],"Prilohy":[{"nazevSouboru":"Smlouva PD-adventure golf.pdf","hash":{"algoritmus":"sha256","Value":"8791e62a1af70d7e80b8c205e6c7ddfee3461086a39ba5956f9671df07c663b7"},"odkaz":"https://smlouvy.gov.cz/smlouva/soubor/4983496/Smlouva%20PD-adventure%20golf.pdf","PlainTextContentQuality":3,"LastUpdate":"2017-10-30T09:11:30.9528211+01:00","ContentType":"application/pdf","Lenght":45885,"WordCount":5478,"UniqueWordsCount":1619,"WordsVariance":0.004182263108919729650621181,"Pages":0,"EnoughExtractedText":true}],"schvalil":"","spadaPodRS":true,"Hint":{"SmlouvaULimitu":0,"DenUzavreni":0,"SmlouvaSPolitickyAngazovanymSubjektem":0,"PocetDniOdZalozeniFirmy":3325,"VztahSeSoukromymSubjektem":1},"VkladatelDoRejstriku":{"adresa":"Svornosti
+        SLUŽBY s.r.o.","utvar":null}],"prilohy":[{"fileMetadata":null,"data":null,"nazevSouboru":"Smlouva
+        PD-adventure golf.pdf","hash":{"algoritmus":"sha256","value":"8791e62a1af70d7e80b8c205e6c7ddfee3461086a39ba5956f9671df07c663b7"},"odkaz":"https://smlouvy.gov.cz/smlouva/soubor/4983496/Smlouva%20PD-adventure%20golf.pdf","plainTextContent":null,"plainTextContentQuality":3,"lastUpdate":"2017-10-30T09:11:30.9528211+01:00","localCopy":null,"contentType":"application/pdf","lenght":45885,"wordCount":5478,"uniqueWordsCount":1619,"wordsVariance":0.004182263108919729650621181,"pages":0,"enoughExtractedText":true}],"schvalil":"","souvisejiciSmlouvy":null,"spadaPodRS":true,"sVazbouNaPolitiky":null,"sVazbouNaPolitikyAktualni":null,"sVazbouNaPolitikyNedavne":null,"hint":{"updated":"2021-06-29T19:40:06.9045954+02:00","smlouvaULimitu":0,"denUzavreni":0,"smlouvaSPolitickyAngazovanymSubjektem":0,"pocetDniOdZalozeniFirmy":3325,"vztahSeSoukromymSubjektem":1,"skrytaCena":0},"vkladatelDoRejstriku":{"adresa":"Svornosti
         86/2, 73601 Havířov, CZ","datovaSchranka":"7zhb6tn","ico":"00297488","nazev":"Statutární
-        město Havířov"}}'
-  recorded_at: 2021-02-20 17:52:41 GMT
-  recorded_with: vcr/0.6.0, webmockr/0.7.4
+        město Havířov","utvar":null}}'
+  recorded_at: 2021-08-23 12:32:05 GMT
+  recorded_with: vcr/1.0.0, webmockr/0.8.0

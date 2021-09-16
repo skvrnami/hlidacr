@@ -1,0 +1,31 @@
+http_interactions:
+- request:
+    method: get
+    uri: https://www.hlidacstatu.cz/api/v2/osoby/hledat?jmeno=Miroslav&prijmeni=Kalousek&datumNarozeni=1960-12-17&ignoreDiakritiku=TRUE
+    body:
+      encoding: ''
+      string: ''
+    headers:
+      Accept: application/json, text/xml, application/xml, */*
+      Authorization: My token is safe
+      User-Agent: github.com/skvrnami/hlidacr
+  response:
+    status:
+      status_code: 200
+      category: Success
+      reason: OK
+      message: 'Success: (200) OK'
+    headers:
+      content-type: application/json; charset=utf-8
+      server: Microsoft-IIS/8.5
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      strict-transport-security: max-age=2592000
+      x-powered-by: ASP.NET
+      date: Mon, 23 Aug 2021 12:34:17 GMT
+      content-length: '177'
+    body:
+      encoding: UTF-8
+      file: no
+      string: '[{"titulPred":"Ing.","jmeno":"Miroslav","prijmeni":"Kalousek","titulPo":null,"narozeni":"1960-12-17T00:00:00","nameId":"miroslav-kalousek","profile":"/osoba/miroslav-kalousek"}]'
+  recorded_at: 2021-08-23 12:34:17 GMT
+  recorded_with: vcr/1.0.0, webmockr/0.8.0

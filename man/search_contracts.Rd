@@ -11,7 +11,7 @@ search_contracts(query, token = Sys.getenv("HLIDAC_TOKEN"), page = 1, sort = 0)
 
 \item{token}{Access token}
 
-\item{page}{Page of results}
+\item{page}{Page of results (Please note that if the page parameter exceeds 200, the function returns error)}
 
 \item{sort}{Ordering of the results, the available options are the following:
 - 0: sort by relevance

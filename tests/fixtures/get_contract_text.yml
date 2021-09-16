@@ -8,6 +8,7 @@ http_interactions:
     headers:
       Accept: application/json, text/xml, application/xml, */*
       Authorization: My token is safe
+      User-Agent: github.com/skvrnami/hlidacr
   response:
     status:
       status_code: 200
@@ -15,18 +16,13 @@ http_interactions:
       reason: OK
       message: 'Success: (200) OK'
     headers:
-      cache-control: no-cache
-      pragma: no-cache
-      content-type: application/json; charset=utf-8
-      expires: '-1'
-      server: Microsoft-IIS/8.5
-      x-aspnet-version: 4.0.30319
-      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
-      access-control-expose-headers: Request-Context
-      x-powered-by: ASP.NET
-      access-control-allow-origin: '*'
-      date: Sat, 20 Feb 2021 17:52:41 GMT
       content-length: '51703'
+      content-type: application/json; charset=utf-8
+      server: Microsoft-IIS/8.5
+      request-context: appId=cid-v1:3722fa8f-2df2-4e7a-aa7a-606135317021
+      strict-transport-security: max-age=2592000
+      x-powered-by: ASP.NET
+      date: Mon, 23 Aug 2021 12:32:05 GMT
     body:
       encoding: UTF-8
       file: no
@@ -573,5 +569,5 @@ http_interactions:
         značka v\r\n     obch. rejstříku:\r\n     Osoba oprávněná\r\n     k jednání:\r\n\r\nCelkový
         objem subdodávek\r\n\r\nV Těrlicku dne\r\n\r\n…………………………\r\n     Ing. Ivan
         Šnapka\r\n\r\n   jednatel společnosti\r\n\r\n                                                                       16\r\n"]'
-  recorded_at: 2021-02-20 17:52:42 GMT
-  recorded_with: vcr/0.6.0, webmockr/0.7.4
+  recorded_at: 2021-08-23 12:32:06 GMT
+  recorded_with: vcr/1.0.0, webmockr/0.8.0
