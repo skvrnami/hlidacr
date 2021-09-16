@@ -16,7 +16,7 @@
 #' get_datasets()
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_datasets <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
@@ -50,7 +50,7 @@ get_datasets <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
 #' get_dataset_metadata("ministri")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_dataset_metadata <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN")) {
@@ -90,7 +90,7 @@ get_dataset_metadata <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"))
 #' get_dataset_data("ministri", query = "Zeman", page = 1)
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_dataset_data <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"),
@@ -130,7 +130,7 @@ get_dataset_data <- function(dataset_id, token = Sys.getenv("HLIDAC_TOKEN"),
 #' }
 #' @seealso
 #' \code{\link{get_dataset_data}}
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_dataset_record_detail <- function(dataset_id, item_id,
@@ -178,7 +178,7 @@ get_dataset_record_detail <- function(dataset_id, item_id,
 #' search_subsidies("golf")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 search_subsidies <- function(query, page = 1, sort = NULL,
@@ -215,7 +215,7 @@ search_subsidies <- function(query, page = 1, sort = NULL,
 #' get_subsidy("deminimis-1000229862")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_subsidy <- function(id, token = Sys.getenv("HLIDAC_TOKEN")){
@@ -253,7 +253,7 @@ get_subsidy <- function(id, token = Sys.getenv("HLIDAC_TOKEN")){
 #' get_company("Agrofert")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_company <- function(company_name, token = Sys.getenv("HLIDAC_TOKEN")) {
@@ -299,7 +299,7 @@ get_company <- function(company_name, token = Sys.getenv("HLIDAC_TOKEN")) {
 #' get_person("andrej-babis")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_person <- function(person_id, token = Sys.getenv("HLIDAC_TOKEN")) {
@@ -340,7 +340,7 @@ get_person <- function(person_id, token = Sys.getenv("HLIDAC_TOKEN")) {
 #' search_person(query = "Kalousek")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 search_person <- function(query, page = NULL,
@@ -392,7 +392,7 @@ search_person <- function(query, page = NULL,
 #' birth_date = "1960-12-17")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 search_person_by_parameters <- function(first_name = NULL,
@@ -454,7 +454,7 @@ search_person_by_parameters <- function(first_name = NULL,
 #' get_person_social(types = c("Twitter", "Instagram"))
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_person_social <- function(types, token = Sys.getenv("HLIDAC_TOKEN")){
@@ -506,7 +506,7 @@ get_person_social <- function(types, token = Sys.getenv("HLIDAC_TOKEN")){
 #' search_contracts(query = "golf")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 #'
@@ -551,7 +551,7 @@ search_contracts <- function(query, token = Sys.getenv("HLIDAC_TOKEN"),
 #' get_contract(id = "1086905")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 #'
@@ -585,7 +585,7 @@ get_contract <- function(id, token = NULL) {
 #' get_contract_text(id = "1086905")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 #'
@@ -628,7 +628,7 @@ get_contract_text <- function(id, token = Sys.getenv("HLIDAC_TOKEN")) {
 #' get_websites()
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_websites <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
@@ -663,7 +663,7 @@ get_websites <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
 #' get_website_detail(id = "10107")
 #' }
 #' @seealso
-#' \url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
 #'
 #' \url{https://www.hlidacstatu.cz/api/v1/doc}
 get_website_detail <- function(id, token = Sys.getenv("HLIDAC_TOKEN")) {

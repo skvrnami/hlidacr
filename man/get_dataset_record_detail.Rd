@@ -30,7 +30,7 @@ get_dataset_record_detail("ministri", item_id = 1)
 }
 \seealso{
 \code{\link{get_dataset_data}}
-\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/swagger/index.html}
 
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 

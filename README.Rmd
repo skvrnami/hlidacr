@@ -22,7 +22,7 @@ knitr::opts_chunk$set(
 [![](https://cranlogs.r-pkg.org/badges/hlidacr)](https://CRAN.R-project.org/package=hlidacr)
 <!-- badges: end -->
 
-The goal of hlidacr is to provide access to the data published by [Hlídač státu](https://www.hlidacstatu.cz/) provided by their [API](https://www.hlidacstatu.cz/api/v2/swagger/index). 
+The goal of hlidacr is to provide access to the data published by [Hlídač státu](https://www.hlidacstatu.cz/) provided by their [API](https://www.hlidacstatu.cz/swagger/index.html). 
 
 ## Installation
 
@@ -47,7 +47,7 @@ after the registration at the Hlídač státu's website.
 ## Usage
 
 The package implements functions for accessing all publicly available API endpoints
-as defined in the [documentation](https://www.hlidacstatu.cz/api/v2/swagger/index)
+as defined in the [documentation](https://www.hlidacstatu.cz/swagger/index.html)
 of the Hlídač státu API. 
 
 The data available via the API are related to:

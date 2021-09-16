@@ -2,6 +2,7 @@
 * local macOS, R 4.0.4
 * ubuntu 20.04 (on Github Actions), R 4.1.1
 * Fedora Linux, R-devel (on r-hub)
+* windows (R-devel on winbuilder)
 * windows (R 4.1.1 on Github Actions)
 * macOS (on Github Actions)
 
