@@ -652,10 +652,7 @@ get_websites <- function(token = Sys.getenv("HLIDAC_TOKEN")) {
 #' @param id Website id
 #' @param token Authorization token
 #'
-#' @return list with 2 elements:
-#' - availability: data on availability of the website
-#' including response time and HTTP status code every minute
-#' - ssl: assessment of the website's SSL server configuration
+#' @return data.frame with the donations to the political party
 #'
 #' @export
 #' @examples
@@ -679,5 +676,40 @@ get_website_detail <- function(id, token = Sys.getenv("HLIDAC_TOKEN")) {
     handle_error_response(response)
   }
 
+  jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
+}
+
+#' Get donations to political party
+#'
+#' @param party_ico ID of party receiving the donation (ICO)
+#' @param token Authorization token
+#'
+#' @return list with 2 elements:
+#' - availability: data on availability of the website
+#' including response time and HTTP status code every minute
+#' - ssl: assessment of the website's SSL server configuration
+#'
+#' @export
+#' @examples
+#' \dontrun{
+#' get_donations(party_ico = "71443339")
+#' }
+#' @seealso
+#' \url{https://www.hlidacstatu.cz/swagger/index.html}
+#'
+#' \url{https://www.hlidacstatu.cz/api/v1/doc}
+get_party_donations <- function(party_ico, token = Sys.getenv("HLIDAC_TOKEN")) {
+  check_token(token)
+  check_connection()
+  response <- httr::GET(
+    glue::glue("https://api.hlidacstatu.cz/api/v2/sponzoring/{party_ico}"),
+    httr::add_headers(Authorization = token,
+                      user_agent)
+  )
+  
+  if (response$status_code != 200) {
+    handle_error_response(response)
+  }
+  
   jsonlite::fromJSON(stringr::str_conv(response$content, "UTF-8"))
 }
